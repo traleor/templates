@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="65" viewBox="0 0 221 65">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #018489;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 41px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="traleor" transform="translate(-1381 624)">
+    <g id="logo" transform="translate(1381.026 -624)">
+      <circle id="circle" class="cls-1" cx="32.5" cy="32.5" r="32.5" transform="translate(-0.026)"/>
+      <path id="bottom" class="cls-2" d="M18.7-77.115h7.957l1.113-5.565H19.81l-6.936.052L8.959-63.092A12.357,12.357,0,0,0,8.736-60.7c0,4.953,3.506,7.9,8.458,7.9a13.378,13.378,0,0,0,7.178-1.781L23.148-59.7a7.09,7.09,0,0,1-3.9,1.169c-2.393,0-3.45-1.28-3.45-3.339a10.865,10.865,0,0,1,.111-1.28Z" transform="translate(15.358 106.91)"/>
+      <path id="top" class="cls-2" d="M12.619-89.358l.9-5.565,1.391-6.789H7.957L6.518-94.53H.389l-1.427,5.171H12.619Z" transform="translate(22.621 112.518)"/>
+    </g>
+    <text id="traleor-2" data-name="traleor" class="cls-3" transform="translate(1455 -577)"><tspan x="0" y="0">traleor</tspan></text>
+  </g>
+</svg>

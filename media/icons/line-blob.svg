@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55.125" height="8" viewBox="0 0 55.125 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #018489;
+        stroke-linecap: round;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <path id="line-blob" class="cls-1" d="M-4649.125,1570.667H-4602" transform="translate(4653.125 -1566.667)"/>
+</svg>
