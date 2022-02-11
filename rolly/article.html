@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="navBar">
+    <nav class="navBar">
       <!-- ************************* NavBar begins here ************************************ -->
 
-      <div class="navBarContainer">
-        <a href="#home">
-          <h1 class="navLogo"><span>Y</span>van <span>R</span>olly</h1>
-        </a>
-
-        <div class="rightNavItem">
-          <a href="#about"> About Me </a>
-        </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active"><h1><span>Y</span>van <span>R</span>olly</h1></a>
+        <a href="#news">Get in Touch</a>
+        <a href="#contact">Articles</a>
+        <a href="#about">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="menuIcon()" 
+        style="font-size: large; color: #fff;"> &#9776</a>
       </div>
-    </section>
+    </nav>
 
     <!-- ****************SHARE SOCIAL MEDIA ICONS******************* -->
 
@@ -182,16 +181,102 @@
       </section>
     </section>
 
+
+    <!-- ****************SHARE SOCIAL MEDIA ICONS******************* -->
+
+    <div class="shareIconsBottom">
+      <h5>Share</h5>
+      <div class="iconContainer">
+        <a href=""
+          ><img
+            src="../media/icons/social/twitter.svg"
+            alt=""
+            class="socialIcons"
+        /></a>
+      </div>
+      <div class="iconContainer">
+        <a href=""
+          ><img
+            src="../media/icons/social/facebook.svg"
+            alt=""
+            class="socialIcons"
+        /></a>
+      </div>
+      <div class="iconContainer">
+        <a href=""
+          ><img
+            src="../media/icons/social/instagram-outlined.png"
+            alt=""
+            class="socialIcons"
+        /></a>
+      </div>
+      <div class="iconContainer">
+        <a href=""
+          ><img
+            src="../media/icons/social/linkedin.svg"
+            alt=""
+            class="socialIcons"
+        /></a>
+      </div>
+      <div class="iconContainer">
+        <a href="">
+          <img
+            src="../media/icons/utility/feather-copy.png"
+            alt="Copy Link"
+            id="copyImage"
+            class="socialIcons"
+            onclick="copyLink()"
+        /></a>
+        <h6>Copy</h6>
+        <br />
+      </div>
+    </div>
+
+    <!-- **************************Last Segment Begins Here***************************************** -->
+    <section class="lastSegment">
+      <div class="lsBg">
+        <div class="lsDiv">
+          <div class="lsText">
+            <h2 class="tsFirst">Get Started with Traleor</h2>
+            <p class="lsSecond">
+              Traleor is the number one tool used by all small and medium-sized
+              businesses <br />
+              to maintain an online presence easily with just two clicks. We
+              also help customers find the best good and services at the right
+              price.
+            </p>
+            <a
+              id="navVisitLink"
+              href="https://traleor.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button class="navVisitBtn">Visit Traleor</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- *******************FOOTER************** -->
     <section class="footerSection">
       <footer class="footerContainer">
+        <div class="getInTouch">
+          <h3>Hey there 👋🏾 I'm <span>Yvan Rolly</span></h3>
+          <p>Thank you for reading till the end, See you on the next one. <br>Get in Touch!</p>
+          <div class="contact">
+            <a href="#"><img src="../media/icons/social/twitter.svg" alt=""></a>
+            <a href="#"><img src="../media/icons/social/facebook.svg" alt=""></a>
+            <a href="#"><img src="../media/icons/social/instagram.svg" alt=""></a>
+            <a href="#"><img src="../media/icons/social/whatsapp.svg" alt=""></a>
+          </div>
+          <hr>
+        </div>
         <div class="footer-copyright">
-          <a href="https://traleor.com/"
-            >&copy;
-            <script>
+          <a href="https://traleor.com/">
+            <!-- <script>
               document.write(new Date().getFullYear());
-            </script>
-            Copyright Traleor</a
+            </script> -->
+            Made With Traleor</a
           >
       </footer>
 
