@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="30" viewBox="0 0 29.496 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #01BAEF;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linejoin: round;
+        stroke-width: 0.4px;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #01BAEF;
+      }
+    </style>
+  </defs>
+  <g id="calendar" transform="translate(-1231.725 -600.262)">
+    <g id="box" transform="translate(-41.417 -179.456)">
+      <path id="Path_9788" data-name="Path 9788" class="cls-1" d="M-4616.3,1464l-1.95,1.115,1.95,1.353,1.991-1.353Z" transform="translate(5901.827 -669.367)"/>
+      <path id="Path_9789" data-name="Path 9789" class="cls-2" d="M-4619.5,1471.75v2.428l2.109,1.115V1473.1Z" transform="translate(5902.938 -675.883)"/>
+      <path id="Path_9790" data-name="Path 9790" class="cls-2" d="M-4603.43,1471.75v2.428l-2.07,1.154v-2.349Z" transform="translate(5891.047 -675.883)"/>
+    </g>
+    <path id="Path_9807" data-name="Path 9807" class="cls-3" d="M-4966.2,1839.2h27.4V1817h-27.4Z" transform="translate(6199.02 -1209.938)"/>
+    <path id="Path_9808" data-name="Path 9808" class="cls-4" d="M-4967.3,1814.4h28.7v-4.2h-3.8v1.8h-3.6v-1.8h-13.8v1.8h-4.4v-1.8h-3.1Z" transform="translate(6199.02 -1209.938)"/>
+    <rect id="Rectangle_783" data-name="Rectangle 783" class="cls-4" width="4" height="4" transform="translate(1236.02 610.062)"/>
+    <rect id="Rectangle_784" data-name="Rectangle 784" class="cls-4" width="4" height="4" transform="translate(1236.02 616.062)"/>
+    <rect id="Rectangle_787" data-name="Rectangle 787" class="cls-4" width="4" height="4" transform="translate(1236.02 622.062)"/>
+    <rect id="Rectangle_785" data-name="Rectangle 785" class="cls-4" width="4" height="4" transform="translate(1242.02 610.062)"/>
+    <rect id="Rectangle_788" data-name="Rectangle 788" class="cls-4" width="4" height="4" transform="translate(1242.02 622.062)"/>
+    <rect id="Rectangle_789" data-name="Rectangle 789" class="cls-4" width="4" height="4" transform="translate(1248.021 610.062)"/>
+    <rect id="Rectangle_790" data-name="Rectangle 790" class="cls-4" width="4" height="4" transform="translate(1248.021 616.062)"/>
+    <rect id="Rectangle_791" data-name="Rectangle 791" class="cls-4" width="4" height="4" transform="translate(1248.021 622.062)"/>
+    <rect id="Rectangle_792" data-name="Rectangle 792" class="cls-4" width="4" height="4" transform="translate(1254.02 610.062)"/>
+    <rect id="Rectangle_793" data-name="Rectangle 793" class="cls-4" width="4" height="4" transform="translate(1254.02 616.062)"/>
+    <rect id="Rectangle_794" data-name="Rectangle 794" class="cls-4" width="4" height="4" transform="translate(1254.02 622.062)"/>
+  </g>
+</svg>
