@@ -18,6 +18,9 @@ a {
   text-decoration: none;
   color: var(--main-color);
 }
+a:hover{
+  cursor: pointer;
+}
 span {
   color: var(--main-color);
 }
@@ -101,7 +104,7 @@ span {
 }
 .aboutMeButton {
   background-color: transparent;
-  padding: 3% 7% 3% 4%;
+  padding: 4%;
   border: 0.5px solid var(--main-color);
 }
 .linkAboutMe h3 {
