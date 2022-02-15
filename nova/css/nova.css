@@ -1,0 +1,259 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #018489;
+  --secondary-color: #000411;
+  --white-color: #fffbfe;
+  --background-color: #eff5f8;
+  --background-secondary: #f9f9f9;
+
+  /*========== Font and typography ==========*/
+  --heading-font-size: 1.5rem;
+  --biggest-font-size: 1.25rem;
+  --normal-font-size: 0.838rem;
+  --h2-font-size: 1.15rem;
+  --small-font-size: 0.713rem;
+  --smaller-font-size: 0.65rem;
+  --tiny-font-size: 0.625rem;
+
+  /*  */
+  --container-margin: 4rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --heading-font-size: 3rem;
+    --biggest-font-size: 1.5rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.688rem;
+
+    /*  */
+    --container-margin: 2rem;
+  }
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #018489;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+img {
+  height: 128px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-weight: 800;
+  line-height: 67px;
+  margin-top: var(--heading-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: 40px;
+}
+
+h1,
+h2,
+p {
+  margin: 0.8rem auto;
+}
+
+
+h2 {
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+button::hover {
+  box-shadow: 0 0 20px 7px rgba(40, 35, 74, 0.1);
+}
+
+.container {
+  margin: 0 var(--container-margin);
+  max-width: 1820px;
+  padding: 0 10px;
+}
+
+/* ------------------- NAV TOP----------------- */
+ul.topnav {
+  height: 5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  padding: 2rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: var(--main-color);
+}
+
+ul.topnav li a.active {
+  background-color: var(--main-color);
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+  ul.topnav li a {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+}
+
+/* ------------------- END TOP----------------- */
+
+/* ------------------- HERO----------------- */
+
+/* The hero image */
+.hero-image {
+  display: flex;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/start.png");
+
+  /* Set a specific height */
+  height: 50vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 50%;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 6px;
+}
+/* ------------------- END HERO----------------- */
+
+/* ------------------- STANDARD ----------------- */
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.standard-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* ------------------- STANDARD ----------------- */
+
+footer {
+  margin-bottom: 0;
+  padding: 1rem 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+}

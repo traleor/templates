@@ -6,6 +6,12 @@ This templates are crafted with love to help you to build or customize your own 
 
 #
 
+### [Nova](/nova/README.md)
+
+- Nova (Latin for "new") is the default template of traleor websites.
+
+#
+
 ### [Rolly](/rolly/README.md)
 
 - This is a Beautiful blog template for ...
