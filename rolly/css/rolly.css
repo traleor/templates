@@ -329,10 +329,10 @@ figure {
 }
 
 /* *******************ABOUT PAGE STYLES************** */
-.sectionContainer {
+.aboutContainer {
   display: flex;
-  flex-direction: row;
-  padding: 3%;
+  flex-direction: column;
+  margin: 2% 5%;
 }
 .leftChild {
   flex: 20;
