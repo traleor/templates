@@ -18,22 +18,38 @@ a {
   text-decoration: none;
   color: var(--main-color);
 }
-a:hover{
+a:hover {
   cursor: pointer;
 }
 span {
   color: var(--main-color);
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: rgba(1, 186, 239, 0.1);
+  border: 1px solid rgba(1, 186, 239, 0.5);
+  backdrop-filter: blur(30px);
+  color: var(--white-color);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 /****** NAVIGATION BAR ******/
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: var(--black-color);
   overflow: hidden;
-  padding: 1%;
+  padding: 2% 5% 1% 5%;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a h1{
+.topnav a h1 {
   margin: 0;
 }
 .topnav a {
@@ -46,7 +62,7 @@ span {
   font-size: large;
   font-weight: 500;
 }
-.topnav a:first-child{
+.topnav a:first-child {
   float: left;
 }
 
@@ -64,7 +80,6 @@ span {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
-
 }
 
 /* ******************Welcome Section***************** */
@@ -103,9 +118,7 @@ span {
   font-weight: 500;
 }
 .aboutMeButton {
-  background-color: transparent;
-  padding: 4%;
-  border: 0.5px solid var(--main-color);
+  padding: 4% 8%;
 }
 .linkAboutMe h3 {
   color: var(--main-color);
@@ -176,7 +189,7 @@ span {
 }
 
 /* **************** shareIconsBottom************ */
-.shareIconsBottom{
+.shareIconsBottom {
   display: none;
 }
 
@@ -231,10 +244,10 @@ span {
   padding: 2%;
   text-align: center;
 }
-.getInTouch{
+.getInTouch {
   color: var(--white-color);
 }
-.contact a{
+.contact a {
   padding: 1%;
 }
 /* *********************************STYLES FOR THE ARTICLE PAGE***************************************** */
@@ -282,7 +295,7 @@ figure {
 .shareIcons {
   display: none;
 }
-.showIcons{
+.showIcons {
   display: block;
   padding-left: 3%;
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -297,7 +310,6 @@ figure {
 
 .iconContainer {
   padding: 1.5% 0 1.5% 0;
-  
 }
 .socialIcons {
   width: 1.3rem;
@@ -317,33 +329,33 @@ figure {
 }
 
 /* *******************ABOUT PAGE STYLES************** */
-.sectionContainer{
+.sectionContainer {
   display: flex;
   flex-direction: row;
   padding: 3%;
 }
-.leftChild{
+.leftChild {
   flex: 20;
   width: 100%;
 }
-.aboutPageImage{
+.aboutPageImage {
   width: 100%;
 }
-.rightChild{
+.rightChild {
   flex: 60;
   padding: 0 5% 0 5%;
 }
-.aboutPageText h1{
+.aboutPageText h1 {
   font-size: xx-large;
   text-transform: uppercase;
 }
-.aboutPageText p{
+.aboutPageText p {
   line-height: 2rem;
 }
-.shareIconsAbout{
+.shareIconsAbout {
   display: flex;
 }
-.shareIconsAbout .iconContainer{
+.shareIconsAbout .iconContainer {
   padding: 0 4% 0 0;
 }
 
@@ -351,12 +363,16 @@ figure {
 
 @media screen and (max-width: 950px) {
   /* **********************NAVBAR************************ */
-  .topnav a:not(:first-child){display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
   }
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -394,7 +410,7 @@ figure {
     font-size: 2rem;
   }
   .aboutMeButton {
-    padding: 3% 7% 3% 3%;
+    padding: 3% 7% 3% 7%;
     height: fit-content;
   }
   .welcomeContent {
@@ -406,7 +422,7 @@ figure {
 
   /* *********************Article Display Section****************** */
   .gridSection {
-    margin: 3% 8% 0 10%;
+    margin: 3% 8% 0 8%;
   }
   .gridHeading h1 {
     padding: 0;
@@ -440,21 +456,21 @@ figure {
   }
   .articleImg img {
     height: 50vh;
-}
-.blogContent p {
-  line-height: 1.5rem;
-  font-size: 1rem;
-  padding: 0 0 0 1rem;
-}
-.contact a img{
-  width: 1.5rem;
-}
-.shareIcons h5{
-  margin: 0 0 1rem 0;
-}
-.socialIcons {
-  width: 1rem;
-}
+  }
+  .blogContent p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 0 0 0 1rem;
+  }
+  .contact a img {
+    width: 1.5rem;
+  }
+  .shareIcons h5 {
+    margin: 0 0 1rem 0;
+  }
+  .socialIcons {
+    width: 1rem;
+  }
   .navVisitBtn {
     /* REDUCE NAVBAR BUTTON TEXT SO BUTTON LOOKS GOOD */
     font-size: 1rem;
@@ -464,39 +480,40 @@ figure {
   .articlepostHeading h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-}
-.authorImage {
-  width: 2rem;
-  height: 2rem;
-}
-.articleAuthor h4 {
-  font-size: 0.8rem;
-}
-/* *******************ABOUT PAGE STYLES************** */
-.sectionContainer{
-  flex-direction: column  ;
-  flex-wrap: wrap;
-  padding: 3%;
-}
-.smallScreenImage{
-  display: flex;
-  width: 3%;
-}
+  }
+  .authorImage {
+    width: 2rem;
+    height: 2rem;
+  }
+  .articleAuthor h4 {
+    font-size: 0.8rem;
+  }
+  /* *******************ABOUT PAGE STYLES************** */
+  .sectionContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3%;
+  }
+  .smallScreenImage {
+    display: flex;
+    width: 3%;
+  }
 
-.leftChild{
-  text-align: center;
-}
-.leftChild img{
-  width: 10%;
-  border-radius: 10%;
-}
-.rightChild h1, .rightChild h2{
-  text-align: center;
-  margin: 1% 0 0 0 ;
-  font-size: large;
-  text-transform: capitalize;
-}
-/* .leftChild{
+  .leftChild {
+    text-align: center;
+  }
+  .leftChild img {
+    width: 10%;
+    border-radius: 10%;
+  }
+  .rightChild h1,
+  .rightChild h2 {
+    text-align: center;
+    margin: 1% 0 0 0;
+    font-size: large;
+    text-transform: capitalize;
+  }
+  /* .leftChild{
   flex: 20;
   width: 100%;
 }
@@ -520,7 +537,6 @@ figure {
 .shareIconsAbout .iconContainer{
   padding: 0 4% 0 0;
 } */
-
 }
 
 /* ***********GALAXT FOLD****************** */
@@ -533,41 +549,41 @@ figure {
   .landingTextSection h1 {
     font-size: medium;
   }
-   /* *******************ARTICLE PAGE*********** */
-   .topnav a h1 {
+  /* *******************ARTICLE PAGE*********** */
+  .topnav a h1 {
     font-size: 1.2rem;
-}
-.articlepostHeading h1 {
-  font-size: 1.2rem;
-}
-.articleAuthor h4 {
-  font-size: 0.66rem;
-}
-.articleImg img {
-  height: 30vh;
-}
-.blogContent p {
-  line-height: 1.3rem;
-  font-size: 0.8rem;
-}
-.showIcons {
-  display: none;
-}
-.navVisitBtn {
-  padding: 4%;
-}
-.blogContent p {
-  padding: 0 0 0 0;
-}
+  }
+  .articlepostHeading h1 {
+    font-size: 1.2rem;
+  }
+  .articleAuthor h4 {
+    font-size: 0.66rem;
+  }
+  .articleImg img {
+    height: 30vh;
+  }
+  .blogContent p {
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+  }
+  .showIcons {
+    display: none;
+  }
+  .navVisitBtn {
+    padding: 4%;
+  }
+  .blogContent p {
+    padding: 0 0 0 0;
+  }
 
-.shareIconsBottom{
-  display: flex;
-  margin-left: 15%;
-}
-.shareIconsBottom .iconContainer {
-  padding: 0 2% 0 2%;
-}
-.shareIconsBottom h5{
-  margin: 0 2% 0 0;
-}
+  .shareIconsBottom {
+    display: flex;
+    margin-left: 15%;
+  }
+  .shareIconsBottom .iconContainer {
+    padding: 0 2% 0 2%;
+  }
+  .shareIconsBottom h5 {
+    margin: 0 2% 0 0;
+  }
 }
