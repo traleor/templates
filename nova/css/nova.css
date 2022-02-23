@@ -1,4 +1,4 @@
-/* Fonts */
+/* Font Family Import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap");
 
 * {
@@ -7,6 +7,11 @@
   background: white;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+
+  /* disable selecting of site content */
+  /* user-select: none;
+  -webkit-user-select: none; */
+
   font-family: "Montserrat", sans-serif;
 }
 
@@ -49,3 +54,58 @@ a {
   font-weight: 600;
 }
 
+.default-padding {
+  padding: 2rem 5vw;
+}
+
+.full-width {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.a-j-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.a-j-space-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
