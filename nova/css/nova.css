@@ -48,6 +48,7 @@ html {
 
 body {
   background: var(--background-color);
+  min-height: 100vh;
 }
 
 a {
@@ -134,6 +135,24 @@ ul {
 
 .my-2 {
   margin: 2rem 0;
+}
+
+.made__mark {
+  left: 1rem;
+  bottom: 15rem;
+  transform-origin: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  padding: 0.5rem;
+  background: var(--background-color);
+  display: block;
+}
+
+.made__mark h3 {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /* NAVBAR STYLES *********************************************************/
