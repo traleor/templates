@@ -7,3 +7,4 @@
 #### `css peek`
 #### `css navigation`
 #### `JS & CSS Minifier`
+#### `Live Server`

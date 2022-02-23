@@ -52,6 +52,10 @@ a {
   font-weight: 600;
 }
 
+button {
+  cursor: pointer;
+}
+
 .default-padding {
   padding: 2rem 8vw;
 }
@@ -192,9 +196,30 @@ ul {
   margin-top: 1.5rem;
 }
 
+.title__text__wrapper {
+  background: var(--secondary-main);
+  padding: 4rem 8vw;
+}
+
+.title__text__content h2 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 2rem;
+}
+
+.title__text__content h3 {
+  color: #f3f3f3;
+  font-weight: 400;
+  width: 700px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
   .hero__text h1 {
     font-size: 55px;
+  }
+  .title__text__content h2 {
+    font-size: 40px;
   }
 }
 
@@ -218,10 +243,19 @@ ul {
   .hero__text h1 {
     font-size: 40px;
   }
+  .title__text__content h2 {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .hero__text h1 {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .title__text__content h3 {
+    width: 100%;
   }
 }
