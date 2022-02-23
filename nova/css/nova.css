@@ -355,6 +355,67 @@ button.secondary {
   color: var(--main-color);
 }
 
+.blogs .title h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cards__grid {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.cards__grid .card {
+  border-radius: 20px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  box-shadow: 0 0 10px 1px #d3d3d3;
+}
+
+.cards__grid .card .card__image {
+  height: 255px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.cards__grid .card .card__image img {
+  object-fit: cover;
+  -o-object-fit: cover;
+  height: 100%;
+}
+
+.cards__grid .card .card__body {
+  padding: 1.5rem;
+}
+
+.cards__grid .card .card__body h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cards__grid .card .card__body h2 {
+  color: var(--main-color);
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.footer__mark {
+  background: var(--secondary-main);
+  padding: 1.5rem 8vw;
+  border-top: 1px solid rgba(182, 182, 182, 0.2);
+}
+
+.footer__mark h4 {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 1200px) {
   .hero__text h1 {
     font-size: 55px;
