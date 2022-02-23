@@ -46,6 +46,10 @@ html {
   }
 }
 
+body {
+  background: var(--background-color);
+}
+
 a {
   color: #018489;
   text-decoration: none;
@@ -54,6 +58,12 @@ a {
 
 button {
   cursor: pointer;
+}
+
+img,
+iframe,
+video {
+  width: 100%;
 }
 
 .default-padding {
@@ -212,6 +222,45 @@ ul {
   font-weight: 400;
   width: 700px;
   text-align: center;
+}
+
+.list__block {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.list__block__item a {
+  color: var(--secondary-main);
+  font-style: italic;
+}
+
+.list__block__item .rich__text img {
+  margin: 0.5rem 0;
+}
+
+.list__block__item figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.rich__text h2 {
+  font-size: 25px;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+.rich__text h3 {
+  font-size: 18px;
+  margin-bottom: 0.7rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.rich__text a {
+  color: var(--main-color);
+  font-style: italic;
 }
 
 @media screen and (max-width: 1200px) {
