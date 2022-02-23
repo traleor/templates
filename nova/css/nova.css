@@ -186,13 +186,23 @@ ul {
   margin-bottom: 2rem;
 }
 
-.hero__text .btn__group button {
+button {
   padding: 0.8rem 2rem;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+button.primary {
   background: var(--secondary-main);
   color: var(--white-color);
   border: 1px solid var(--secondary-main);
-  font-size: 18px;
-  border-radius: 4px;
+}
+
+button.secondary {
+  background: var(--white-color);
+  color: var(--main-color);
+  border: 1px solid var(--white-color);
+  margin-top: 2rem;
 }
 
 .hero__text .btn__group a {
@@ -208,13 +218,14 @@ ul {
 
 .title__text__wrapper {
   background: var(--secondary-main);
-  padding: 4rem 8vw;
+  padding: 6rem 8vw;
 }
 
 .title__text__content h2 {
   color: #fff;
   font-size: 45px;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .title__text__content h3 {
@@ -285,11 +296,51 @@ ul {
   font-style: italic;
 }
 
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../media/dark-cover.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 8vw;
+}
+
+.banner__content h2 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.banner__content h3 {
+  color: #f3f3f3;
+  font-weight: 400;
+  width: 700px;
+  text-align: center;
+}
+
+.list__block__item .banner__content h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.list__block__item .banner__content h3 {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.banner__content button {
+  background: #fff;
+  color: var(--main-color);
+}
+
 @media screen and (max-width: 1200px) {
   .hero__text h1 {
     font-size: 55px;
   }
   .title__text__content h2 {
+    font-size: 40px;
+  }
+  .banner__content h2 {
     font-size: 40px;
   }
 }
@@ -317,6 +368,9 @@ ul {
   .title__text__content h2 {
     font-size: 35px;
   }
+  .banner__content h2 {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -327,6 +381,9 @@ ul {
 
 @media screen and (max-width: 750px) {
   .title__text__content h3 {
+    width: 100%;
+  }
+  .banner__content h3 {
     width: 100%;
   }
 }
