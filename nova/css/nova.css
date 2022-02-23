@@ -158,9 +158,11 @@ ul {
 /* NAVBAR STYLES *********************************************************/
 
 .navbar {
-  padding: 2.5rem 8vw;
+  padding: 2rem 8vw;
   background: transparent;
   z-index: 9999;
+  background: var(--background-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar__logo h1 {
@@ -194,9 +196,10 @@ ul {
 }
 
 .hero__text h1 {
-  font-size: 65px;
+  font-size: 63px;
   color: var(--secondary-main);
   margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .hero__text h3 {
