@@ -227,7 +227,7 @@ ul {
 .list__block {
   display: grid;
   display: -ms-grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 1rem;
 }
 
@@ -243,6 +243,28 @@ ul {
 .list__block__item figcaption {
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.list__block__item section {
+  padding: 2rem;
+  min-height: 50vh;
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.list__block__item .title__text__content h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.list__block__item .title__text__content h3 {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
 }
 
 .rich__text h2 {
