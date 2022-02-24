@@ -34,7 +34,7 @@
     />
     <meta
       property="og:image"
-      content="https://github.com/traleor/templates/blob/main/media/welcome.png"
+      content="https://github.com/traleor/templates/blob/main/media/welcome.png?raw=true"
     />
 
     <!-- Twitter Metas -->
@@ -48,10 +48,13 @@
       name="twitter:description"
       content="Traleor templates are crafted with love to help you to build or customize your own website templates."
     />
-    <meta property="twitter:url" content="https://github.com/traleor/templates" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/traleor/templates"
+    />
     <meta
       name="twitter:image"
-      content="https://github.com/traleor/templates/blob/main/media/welcome.png"
+      content="https://github.com/traleor/templates/blob/main/media/welcome.png?raw=true"
     />
 
     <meta http-equiv="”content-language”" content="”en-US”" />
@@ -69,6 +72,11 @@
         flex: 45% 0 0;
         margin: auto 1rem;
       }
+      .card__body h3 {
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 400;
+        font-size: 16px;
+      }
       @media screen and (max-width: 750px) {
         .card {
           width: 100%;
@@ -82,11 +90,6 @@
   </head>
 
   <body>
-    <div class="fixed made__mark">
-      <a href="https://traleor.com">
-        <h3>Made With Traleor</h3>
-      </a>
-    </div>
     <div class="container">
       <!-- NAVBAR -------------------------------------------------->
       <nav
@@ -94,8 +97,8 @@
         role="navigation"
       >
         <div class="navbar__logo">
-          <a href="./nova/index.html">
-            <h1>NOVA</h1>
+          <a href="">
+            <b>NOVA</b>
           </a>
         </div>
         <ul class="navbar__menu flex">
@@ -168,7 +171,7 @@
       <!-- CARDS AREA - BLOGS --------------------------------------------->
       <section class="blogs full-width default-padding">
         <div class="title">
-          <h1>Traleor Templates</h1>
+          <h2>Traleor Templates</h2>
         </div>
 
         <div class="cards">
@@ -177,14 +180,14 @@
               <img src="./media/hill-cover.png" alt="traleor hill cover" />
             </a>
             <div class="card__body">
-              <h4>Starter</h4>
+              <p>Starter</p>
               <h2>Nova Template</h2>
-              <p>
+              <h3>
                 This is the default template for Traleor. It is a clean,
                 minimalist and mobile responsive template. It can be easily
                 customized using the css variables so you can a unique and
                 beautiful website in no time.
-              </p>
+              </h3>
             </div>
           </div>
         </div>
