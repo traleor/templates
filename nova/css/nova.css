@@ -34,7 +34,7 @@ html {
   --tiny-font-size: 0.625rem;
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 1900px) {
   :root {
     --heading-font-size: 3rem;
     --biggest-font-size: 1.5rem;
@@ -157,6 +157,10 @@ ul {
 
 /* NAVBAR STYLES *********************************************************/
 
+.navbar__logo a b {
+  font-size: large;
+}
+
 .navbar {
   padding: 2rem 8vw;
   background: transparent;
@@ -202,8 +206,9 @@ ul {
   margin-top: 3rem;
 }
 
-.hero__text h3 {
+.hero__text h2 {
   font-weight: 400;
+  font-size: var(--h2-font-size);
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 2rem;
 }

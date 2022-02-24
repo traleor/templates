@@ -2,9 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nova - Traleor Default Template</title>
+
+    <!-- Traleor's Metas -->
+    <title>Traleor Templates | Create A Website That Speaks For You</title>
+    <meta name="author" content="Traleor" />
+    <meta name="copyright" content="traleor.com" />
+    <meta name="robots" content="index,follow" />
+    <meta name="geo.placename" content="Africa" />
+    <meta
+      name="description"
+      content="Traleor templates are crafted with love to help you to build or customize your own website templates."
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://github.com/traleor/templates" />
+
+    <!-- Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/traleor/templates" />
+    <meta
+      property="og:title"
+      content="Traleor Templates | Create A Website That Speaks For You"
+    />
+    <meta
+      property="og:description"
+      content="Traleor templates are crafted with love to help you to build or customize your own website templates."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/traleor/templates/blob/main/media/welcome.png"
+    />
+
+    <!-- Twitter Metas -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="traleor.com" />
+    <meta
+      name="twitter:title"
+      content="Traleor Templates | Create A Website That Speaks For You"
+    />
+    <meta
+      name="twitter:description"
+      content="Traleor templates are crafted with love to help you to build or customize your own website templates."
+    />
+    <meta property="twitter:url" content="https://github.com/traleor/templates" />
+    <meta
+      name="twitter:image"
+      content="https://github.com/traleor/templates/blob/main/media/welcome.png"
+    />
+
+    <meta http-equiv="”content-language”" content="”en-US”" />
 
     <link rel="stylesheet" href="nova/css/nova.css" />
     <style>
@@ -18,6 +68,13 @@
         width: 45%;
         flex: 45% 0 0;
         margin: auto 1rem;
+      }
+      @media screen and (max-width: 750px) {
+        .card {
+          width: 100%;
+          flex: 100% 0 0;
+          margin: auto 1rem;
+        }
       }
     </style>
     <!-- Place this tag in your head or just before your close body tag. -->
@@ -69,10 +126,10 @@
       <div class="hero default-padding full-width flex a-j-center">
         <div class="hero__text flex-one">
           <h1>Start something Big with Traleor</h1>
-          <h3>
+          <h2>
             Traleor templates are open sourced and free to use in building your
             own websites and/or customizing your Traleor template.
-          </h3>
+          </h2>
           <div class="btn__group">
             <a href="https://traleor.com">
               <button class="primary">Start Building</button>
@@ -148,6 +205,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/nova.js"></script>
+    <script src="./nova/js/nova.js"></script>
   </body>
 </html>
