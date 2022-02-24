@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova - Traleor Default Template</title>
+
+    <link rel="stylesheet" href="nova/css/nova.css" />
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .card {
+        width: 45%;
+        flex: 45% 0 0;
+        margin: auto 1rem;
+      }
+    </style>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <body>
+    <div class="fixed made__mark">
+      <a href="https://traleor.com">
+        <h3>Made With Traleor</h3>
+      </a>
+    </div>
+    <div class="container">
+      <!-- NAVBAR -------------------------------------------------->
+      <nav
+        class="navbar flex fixed full-width a-j-space-between"
+        role="navigation"
+      >
+        <div class="navbar__logo">
+          <a href="./nova/index.html">
+            <h1>NOVA</h1>
+          </a>
+        </div>
+        <ul class="navbar__menu flex">
+          <li class="navbar__menu__list">
+            <a href="https://traleor.com" class="navbar__menu__list__item"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__menu__list">
+            <a href="#" class="navbar__menu__list__item">About</a>
+          </li>
+          <li class="navbar__menu__list">
+            <!-- Place this tag where you want the button to render. -->
+            <a
+              class="github-button"
+              href="https://github.com/traleor/templates"
+              data-color-scheme="no-preference: light_high_contrast; light: light; dark: light;"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star traleor/templates on GitHub"
+              >Star</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HERO ----------------------------------------------------->
+      <div class="hero default-padding full-width flex a-j-center">
+        <div class="hero__text flex-one">
+          <h1>Start something Big with Traleor</h1>
+          <h3>
+            Traleor templates are open sourced and free to use in building your
+            own websites and/or customizing your Traleor template.
+          </h3>
+          <div class="btn__group">
+            <a href="https://traleor.com">
+              <button class="primary">Start Building</button>
+            </a>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div class="hero__image flex-one">
+          <img src="./media/yellow-cover.png" alt="traleor yellow cover" />
+        </div>
+      </div>
+
+      <!-- BANNER --------------------------------------------->
+      <section class="banner flex a-j-center full-width default-padding">
+        <div class="banner__content flex a-j-center flex-column">
+          <h2>Star Us On GitHub</h2>
+          <h3>
+            The stars are the most valuable thing in the universe. They make us
+            build more beautiful templates.
+          </h3>
+          <br />
+          <!-- Place this tag where you want the button to render. -->
+          <a
+            class="github-button"
+            href="https://github.com/traleor/templates"
+            data-color-scheme="no-preference: light_high_contrast; light: light; dark: light;"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star traleor/templates on GitHub"
+            >Star</a
+          >
+        </div>
+      </section>
+
+      <!-- CARDS AREA - BLOGS --------------------------------------------->
+      <section class="blogs full-width default-padding">
+        <div class="title">
+          <h1>Traleor Templates</h1>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <a href="./nova/index.html" class="card__image">
+              <img src="./media/hill-cover.png" alt="traleor hill cover" />
+            </a>
+            <div class="card__body">
+              <h4>Starter</h4>
+              <h2>Nova Template</h2>
+              <p>
+                This is the default template for Traleor. It is a clean,
+                minimalist and mobile responsive template. It can be easily
+                customized using the css variables so you can a unique and
+                beautiful website in no time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="title__text__wrapper full-width">
+          <div class="title__text__content flex flex-column a-j-center">
+            <h2>Learn More About Traleor CMS</h2>
+            <h3>
+              We help you create beautiful content driven websites in no time
+              with our powerful content management system.
+            </h3>
+          </div>
+        </div>
+        <div class="footer__mark">
+          <h4>Traleor Templates - With Love From Traleor</h4>
+        </div>
+      </footer>
+    </div>
+    <script src="js/nova.js"></script>
+  </body>
+</html>
