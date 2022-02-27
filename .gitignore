@@ -1,5 +1,6 @@
 # 
 .vscode
 
-# exclude minified css
+# exclude minified files
 *.min.css
+*.min.js
