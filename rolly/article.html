@@ -1,286 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rolly</title>
 
-    <!-- Links -->
-    <link rel="stylesheet" href="css/rolly.css" />
-  </head>
-  <body>
-    <nav class="navBar">
-      <!-- ************************* NavBar begins here ************************************ -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rolly</title>
 
-      <div class="topnav" id="myTopnav">
-        <a href="../rolly/index.html" class="active"><h1><span>Y</span>van <span>R</span>olly</h1></a>
-        <a href="#contactDetails">Get in Touch</a>
-        <a href="../rolly/article.html">Articles</a>
-        <a href="../rolly/about.html">About Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="menuIcon()" 
-        style="font-size: large; color: #fff;"> &#9776</a>
-      </div>
-    </nav>
+  <!-- Links -->
+  <link rel="stylesheet" href="css/rolly.css" />
+</head>
 
-    <!-- ****************SHARE SOCIAL MEDIA ICONS******************* -->
+<body>
+  <nav class="navBar">
+    <!-- ************************* NavBar begins here ************************************ -->
 
-    <div id="shareIcon" class="shareIcons">
-      <h5>Share</h5>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/twitter.svg"
-            alt=""
-            class="socialIcons"
-        /></a>
-        <h6>Twitter</h6>
-        <br />
-      </div>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/facebook.svg"
-            alt=""
-            class="socialIcons"
-        /></a>
-        <h6>Facebook</h6>
-        <br />
-      </div>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/instagram-outlined.png"
-            alt=""
-            class="socialIcons"
-        /></a>
-        <h6>Instagram</h6>
-        <br />
-      </div>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/linkedin.svg"
-            alt=""
-            class="socialIcons"
-        /></a>
-        <h6>LinkedIn</h6>
-        <br />
-      </div>
-      <div class="iconContainer">
-        <a href="">
-          <img
-            src="../media/icons/utility/feather-copy.png"
-            alt="Copy Link"
-            id="copyImage"
-            class="socialIcons"
-            onclick="copyLink()"
-        /></a>
-        <h6>Copy Link</h6>
-        <br />
-      </div>
+    <div class="topnav" id="myTopnav">
+      <a href="../rolly/index.html" class="active">
+        <b><span>Y</span>van <span>R</span>olly</b>
+      </a>
+      <a href="#contactDetails">Get in Touch</a>
+      <a href="../rolly/article.html">Articles</a>
+      <a href="../rolly/about.html">About Me</a>
+      <a href="javascript:void(0);" class="icon" onclick="menuIcon()" style="font-size: large; color: #fff;"> &#9776</a>
     </div>
+  </nav>
 
-    <!-- *****************Article Boby********************** -->
-    <section class="articleBody">
-      <!-- *********************Article Headin section************** -->
-      <section class="articlepostHeading">
-        <h1>Getting really started with this</h1>
+  <!-- ****************SHARE SOCIAL MEDIA ICONS******************* -->
 
-        <div class="articleAuthor">
-          <img src="images/lamb.jpg" alt="" class="authorImage" />
-          <h4>
-            Written by <span> <a href="#">Meli Imelda</a></span>
-          </h4>
-          <img src="images/calendar.svg" alt="" />
-          <h4 style="padding: 0 0 0 0.5%">May 21st 2001</h4>
-        </div>
+  <div id="shareIcon" class="shareIcons">
+    <h2>Share</h2>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/twitter.svg" alt="" class="socialIcons" />Twitter</a>
+      <br />
+    </div>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/facebook.svg" alt="" class="socialIcons" />Facebook</a>
+      <br />
+    </div>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/instagram-outlined.png" alt="" class="socialIcons" />Instagram</a>
+      <br />
+    </div>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/linkedin.svg" alt="" class="socialIcons" />LinkedIn</a>
+      <br />
+    </div>
+    <div class="iconContainer">
+      <a href="">
+        <img src="../media/icons/utility/feather-copy.png" alt="Copy Link" id="copyImage" class="socialIcons"
+          onclick="copyLink()" />Copy Link</a>
+      <br />
+    </div>
+  </div>
 
-        <figure class="articleImg">
-          <img src="images/lamb.jpg" class="articleImg" alt="" />
-          <figcaption><i>Image by @itzomen</i></figcaption>
-        </figure>
-      </section>
+  <!-- *****************Article Boby********************** -->
+  <section class="articleBody">
+    <!-- *********************Article Headin section************** -->
+    <section class="articlepostHeading">
+      <h1>Getting really started with this</h1>
 
-      <!-- *******************************Body of Article ************************************** -->
-      <section class="articleContent">
+      <div class="articleAuthor">
+        <img src="images/lamb.jpg" alt="" class="authorImage" />
+        <h2>
+          Written by <span> <a href="#">Meli Imelda</a></span>
+        </h2>
+        <img src="images/calendar.svg" alt="" />
+        <h3>May 21st 2001</h3>
+      </div>
 
-        <div id="blogContent" class="blogContent">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            esse rem saepe. Magnam magni, et nulla nemo veniam placeat.
-            Distinctio omnis, temporibus et iure aliquam laborum natus quae
-            quisquam nulla? Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus ducimus ipsum deserunt, recusandae est fugit dicta
-            porro necessitatibus earum in omnis quibusdam, sed id repudiandae
-            pariatur expedita. Consequuntur, alias dolore! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Recusandae esse rem saepe. Magnam
-            magni, et nulla nemo veniam placeat. Distinctio omnis, temporibus et
-            iure aliquam laborum natus quae quisquam nulla? Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Doloribus ducimus ipsum
-            deserunt, recusandae est fugit dicta porro necessitatibus earum in
-            omnis quibusdam, sed id repudiandae pariatur expedita. Consequuntur,
-            alias dolore! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Recusandae esse rem saepe. Magnam magni, et nulla nemo veniam
-            placeat. Distinctio omnis, temporibus et iure aliquam laborum natus
-            quae quisquam nulla? Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Doloribus ducimus ipsum deserunt, recusandae est
-            fugit dicta porro necessitatibus earum in omnis quibusdam, sed id
-            repudiandae pariatur expedita. Consequuntur, alias dolore! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Recusandae esse
-            rem saepe. Magnam magni, et nulla nemo veniam placeat. Distinctio
-            omnis, temporibus et iure aliquam laborum natus quae quisquam nulla?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            ducimus ipsum deserunt, recusandae est fugit dicta porro
-            necessitatibus earum in omnis quibusdam, sed id repudiandae pariatur
-            expedita. Consequuntur, alias dolore!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            esse rem saepe. Magnam magni, et nulla nemo veniam placeat.
-            Distinctio omnis, temporibus et iure aliquam laborum natus quae
-            quisquam nulla? Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus ducimus ipsum deserunt, recusandae est fugit dicta
-            porro necessitatibus earum in omnis quibusdam, sed id repudiandae
-            pariatur expedita. Consequuntur, alias dolore! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Recusandae esse rem saepe. Magnam
-            magni, et nulla nemo veniam placeat. Distinctio omnis, temporibus et
-            iure aliquam laborum natus quae quisquam nulla? Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Doloribus ducimus ipsum
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            ducimus ipsum deserunt, recusandae est fugit dicta porro
-            necessitatibus earum in omnis quibusdam, sed id repudiandae pariatur
-            expedita. Consequuntur, alias dolore!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            esse rem saepe. Magnam magni, et nulla nemo veniam placeat.
-            Distinctio omnis, temporibus et iure aliquam laborum natus quae
-            quisquam nulla? Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus ducimus ipsum deserunt, recusandae est fugit dicta
-            porro necessitatibus earum in omnis quibusdam, sed id repudiandae
-            pariatur expedita. Consequuntur, alias dolore! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Recusandae esse rem saepe. Magnam
-            magni, et nulla nemo veniam placeat. Distinctio omnis, temporibus et
-            iure aliquam laborum natus quae quisquam nulla? Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Doloribus ducimus ipsum
-            deserunt, recusandae est fugit dicta porro necessitatibus earum in
-            omnis quibusdam, sed id repudiandae pariatur expedita. Consequuntur,
-            alias dolore! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Recusandae esse rem saepe. Magnam magni, et nulla nemo veniam
-            placeat. Distinctio omnis, temporibus et iure aliquam laborum natus
-            quae quisquam nulla? Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Doloribus ducimus ipsum deserunt, recusandae est
-            fugit dicta porro necessitatibus earum in omnis quibusdam, sed id
-            repudiandae pariatur expedita. Consequuntur, alias dolore! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Recusandae esse
-            rem saepe. Magnam magni, et nulla nemo veniam placeat. Distinctio
-            omnis, temporibus et iure aliquam laborum natus quae quisquam nulla?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            ducimus ipsum deserunt, recusandae est fugit dicta porro
-            necessitatibus earum in omnis quibusdam, sed id repudiandae pariatur
-            expedita. Consequuntur, alias dolore!
-          </p>
-        </div>
-      </section>
+      <figure class="articleImg">
+        <img src="images/lamb.jpg" class="articleImg" alt="" />
+        <figcaption><i>Image by @itzomen</i></figcaption>
+      </figure>
     </section>
 
+    <!-- *******************************Body of Article ************************************** -->
+    <section class="articleContent">
 
-    <!-- ****************SHARE SOCIAL MEDIA ICONS******************* -->
-
-    <div class="shareIconsBottom">
-      <h5>Share</h5>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/twitter.svg"
-            alt=""
-            class="socialIcons"
-        /></a>
-      </div>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/facebook.svg"
-            alt=""
-            class="socialIcons"
-        /></a>
-      </div>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/instagram-outlined.png"
-            alt=""
-            class="socialIcons"
-        /></a>
-      </div>
-      <div class="iconContainer">
-        <a href=""
-          ><img
-            src="../media/icons/social/linkedin.svg"
-            alt=""
-            class="socialIcons"
-        /></a>
-      </div>
-      <div class="iconContainer">
-        <a href="">
-          <img
-            src="../media/icons/utility/feather-copy.png"
-            alt="Copy Link"
-            id="copyImage"
-            class="socialIcons"
-            onclick="copyLink()"
-        /></a>
-        <h6>Copy</h6>
-        <br />
-      </div>
-    </div>
-
-    <!-- **************************Last Segment Begins Here***************************************** -->
-    <section class="lastSegment">
-      <div class="lsBg">
-        <div class="lsDiv">
-          <div class="lsText">
-            <h2 class="tsFirst">Get Started with Traleor</h2>
-            <p class="lsSecond">
-              Traleor is the number one tool used by all small and medium-sized
-              businesses <br />
-              to maintain an online presence easily with just two clicks. We
-              also help customers find the best good and services at the right
-              price.
-            </p>
-            <a
-              id="navVisitLink"
-              href="https://traleor.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><button class="navVisitBtn">Visit Traleor</button></a
-            >
-          </div>
-        </div>
+      <div id="blogContent" class="blogContent">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          esse rem saepe. Magnam magni, et nulla nemo veniam placeat.
+          Distinctio omnis, temporibus et iure aliquam laborum natus quae
+          quisquam nulla? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Doloribus ducimus ipsum deserunt, recusandae est fugit dicta
+          porro necessitatibus earum in omnis quibusdam, sed id repudiandae
+          pariatur expedita. Consequuntur, alias dolore! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Recusandae esse rem saepe. Magnam
+          magni, et nulla nemo veniam placeat. Distinctio omnis, temporibus et
+          iure aliquam laborum natus quae quisquam nulla? Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Doloribus ducimus ipsum
+          deserunt, recusandae est fugit dicta porro necessitatibus earum in
+          omnis quibusdam, sed id repudiandae pariatur expedita. Consequuntur,
+          alias dolore! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Recusandae esse rem saepe. Magnam magni, et nulla nemo veniam
+          placeat. Distinctio omnis, temporibus et iure aliquam laborum natus
+          quae quisquam nulla? Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Doloribus ducimus ipsum deserunt, recusandae est
+          fugit dicta porro necessitatibus earum in omnis quibusdam, sed id
+          repudiandae pariatur expedita. Consequuntur, alias dolore! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Recusandae esse
+          rem saepe. Magnam magni, et nulla nemo veniam placeat. Distinctio
+          omnis, temporibus et iure aliquam laborum natus quae quisquam nulla?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          ducimus ipsum deserunt, recusandae est fugit dicta porro
+          necessitatibus earum in omnis quibusdam, sed id repudiandae pariatur
+          expedita. Consequuntur, alias dolore!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          esse rem saepe. Magnam magni, et nulla nemo veniam placeat.
+          Distinctio omnis, temporibus et iure aliquam laborum natus quae
+          quisquam nulla? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Doloribus ducimus ipsum deserunt, recusandae est fugit dicta
+          porro necessitatibus earum in omnis quibusdam, sed id repudiandae
+          pariatur expedita. Consequuntur, alias dolore! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Recusandae esse rem saepe. Magnam
+          magni, et nulla nemo veniam placeat. Distinctio omnis, temporibus et
+          iure aliquam laborum natus quae quisquam nulla? Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Doloribus ducimus ipsum
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          ducimus ipsum deserunt, recusandae est fugit dicta porro
+          necessitatibus earum in omnis quibusdam, sed id repudiandae pariatur
+          expedita. Consequuntur, alias dolore!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          esse rem saepe. Magnam magni, et nulla nemo veniam placeat.
+          Distinctio omnis, temporibus et iure aliquam laborum natus quae
+          quisquam nulla? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Doloribus ducimus ipsum deserunt, recusandae est fugit dicta
+          porro necessitatibus earum in omnis quibusdam, sed id repudiandae
+          pariatur expedita. Consequuntur, alias dolore! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Recusandae esse rem saepe. Magnam
+          magni, et nulla nemo veniam placeat. Distinctio omnis, temporibus et
+          iure aliquam laborum natus quae quisquam nulla? Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Doloribus ducimus ipsum
+          deserunt, recusandae est fugit dicta porro necessitatibus earum in
+          omnis quibusdam, sed id repudiandae pariatur expedita. Consequuntur,
+          alias dolore! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Recusandae esse rem saepe. Magnam magni, et nulla nemo veniam
+          placeat. Distinctio omnis, temporibus et iure aliquam laborum natus
+          quae quisquam nulla? Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Doloribus ducimus ipsum deserunt, recusandae est
+          fugit dicta porro necessitatibus earum in omnis quibusdam, sed id
+          repudiandae pariatur expedita. Consequuntur, alias dolore! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Recusandae esse
+          rem saepe. Magnam magni, et nulla nemo veniam placeat. Distinctio
+          omnis, temporibus et iure aliquam laborum natus quae quisquam nulla?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          ducimus ipsum deserunt, recusandae est fugit dicta porro
+          necessitatibus earum in omnis quibusdam, sed id repudiandae pariatur
+          expedita. Consequuntur, alias dolore!
+        </p>
+        <img src="images/lamb.jpg" class="articleImg" alt="" />
       </div>
     </section>
+  </section>
 
-    <!-- *******************FOOTER************** -->
-    <section class="footerSection" id="contactDetails">
-      <footer class="footerContainer">
-        <div class="getInTouch">
-          <h3>Hey there 👋🏾 I'm <span>Yvan Rolly</span></h3>
-          <p>Thank you for reading till the end, See you on the next one. <br>Get in Touch!</p>
-          <div class="contact">
-            <a href="#"><img src="../media/icons/social/twitter.svg" alt=""></a>
-            <a href="#"><img src="../media/icons/social/facebook.svg" alt=""></a>
-            <a href="#"><img src="../media/icons/social/instagram.svg" alt=""></a>
-            <a href="#"><img src="../media/icons/social/whatsapp.svg" alt=""></a>
-          </div>
-          <hr>
+
+  <!-- ****************SHARE SOCIAL MEDIA ICONS******************* -->
+
+  <div class="shareIconsBottom">
+    <h4>Share on</h4>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/twitter.svg" alt="" class="socialIcons" /></a>
+    </div>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/facebook.svg" alt="" class="socialIcons" /></a>
+    </div>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/instagram-outlined.png" alt="" class="socialIcons" /></a>
+    </div>
+    <div class="iconContainer">
+      <a href=""><img src="../media/icons/social/linkedin.svg" alt="" class="socialIcons" /></a>
+    </div>
+    <div class="iconContainer">
+      <a href="">
+        <img src="../media/icons/utility/feather-copy.png" alt="Copy Link" id="copyImage" class="socialIcons"
+          onclick="copyLink()" /></a>
+      <br />
+    </div>
+  </div>
+
+  <!-- *******************FOOTER************** -->
+  <section class="footerSection" id="contactDetails">
+    <footer class="footerContainer">
+      <div class="getInTouch">
+        <h3>Hey there 👋🏾 I'm <span>Yvan Rolly</span></h3>
+        <p>Thank you for reading till the end, See you on the next one. <br>Get in Touch!</p>
+        <div class="contact">
+          <a href="#"><img src="../media/icons/social/twitter.svg" alt=""></a>
+          <a href="#"><img src="../media/icons/social/facebook.svg" alt=""></a>
+          <a href="#"><img src="../media/icons/social/instagram.svg" alt=""></a>
+          <a href="#"><img src="../media/icons/social/whatsapp.svg" alt=""></a>
         </div>
-        <div class="footer-copyright">
-          <a href="https://traleor.com/">
-            <!-- <script>
-              document.write(new Date().getFullYear());
-            </script> -->
-            Made With Traleor</a
-          >
-      </footer>
+        <hr>
+      </div>
+      <div class="footer-copyright">
+        <a href="https://traleor.com/">
+          Made With Traleor</a>
+    </footer>
 
     <!-- Link to JavaScript -->
     <script src="js/rolly.js"></script>
-  </body>
+</body>
+
 </html>

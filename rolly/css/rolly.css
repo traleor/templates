@@ -64,6 +64,7 @@ button {
 }
 .topnav a:first-child {
   float: left;
+  font-size: large;
 }
 
 /* Change the color of links on hover */
@@ -71,24 +72,14 @@ button {
   color: var(--main-color);
 }
 
-/* Add an active class to highlight the current page */
-/* .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
 /* ******************Welcome Section***************** */
-.welcomeContainer {
-  /* background-color: var(--background-color); */
-  height: calc(90vh - 4rem);
-}
 .welcomeContent {
-  height: 89vh;
+  /* height: 89vh; */
   background: var(--black-color);
   border-bottom-left-radius: 100px;
 }
@@ -107,7 +98,7 @@ button {
 }
 .landingTextSection {
   flex: 50%;
-  padding: 14% 0 16% 1%;
+  padding: 10% 0 16% 1%;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -133,7 +124,7 @@ button {
   padding: 3% 0 0 0;
   font-size: x-large;
 }
-.subCategory h3 {
+.subCategory h2 {
   margin: 0;
   padding-top: 2%;
 }
@@ -193,51 +184,6 @@ button {
   display: none;
 }
 
-/* ***********************************Last Segment Of Body */
-.lastSegment {
-  margin-top: 2rem;
-}
-
-.lsBg {
-  transition: 1s ease-in-out;
-  background: linear-gradient(#edf1fa, #fff);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.lsDiv {
-  height: 30%;
-  padding: 2rem 3rem;
-  background: 100%;
-  background-image: url("../images/circles.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.lsText {
-  align-items: center;
-  text-align: center;
-  color: var(--black-color);
-  padding-bottom: 2rem;
-}
-
-.lsSecond {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-.navVisitBtn {
-  cursor: pointer;
-  font-size: 15px;
-  border: none;
-  border-radius: 7px;
-  outline: none;
-  color: rgb(248, 240, 240);
-  padding: 12px 35px;
-  background-color: var(--main-color);
-  margin: 10px;
-}
-.navVisitBtn:hover {
-  background-color: #005558;
-  cursor: pointer;
-}
-
 /* *************FOOTER************** */
 .footerSection {
   background-color: var(--black-color);
@@ -271,8 +217,13 @@ button {
   width: 3rem;
   height: 3rem;
 }
-.articleAuthor h4 {
+.articleAuthor h2 {
+  font-size: medium;
   padding: 0 2% 0 2%;
+}
+.articleAuthor h3 {
+  font-size: medium;
+  padding: 0 0 0 0.5%;
 }
 
 figure {
@@ -308,11 +259,22 @@ figure {
   padding-top: 20px;
 }
 
-.iconContainer {
-  padding: 1.5% 0 1.5% 0;
+.showIcons h2 {
+  font-size: medium;
 }
+
+.iconContainer {
+  padding: 4% 0;
+}
+
+.iconContainer a {
+  color: var(--black-color-light);
+  font-size: small;
+}
+
 .socialIcons {
-  width: 1.3rem;
+  width: 1rem;
+  margin-right: 1px;
 }
 
 .iconContainer {
@@ -322,6 +284,12 @@ figure {
   margin: 0.5% 0 0 1%;
   padding: 1.2% 0 0 2.5%;
   color: #3f3e3e;
+}
+
+.blogContent img,
+.blogContent iframe,
+.blogContent video {
+  width: 100%;
 }
 
 .blogContent p {
@@ -334,7 +302,9 @@ figure {
   flex-direction: column;
   margin: 2% 5%;
 }
-.aboutContainer img {
+.aboutContainer img,
+.aboutContainer iframe,
+.aboutContainer video {
   width: 100%;
 }
 
@@ -473,10 +443,6 @@ figure {
   .socialIcons {
     width: 1rem;
   }
-  .navVisitBtn {
-    /* REDUCE NAVBAR BUTTON TEXT SO BUTTON LOOKS GOOD */
-    font-size: 1rem;
-  }
 
   /* *******************ARTICLE PAGE*********** */
   .articlepostHeading h1 {
@@ -487,8 +453,9 @@ figure {
     width: 2rem;
     height: 2rem;
   }
-  .articleAuthor h4 {
-    font-size: 0.8rem;
+  .articleAuthor h2,
+  .articleAuthor h3 {
+    font-size: 0.6rem;
   }
   /* *******************ABOUT PAGE STYLES************** */
 
@@ -521,30 +488,6 @@ figure {
     font-size: large;
     text-transform: capitalize;
   }
-  /* .leftChild{
-  flex: 20;
-  width: 100%;
-}
-.aboutPageImage{
-  width: 100%;
-}
-.rightChild{
-  flex: 60;
-  padding: 0 5% 0 5%;
-}
-.aboutPageText h1{
-  font-size: xx-large;
-  text-transform: uppercase;
-}
-.aboutPageText p{
-  line-height: 2rem;
-}
-.shareIconsAbout{
-  display: flex;
-}
-.shareIconsAbout .iconContainer{
-  padding: 0 4% 0 0;
-} */
 }
 
 /* ***********GALAXT FOLD****************** */
@@ -591,7 +534,7 @@ figure {
   .shareIconsBottom .iconContainer {
     padding: 0 2% 0 2%;
   }
-  .shareIconsBottom h5 {
+  .shareIconsBottom h4 {
     margin: 0 2% 0 0;
   }
 }
