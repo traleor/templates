@@ -12,19 +12,21 @@
 </head>
 
 <body>
-    <nav class="navBar">
+    <nav class="navbar">
         <!-- ************************* NavBar begins here ************************************ -->
-
-        <div class="topnav" id="myTopnav">
-            <a href="../rolly/index.html" class="active">
-                <b><span>R</span>olly <span>T</span>emplate</b>
-            </a>
-            <a href="#contactDetails">Get in Touch</a>
-            <a href="../rolly/article.html">Articles</a>
-            <a href="../rolly/about.html">About Me</a>
-            <a href="javascript:void(0);" class="icon" onclick="menuIcon()" style="font-size: large; color: #fff;">
-                &#9776</a>
-        </div>
+        <a class="brand" href="../rolly/index.html">
+            <b><span>R</span>olly <span>T</span>emplate</b>
+        </a>
+        <!-- checkbox to track when the hamburger menu is clicked on -->
+        <input type="checkbox" id="menu_check" />
+        <label for="menu_check" class="menu__btn">
+            <div class="hamburger__menu"></div>
+        </label>
+        <ul class="nav__menu">
+            <li><a href="#contactDetails">Get in Touch</a></li>
+            <li><a href="../rolly/article.html">Articles</a></li>
+            <li><a href="../rolly/about.html">About Me</a></li>
+        </ul>
     </nav>
 
     <!-- Welcome section of Landing page -->

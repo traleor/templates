@@ -21,6 +21,9 @@ a {
 a:hover {
   cursor: pointer;
 }
+ul {
+  list-style-type: none;
+}
 span {
   color: var(--main-color);
 }
@@ -40,41 +43,66 @@ button {
   cursor: pointer;
   text-transform: uppercase;
 }
+
 /****** NAVIGATION BAR ******/
-/* Add a black background color to the top navigation */
-.topnav {
+
+.navbar {
+  display: flex;
   background-color: var(--black-color);
-  overflow: hidden;
   padding: 2% 5% 1% 5%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a h1 {
-  margin: 0;
+.navbar input {
+  display: none;
 }
-.topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
+
+.brand {
+  font-size: large;
   padding: 14px 16px;
-  text-decoration: none;
-  font-size: large;
-  font-weight: 500;
+  color: var(--white-color);
 }
-.topnav a:first-child {
-  float: left;
-  font-size: large;
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__menu li a {
+  color: var(--white-color);
+  padding: 0 16px;
+}
+.nav__menu li a:last-child {
+  padding-right: 0;
+}
+
+.nav__menu li a:hover,
+.nav__menu li a:focus-within {
+  color: #018489;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.navbar a:hover {
   color: var(--main-color);
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
+/* When menu checked */
+.navbar input:checked ~ .nav__menu {
+  top: 0;
+}
+
+.navbar input:checked ~ label .hamburger__menu {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.navbar input:checked ~ label .hamburger__menu::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.navbar input:checked ~ label .hamburger__menu::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 /* ******************Welcome Section***************** */
@@ -88,10 +116,12 @@ button {
   color: var(--white-color);
   padding: 0 0 0 5%;
 }
+
 .gridChild {
   padding: 2% 5% 0 5%;
   flex: 50%;
 }
+
 .welcomeImage {
   width: 100%;
   height: 90%;
@@ -335,26 +365,70 @@ figure {
 
 @media screen and (max-width: 950px) {
   /* **********************NAVBAR************************ */
-  .topnav a:not(:first-child) {
-    display: none;
+
+  .menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
+  .hamburger__menu::before,
+  .hamburger__menu::after {
+    content: "";
     position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .hamburger__menu::before {
+    transform: translateY(-8px);
+  }
+
+  .hamburger__menu::after {
+    transform: translateY(8px);
+  }
+
+  .hamburger__menu {
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+    border-radius: 5px;
+    z-index: 10;
+    transition: all 0.5s ease;
+  }
+
+  .nav__menu {
+    top: -100%;
     right: 0;
-    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(4, 15, 22, 0.8);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .nav__menu li {
+    font-size: large;
+    padding: 24px 10%;
+    border-bottom: 0.5px solid var(--main-color);
+    transition: all 0.2s ease-out;
   }
+  .nav__menu li a:hover {
+    color: var(--white-color);
+    letter-spacing: 5px;
+  }
+
   /* ****************Welcome Section*************** */
   .grid {
     flex-wrap: wrap;
@@ -384,9 +458,6 @@ figure {
   .aboutMeButton {
     padding: 3% 7% 3% 7%;
     height: fit-content;
-  }
-  .welcomeContent {
-    height: 110%;
   }
   .welcomeContainer {
     height: max-content;
@@ -501,7 +572,7 @@ figure {
     font-size: medium;
   }
   /* *******************ARTICLE PAGE*********** */
-  .topnav a h1 {
+  .navbar a h1 {
     font-size: 1.2rem;
   }
   .articlepostHeading h1 {

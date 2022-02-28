@@ -541,6 +541,8 @@ button.secondary {
     height: 100%;
     position: fixed;
     padding-top: 25%;
+    align-items: initial;
+    justify-content: initial;
     background: var(--white-color);
     flex-direction: column;
     transition: all 0.5s ease-in-out;
