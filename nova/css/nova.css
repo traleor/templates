@@ -173,44 +173,7 @@ ul {
   display: none;
 }
 
-.menu__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.hamburger__menu {
-  width: 20px;
-  height: 2px;
-  background-color: #533557;
-  border-radius: 5px;
-  z-index: 10;
-  transition: all 0.5s ease;
-}
-.hamburger__menu::before,
-.hamburger__menu::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background: var(--secondary-main);
-  border-radius: 5px;
-  transition: all 0.5s ease;
-}
-
-.hamburger__menu::before {
-  transform: translateY(-8px);
-}
-
-.hamburger__menu::after {
-  transform: translateY(8px);
-}
-
-/* When menu_checked */
+/* When menu checked */
 .navbar input:checked ~ .navbar__menu {
   left: 40%;
 }
@@ -444,6 +407,7 @@ button.secondary {
   object-fit: cover;
   -o-object-fit: cover;
   height: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .cards__flex .card .card__body {
@@ -532,7 +496,44 @@ button.secondary {
 }
 
 @media screen and (max-width: 750px) {
-  /*---- navbar__menu ----*/
+  /*---- side menu ----*/
+  .menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .hamburger__menu::before,
+  .hamburger__menu::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--secondary-main);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .hamburger__menu::before {
+    transform: translateY(-8px);
+  }
+
+  .hamburger__menu::after {
+    transform: translateY(8px);
+  }
+
+  .hamburger__menu {
+    width: 20px;
+    height: 2px;
+    background: var(--secondary-main);
+    border-radius: 5px;
+    z-index: 10;
+    transition: all 0.5s ease;
+  }
+
   .navbar__menu {
     top: 0;
     right: 0;
