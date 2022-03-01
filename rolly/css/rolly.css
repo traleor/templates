@@ -347,11 +347,8 @@ figure {
   flex: 60;
   padding: 0 5% 0 5%;
 }
-.aboutPageText h1 {
-  font-size: xx-large;
-  text-transform: uppercase;
-}
-.aboutPageText p {
+
+.aboutContainer p {
   line-height: 2rem;
 }
 .shareIconsAbout {
@@ -600,6 +597,7 @@ figure {
 
   .shareIconsBottom {
     display: flex;
+    margin: 2rem auto;
     margin-left: 15%;
   }
   .shareIconsBottom .iconContainer {
