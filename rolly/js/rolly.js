@@ -1,4 +1,3 @@
-
 // Function to copy the current page url to the clipboard
 function copyLink() {
     var dummy = document.createElement("input"),
