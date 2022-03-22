@@ -25,23 +25,25 @@ html {
   --secondary-main: #1b364c;
 
   /*------- Font and typography -------*/
-  --heading-font-size: 1.5rem;
   --biggest-font-size: 1.25rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.6rem;
+  --h3-font-size: 2.2rem;
+  --h4-font-size: 1.8rem;
   --normal-font-size: 1.2rem;
-  --h2-font-size: 1.15rem;
   --small-font-size: 0.713rem;
-  --smaller-font-size: 0.65rem;
   --tiny-font-size: 0.625rem;
 }
 
 @media screen and (min-width: 1900px) {
   :root {
-    --heading-font-size: 3rem;
     --biggest-font-size: 1.5rem;
-    --h2-font-size: 1.5rem;
+    --h1-font-size: 3.2rem;
+    --h2-font-size: 2.8rem;
+    --h3-font-size: 2.4rem;
+    --h4-font-size: 2rem;
     --normal-font-size: 1.8rem;
     --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
     --tiny-font-size: 0.688rem;
   }
 }
@@ -49,6 +51,32 @@ html {
 body {
   background: var(--background-color);
   min-height: 100vh;
+}
+
+h1 {
+  font-weight: 800;
+  margin: 4vh auto;
+  font-size: var(--h1-font-size);
+}
+h2 {
+  font-weight: 600;
+  margin: 3vh auto;
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-weight: 500;
+  margin: 2vh auto;
+  font-size: var(--h3-font-size);
+}
+h4 {
+  font-weight: 400;
+  margin: 1vh auto;
+  font-size: var(--h4-font-size);
+}
+p {
+  font-weight: 400;
+  margin: 1vh auto;
+  font-size: var(--normal-font-size);
 }
 
 a {
@@ -65,6 +93,12 @@ img,
 iframe,
 video {
   width: 100%;
+}
+
+pre {
+  color: var(--white-color);
+  border-radius: 10px;
+  background-color: var(--secondary-main);
 }
 
 .default-padding {
@@ -150,6 +184,7 @@ ul {
 }
 
 .made__mark h3 {
+  margin: 0;
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
@@ -223,8 +258,9 @@ ul {
 
 .hero__text h2 {
   font-weight: 400;
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   color: rgba(0, 0, 0, 0.6);
+  margin: 0;
   margin-bottom: 2rem;
 }
 
@@ -271,14 +307,15 @@ button.secondary {
 .title__text__content h2 {
   color: #fff;
   font-size: 45px;
+  margin: 0;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .title__text__content h3 {
   color: #f3f3f3;
+  font-size: var(--h4-font-size);
   font-weight: 400;
-  width: 700px;
   text-align: center;
 }
 
@@ -325,19 +362,6 @@ button.secondary {
   width: 100%;
 }
 
-.rich__text h2 {
-  font-size: 25px;
-  margin-bottom: 0.8rem;
-  font-weight: 400;
-}
-
-.rich__text h3 {
-  font-size: 18px;
-  margin-bottom: 0.7rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-}
-
 .rich__text a {
   color: var(--main-color);
   font-style: italic;
@@ -354,6 +378,7 @@ button.secondary {
 .banner__content h2 {
   color: #fff;
   font-size: 45px;
+  margin: 0;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -361,7 +386,8 @@ button.secondary {
 .banner__content h3 {
   color: #f3f3f3;
   font-weight: 400;
-  width: 700px;
+  width: 90%;
+  margin: 0;
   text-align: center;
 }
 
@@ -444,6 +470,7 @@ button.secondary {
 .blog__hero__content h1 {
   color: #fff;
   font-size: 4rem;
+  margin: 0;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -451,7 +478,8 @@ button.secondary {
 .blog__hero__content h2 {
   color: #f3f3f3;
   font-weight: 400;
-  font-size: var(--h2-font-size);
+  margin: 0;
+  font-size: var(--h4-font-size);
   width: 80%;
   text-align: center;
 }
@@ -463,13 +491,14 @@ button.secondary {
   border-radius: 10px;
 }
 .featured__article__content span {
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   margin-left: 2%;
   margin-bottom: 1%;
 }
 .featured__article__content h2 {
   font-weight: 700;
   font-size: 3.5rem;
+  margin: 0;
   margin-left: 2%;
   margin-bottom: 1%;
 }
@@ -496,11 +525,52 @@ button.secondary {
   -o-object-fit: cover;
   border-radius: 10px;
 }
+.blog__card__content h2 {
+  margin: 2% auto;
+  font-size: var(--normal-font-size);
+}
 .blog__card__content p {
   font-weight: 400;
   font-size: 16px;
 }
 /* ---------------------- End Blog Index -------------------------- */
+
+/* ---------------------- Blog Post -------------------------- */
+.blog__post__wrapper {
+  padding: 2rem 8vw;
+}
+
+.blog__post__wrapper ul {
+  font-weight: 400;
+  margin: 1vh auto;
+  list-style-type: disc;
+  font-size: var(--normal-font-size);
+}
+
+.blog__post__padding {
+  padding: 0 8vw;
+}
+
+.headline {
+  margin: 0;
+  font-weight: 800;
+  padding-top: 8rem;
+  font-size: 4rem;
+}
+
+.authors__wrapper {
+  margin-bottom: 4rem;
+}
+.author {
+  margin-right: 2%;
+}
+.author img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+/* ---------------------- End Blog Post -------------------------- */
 
 .footer__mark {
   background: var(--secondary-main);
@@ -510,6 +580,8 @@ button.secondary {
 
 .footer__mark h4 {
   color: #fff;
+  margin: 0;
+  font-size: var(--normal-font-size);
   text-align: center;
   font-weight: 500;
 }
@@ -680,6 +752,10 @@ button.secondary {
   .blog__card {
     width: 100%;
     flex: 100% 0 0;
+  }
+  /*---- blog post ----*/
+  .blog__post__wrapper {
+    padding: 2rem 0;
   }
 }
 
