@@ -478,6 +478,28 @@ button.secondary {
   font-size: var(--normal-font-size);
 }
 
+.blog__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.blog__card {
+  width: 30%;
+  flex: 30% 0 0;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+.blog__card a img {
+  object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 10px;
+}
+.blog__card__content p {
+  font-weight: 400;
+  font-size: 16px;
+}
 /* ---------------------- End Blog Index -------------------------- */
 
 .footer__mark {
@@ -653,6 +675,10 @@ button.secondary {
     width: 90%;
   }
   .featured__article__content {
+    flex: 100% 0 0;
+  }
+  .blog__card {
+    width: 100%;
     flex: 100% 0 0;
   }
 }
