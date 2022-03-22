@@ -431,6 +431,33 @@ button.secondary {
   margin-top: 0.6rem;
 }
 
+/* ---------------------- Blog Index -------------------------- */
+
+.blog__hero__wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../media/hill-cover.png");
+  background-size: cover;
+  background-position: center;
+  padding: 12% 8vw 5% 8vw;
+}
+
+.blog__hero__content h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.blog__hero__content h2 {
+  color: #f3f3f3;
+  font-weight: 400;
+  font-size: var(--h2-font-size);
+  width: 80%;
+  text-align: center;
+}
+
+/* ---------------------- End Blog Index -------------------------- */
+
 .footer__mark {
   background: var(--secondary-main);
   padding: 1.5rem 8vw;
@@ -452,6 +479,10 @@ button.secondary {
   }
   .banner__content h2 {
     font-size: 40px;
+  }
+  /* blog hero */
+  .blog__hero__content h1 {
+    font-size: 3rem;
   }
 }
 
@@ -580,5 +611,22 @@ button.secondary {
   .cards__flex .card {
     width: 100%;
     flex: 100% 0 0;
+  }
+  /* blog hero */
+  .blog__hero__wrapper {
+    padding: 20% 8vw 5% 8vw;
+  }
+  .blog__hero__content h1 {
+    font-size: 2rem;
+  }
+  .blog__hero__content h2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* blog hero */
+  .blog__hero__wrapper {
+    padding: 35% 8vw 5% 8vw;
   }
 }
