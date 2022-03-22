@@ -27,7 +27,7 @@ html {
   /*------- Font and typography -------*/
   --heading-font-size: 1.5rem;
   --biggest-font-size: 1.25rem;
-  --normal-font-size: 0.838rem;
+  --normal-font-size: 1.2rem;
   --h2-font-size: 1.15rem;
   --small-font-size: 0.713rem;
   --smaller-font-size: 0.65rem;
@@ -39,7 +39,7 @@ html {
     --heading-font-size: 3rem;
     --biggest-font-size: 1.5rem;
     --h2-font-size: 1.5rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.8rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
     --tiny-font-size: 0.688rem;
@@ -456,6 +456,28 @@ button.secondary {
   text-align: center;
 }
 
+.featured__article__wrapper {
+  flex-wrap: wrap;
+}
+.featured__article__wrapper img {
+  border-radius: 10px;
+}
+.featured__article__content span {
+  font-size: var(--h2-font-size);
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+.featured__article__content h2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+.featured__article__content p {
+  margin-left: 2%;
+  font-size: var(--normal-font-size);
+}
+
 /* ---------------------- End Blog Index -------------------------- */
 
 .footer__mark {
@@ -482,6 +504,9 @@ button.secondary {
   }
   /* blog hero */
   .blog__hero__content h1 {
+    font-size: 3rem;
+  }
+  .featured__article__content h2 {
     font-size: 3rem;
   }
 }
@@ -517,6 +542,10 @@ button.secondary {
   }
   .banner__content h2 {
     font-size: 35px;
+  }
+  /* blog index  */
+  .featured__article__content h2 {
+    font-size: 2rem;
   }
 }
 
@@ -612,7 +641,8 @@ button.secondary {
     width: 100%;
     flex: 100% 0 0;
   }
-  /* blog hero */
+
+  /*---- blog hero ----*/
   .blog__hero__wrapper {
     padding: 20% 8vw 5% 8vw;
   }
@@ -621,6 +651,9 @@ button.secondary {
   }
   .blog__hero__content h2 {
     width: 90%;
+  }
+  .featured__article__content {
+    flex: 100% 0 0;
   }
 }
 
