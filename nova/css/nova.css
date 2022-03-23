@@ -101,6 +101,24 @@ pre {
   background-color: var(--secondary-main);
 }
 
+pre,
+code {
+  /* font-family: monospace, monospace; */
+  background-color: var(--secondary-main) !important;
+}
+pre {
+  overflow: auto;
+}
+pre > code {
+  word-wrap: normal;
+}
+pre > code[class]::before {
+  content: attr(class);
+  font-size: small;
+  font-style: italic;
+  margin: -.4rem 0 .8rem -8.2rem
+}
+
 .default-padding {
   padding: 2rem 8vw;
 }

@@ -13,6 +13,10 @@
     <link rel="canonical" href="https://traleor.github.io/templates/nova/index.html" />
 
     <link rel="stylesheet" href="css/nova.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-okaidia.min.css"
+        integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -91,11 +95,10 @@
                 <h4>Traleor templates are crafted with love to help you to build</h4>
             </div>
 
-            <section class="text__component default-padding full-width">
+                        <section class="text__component default-padding full-width">
                 <div class="list__block__item">
                     <div class="rich__text">
                         <h2>No Time to Waste</h2>
-                        <h3><b>Sed</b> ut perspiciatis unde omnis iste natus.</h3>
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit
                             <a href="">voluptatemaccusantium</a> doloremque laudantium, totam
@@ -107,12 +110,92 @@
                             voluptatemaccusantium doloremque laudantium, totam rem aperiam
                             inventore Veritatis.
                         </p>
-                        <h4>
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            <a href="">voluptatemaccusantium</a> doloremque laudantium, totam
-                            rem aperiam inventore Veritatis
-                        </h4>
 
+                    </div>
+                </div>
+            </section>
+
+            <section class="default-padding full-width">
+                <pre>
+                    <code class="language-css">
+                        
+    <!-- css -->
+    .blog__card {
+        width: 30%;
+        flex: 30% 0 0;
+        margin: 0.5rem;
+        border-radius: 10px;
+    }
+    .blog__card a img {
+        object-fit: cover;
+        -o-object-fit: cover;
+        border-radius: 10px;
+    }
+                    </code>
+                </pre>
+            </section>
+
+            <section class="default-padding full-width">
+                <pre>
+                    <code class="language-html">
+    <!-- html -->
+    &ltsection class="blog__cards"&gt
+        &ltdiv class="list__block__item"&gt
+            &ltfigure&gt
+                &ltimg src="./images/hill-cover.png" alt="hill-cover" style="width: 100%" /&gt
+                &ltfigcaption&gt
+                    &lta href=""&gt
+                        &ltimg src="./images/hill-cover.png" alt="hill-cover" style="width: 100%" /&gt
+                    &lt/a&gt
+                &lt/figcaption&gt
+            &lt/figure&gt
+        &lt/div&gt
+    &lt/section&gt
+                    </code>
+                </pre>
+            </section>
+
+            <section class="default-padding full-width">
+                <pre>
+                    <code  class="language-python">
+    <!-- python -->
+    class CodeBlockAdapter(StructBlockAdapter):
+        js_constructor = "codeblock.blocks.CodeBlock"
+
+        @cached_property
+        def media(self):
+            structblock_media = super().media
+            return Media(
+                js=structblock_media._js + ["codeblock/js/codeblock.js"],
+                css=structblock_media._css,
+            )
+
+    register(CodeBlockAdapter(), CodeBlock)
+                    </code>
+                </pre>
+            </section>
+
+            <section class="default-padding full-width">
+                <pre>
+                    <code  class="language-javascript">
+    <!-- js -->
+    function copyLink() {
+        var dummy = document.createElement("input"),
+        text = window.location.href;
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+        alert("Link copied to clipboard");
+    }
+                    </code>
+                </pre>
+            </section>
+
+            <section class="text__component default-padding full-width">
+                <div class="list__block__item">
+                    <div class="rich__text">
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit
                             <a href="">voluptatemaccusantium</a> doloremque laudantium, totam
@@ -181,44 +264,6 @@
                         <button class="secondary">Start Building</button>
                     </a>
                 </div>
-            </section>
-
-            <section class="text__component default-padding full-width">
-                <div class="list__block__item">
-                    <div class="rich__text">
-                        <h2>No Time to Waste</h2>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            <a href="">voluptatemaccusantium</a> doloremque laudantium, totam
-                            rem aperiam inventore Veritatis.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatemaccusantium doloremque laudantium, totam rem aperiam
-                            inventore Veritatis.
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatemaccusantium doloremque laudantium, totam rem aperiam
-                            inventore Veritatis.
-                        </p>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="default-padding full-width">
-                <pre class="default-padding">
-                <code>
-                    .blog__card {
-                        width: 30%;
-                        flex: 30% 0 0;
-                        margin: 0.5rem;
-                        border-radius: 10px;
-                    }
-                    .blog__card a img {
-                        object-fit: cover;
-                        -o-object-fit: cover;
-                        border-radius: 10px;
-                    }
-                </code>
-            </pre>
             </section>
 
             <section class="text__component default-padding full-width">
@@ -295,6 +340,13 @@
     </div>
 
     <script src="js/nova.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-core.min.js"
+        integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/autoloader/prism-autoloader.min.js"
+        integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 
 </html>
