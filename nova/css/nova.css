@@ -94,6 +94,9 @@ iframe,
 video {
   width: 100%;
 }
+iframe {
+  min-height: 50vh;
+}
 
 pre {
   color: var(--white-color);
@@ -116,7 +119,7 @@ pre > code[class]::before {
   content: attr(class);
   font-size: small;
   font-style: italic;
-  margin: -.4rem 0 .8rem -8.2rem
+  margin: -0.4rem 0 0.8rem -8.2rem;
 }
 
 .default-padding {
