@@ -115,15 +115,12 @@ pre {
 pre > code {
   word-wrap: normal;
 }
-pre > code[class]::before {
-  content: attr(class);
-  font-size: small;
-  font-style: italic;
-  margin: -0.4rem 0 0.8rem -8.2rem;
-}
 
 .default-padding {
   padding: 2rem 8vw;
+}
+.default__LR__padding {
+  padding: 0 8vw;
 }
 
 .full-width {
@@ -566,10 +563,6 @@ button.secondary {
   margin: 1vh auto;
   list-style-type: disc;
   font-size: var(--normal-font-size);
-}
-
-.blog__post__padding {
-  padding: 0 8vw;
 }
 
 .headline {
