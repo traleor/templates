@@ -80,7 +80,7 @@ p {
 }
 
 a {
-  color: #018489;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: 600;
 }
@@ -221,6 +221,10 @@ ul {
 .navbar__logo a b {
   font-size: large;
 }
+/* for logos */
+.navbar__logo a img {
+  height: 2rem;
+}
 
 .navbar input {
   display: none;
@@ -255,7 +259,7 @@ ul {
 
 .navbar__menu__list__item:hover,
 .navbar__menu__list__item:focus-within {
-  color: #018489;
+  color: var(--main-color);
 }
 
 .hero {
@@ -383,6 +387,13 @@ button.secondary {
 .rich__text a {
   color: var(--main-color);
   font-style: italic;
+}
+.rich__text ul {
+  list-style-type: disc;
+  padding: 1rem 0;
+}
+.rich__text ul li {
+  padding: 0.5rem 0;
 }
 
 .banner {
