@@ -12,9 +12,15 @@ This templates are crafted with love to help you to build or customize your own 
 
 #
 
+### [Techa](/techa/README.md)
+
+- Techa (Greek for "late summer") is a bold and gorgeous template for tech bloggers and vloggers.
+
+#
+
 ### [Rolly](/rolly/README.md)
 
-- This is a Beautiful blog template for ...
+- This is a simple, minimalist and beautiful blog template for bloggers
 
 #
 
