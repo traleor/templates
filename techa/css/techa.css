@@ -19,10 +19,10 @@ html {
 }
 
 :root {
-  --main-color: #018489;
-  --white-color: #fffbfe;
-  --background-color: #edf1fa;
-  --secondary-main: #1b364c;
+  --main-color: #00adb5;
+  --white-color: #eeeeee;
+  --background-color: #222831;
+  --secondary-main: #393e46;
 
   /*------- Font and typography -------*/
   --biggest-font-size: 1.25rem;
@@ -49,6 +49,7 @@ html {
 }
 
 body {
+  color: var(--white-color);
   background: var(--background-color);
   min-height: 100vh;
 }
@@ -196,8 +197,8 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  padding: 0.5rem;
-  background: var(--background-color);
+  padding: 0.2rem 0.4rem;
+  background: var(--white-color);
   display: block;
 }
 
@@ -214,8 +215,10 @@ ul {
   padding: 2rem 8vw;
   background: transparent;
   z-index: 9999;
-  background: var(--background-color);
-  border-bottom: 0.2px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  z-index: 9999;
 }
 
 .navbar__logo a b {
@@ -232,7 +235,7 @@ ul {
 
 /* When menu checked */
 .navbar input:checked ~ .navbar__menu {
-  left: 40%;
+  top: 0;
 }
 
 .navbar input:checked ~ label .hamburger__menu {
@@ -252,7 +255,7 @@ ul {
 }
 
 .navbar__menu__list__item {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--white-color);
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
@@ -273,7 +276,7 @@ ul {
 
 .hero__text h1 {
   font-size: 63px;
-  color: var(--secondary-main);
+  /* color: var(--secondary-main); */
   margin-bottom: 1rem;
   margin-top: 3rem;
 }
@@ -281,7 +284,7 @@ ul {
 .hero__text h2 {
   font-weight: 400;
   font-size: var(--normal-font-size);
-  color: rgba(0, 0, 0, 0.6);
+  /* color: rgba(0, 0, 0, 0.6); */
   margin: 0;
   margin-bottom: 2rem;
 }
@@ -307,7 +310,7 @@ button.secondary {
 
 .hero__text .btn__group a {
   margin-left: 1rem;
-  color: var(--secondary-main);
+  /* color: var(--secondary-main); */
   text-decoration: underline;
 }
 /* Make the first CTA button align with margin */
@@ -327,7 +330,7 @@ button.secondary {
 }
 
 .title__text__content h2 {
-  color: #fff;
+  color: var(--white-color);
   font-size: 45px;
   margin: 0;
   margin-bottom: 2rem;
@@ -405,7 +408,7 @@ button.secondary {
 }
 
 .banner__content h2 {
-  color: #fff;
+  color: var(--white-color);
   font-size: 45px;
   margin: 0;
   margin-bottom: 2rem;
@@ -440,7 +443,7 @@ button.secondary {
   font-size: 45px;
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--secondary-main);
+  color: var(--white-color);
 }
 
 .cards__flex {
@@ -470,7 +473,7 @@ button.secondary {
 }
 
 .cards__flex .card .card__body h3 {
-  color: rgba(0, 0, 0, 0.8);
+  /* color: rgba(0, 0, 0, 0.8); */
   font-weight: 400;
   font-size: 16px;
 }
@@ -497,7 +500,7 @@ button.secondary {
 }
 
 .blog__hero__content h1 {
-  color: #fff;
+  color: var(--white-color);
   font-size: 4rem;
   margin: 0;
   margin-bottom: 0.5rem;
@@ -604,7 +607,7 @@ button.secondary {
 }
 
 .footer__mark h4 {
-  color: #fff;
+  color: var(--white-color);
   margin: 0;
   font-size: var(--normal-font-size);
   text-align: center;
@@ -690,33 +693,31 @@ button.secondary {
     content: "";
     position: absolute;
     width: 20px;
-    height: 2px;
-    background: var(--secondary-main);
+    height: 0.2rem;
+    background: var(--main-color);
     border-radius: 5px;
     transition: all 0.5s ease;
   }
 
   .hamburger__menu::before {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
   }
 
   .hamburger__menu::after {
-    transform: translateY(8px);
+    transform: translateY(6px);
   }
 
   .hamburger__menu {
     width: 20px;
-    height: 2px;
-    background: var(--secondary-main);
     border-radius: 5px;
     z-index: 10;
     transition: all 0.5s ease;
   }
 
   .navbar__menu {
-    top: 0;
+    top: -100%;
     right: 0;
-    left: 100%;
+    left: 0;
     height: 100%;
     position: fixed;
     padding-top: 25%;
