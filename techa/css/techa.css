@@ -306,7 +306,7 @@ ul {
   height: 100vh;
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../media/hill-cover.png");
+    url("../../media/dark-cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
