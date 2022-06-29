@@ -331,7 +331,6 @@ ul {
 
 .hero__text .btn__group a {
   margin-left: 4%;
-  /* color: var(--secondary-color); */
   text-decoration: underline;
 }
 /* Make the first CTA button align with margin */
@@ -766,6 +765,13 @@ ul {
   .navbar__menu__list:hover {
     letter-spacing: 10px;
     opacity: 0.6;
+  }
+
+  .hero__text .btn__group a {
+    margin-left: 0;
+  }
+  .hero__text .btn__group button {
+    margin-top: 4%;
   }
 
   .title__text__content h3 {
