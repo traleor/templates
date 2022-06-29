@@ -1,5 +1,5 @@
 /* Font Family Import */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -11,18 +11,31 @@
   /* user-select: none;
   -webkit-user-select: none; */
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
+/* Pallettes
+https://www.canva.com/learn/website-color-schemes/
+https://99designs.com/blog/tips/website-color-schemes/
 
+  --main-color: #EF9273;
+  --secondary-color: #0D0D0D;
+  --white-color: #FFFFFF;
+  --background-color: #FEF9F8;
+
+  --main-color: #77C9D4;
+  --secondary-color: #57BC90;
+  --white-color: #FFFFFF;
+  --background-color: #FEF9F8;
+*/
 :root {
-  --main-color: #00adb5;
-  --white-color: #eeeeee;
-  --background-color: #222831;
-  --secondary-main: #393e46;
+  --main-color: #77c9d4;
+  --secondary-color: #57bc90;
+  --white-color: #ffffff;
+  --background-color: #fef9f8;
 
   /*------- Font and typography -------*/
   --biggest-font-size: 1.25rem;
@@ -49,7 +62,7 @@ html {
 }
 
 body {
-  color: var(--white-color);
+  color: black;
   background: var(--background-color);
   min-height: 100vh;
 }
@@ -88,6 +101,28 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+button.primary {
+  background: var(--main-color);
+  color: var(--white-color);
+  border: 1px solid var(--main-color);
+}
+
+button.secondary {
+  background: none;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+button.primary:hover,
+button.secondary:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 img,
@@ -96,19 +131,19 @@ video {
   width: 100%;
 }
 iframe {
-  min-height: 50vh;
+  min-height: 70vh;
 }
 
 pre {
   color: var(--white-color);
   border-radius: 10px;
-  background-color: var(--secondary-main);
+  background-color: #21262d;
 }
 
 pre,
 code {
   /* font-family: monospace, monospace; */
-  background-color: var(--secondary-main) !important;
+  background-color: #21262d !important;
 }
 pre {
   overflow: auto;
@@ -204,15 +239,15 @@ ul {
 
 .made__mark h3 {
   margin: 0;
-  color: var(--main-color);
+  color: black;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 /* NAVBAR STYLES *********************************************************/
 
 .navbar {
-  padding: 2rem 8vw;
+  padding: 3rem 8vw;
   background: transparent;
   z-index: 9999;
 }
@@ -255,7 +290,9 @@ ul {
 }
 
 .navbar__menu__list__item {
-  color: var(--white-color);
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.2rem;
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
 }
@@ -266,17 +303,22 @@ ul {
 }
 
 .hero {
-  min-height: 100vh;
-  background: var(--background-color);
+  height: 100vh;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../media/hill-cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__text {
-  margin-right: 0.5rem;
+  color: var(--white-color);
+  text-align: center;
 }
 
 .hero__text h1 {
-  font-size: 63px;
-  /* color: var(--secondary-main); */
+  font-size: 4rem;
   margin-bottom: 1rem;
   margin-top: 3rem;
 }
@@ -284,33 +326,12 @@ ul {
 .hero__text h2 {
   font-weight: 400;
   font-size: var(--normal-font-size);
-  /* color: rgba(0, 0, 0, 0.6); */
-  margin: 0;
   margin-bottom: 2rem;
 }
 
-button {
-  padding: 0.8rem 2rem;
-  font-size: 18px;
-  border-radius: 4px;
-}
-
-button.primary {
-  background: var(--secondary-main);
-  color: var(--white-color);
-  border: 1px solid var(--secondary-main);
-}
-
-button.secondary {
-  background: var(--white-color);
-  color: var(--main-color);
-  border: 1px solid var(--white-color);
-  margin-top: 2rem;
-}
-
 .hero__text .btn__group a {
-  margin-left: 1rem;
-  /* color: var(--secondary-main); */
+  margin-left: 4%;
+  /* color: var(--secondary-color); */
   text-decoration: underline;
 }
 /* Make the first CTA button align with margin */
@@ -325,13 +346,14 @@ button.secondary {
 }
 
 .title__text__wrapper {
-  background: var(--secondary-main);
+  background: var(--secondary-color);
   padding: 6rem 8vw;
 }
 
 .title__text__content h2 {
   color: var(--white-color);
   font-size: 45px;
+  font-weight: 600;
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
@@ -340,7 +362,7 @@ button.secondary {
 .title__text__content h3 {
   color: #f3f3f3;
   font-size: var(--h4-font-size);
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -352,7 +374,7 @@ button.secondary {
 }
 
 .list__block__item a {
-  color: var(--secondary-main);
+  color: var(--secondary-color);
   font-style: italic;
 }
 
@@ -363,6 +385,9 @@ button.secondary {
 .list__block__item figcaption {
   text-align: center;
   margin-top: 0.5rem;
+}
+.list__block__item iframe {
+  min-height: 40vh;
 }
 
 .list__block__item section {
@@ -423,6 +448,10 @@ button.secondary {
   text-align: center;
 }
 
+.banner__content button {
+  margin-top: 5%;
+}
+
 .list__block__item .banner__content h2 {
   font-size: 20px;
   text-align: center;
@@ -432,11 +461,6 @@ button.secondary {
   font-size: 18px;
   text-align: center;
   width: 100%;
-}
-
-.banner__content button {
-  background: #fff;
-  color: var(--main-color);
 }
 
 .card__block .title h2 {
@@ -496,7 +520,7 @@ button.secondary {
     url("../../media/hill-cover.png");
   background-size: cover;
   background-position: center;
-  padding: 12% 8vw 5% 8vw;
+  padding: 12% 8vw 10% 8vw;
 }
 
 .blog__hero__content h1 {
@@ -601,7 +625,7 @@ button.secondary {
 /* ---------------------- End Blog Post -------------------------- */
 
 .footer__mark {
-  background: var(--secondary-main);
+  background: var(--secondary-color);
   padding: 1.5rem 8vw;
   border-top: 1px solid rgba(182, 182, 182, 0.2);
 }
