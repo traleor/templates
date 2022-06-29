@@ -35,6 +35,7 @@ https://99designs.com/blog/tips/website-color-schemes/
   --main-color: #77c9d4;
   --secondary-color: #57bc90;
   --white-color: #ffffff;
+  --dark-color: black;
   --background-color: #fef9f8;
 
   /*------- Font and typography -------*/
@@ -62,7 +63,7 @@ https://99designs.com/blog/tips/website-color-schemes/
 }
 
 body {
-  color: black;
+  color: var(--dark-color);
   background: var(--background-color);
   min-height: 100vh;
 }
