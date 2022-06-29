@@ -488,6 +488,7 @@ ul {
 .blog__hero__wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../media/hill-cover.png");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); */
   background-size: cover;
   background-position: center;
   padding: 12% 8vw 5% 8vw;
