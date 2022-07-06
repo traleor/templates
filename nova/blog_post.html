@@ -333,6 +333,11 @@
             <section class="full-width flex a-j-center default-padding">
                 <button class="primary">Start Building</button>
             </section>
+
+            <!-- comments  -->
+            <section class="full-width default-padding">
+            <div id="remark42"></div>
+            </section>
         </section>
     </div>
 
@@ -364,6 +369,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/autoloader/prism-autoloader.min.js"
         integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Traleor comments -->
+    <script>
+      var remark_config = {
+        host: "https://comments.traleor.com",
+        site_id: "traleor",
+        ccomponents: ["embed", "counter"],
+        max_shown_comments: 10, 
+        theme: 'light',
+        locale: "en",
+        show_email_subscription: true,
+        simple_view: false,
+      };
+    </script>
+    <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+    <!-- Traleor comments -->
 
 </body>
 
