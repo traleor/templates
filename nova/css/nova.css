@@ -19,10 +19,10 @@ html {
 }
 
 :root {
-  --main-color: #018489;
+  --main-color: #00BFFF;
   --white-color: #fffbfe;
   --background-color: #edf1fa;
-  --secondary-color: #1b364c;
+  --secondary-color: #1484CD;
 
   /*------- Font and typography -------*/
   --biggest-font-size: 1.25rem;
@@ -482,6 +482,80 @@ ul {
   font-size: 14px;
   margin-top: 0.6rem;
 }
+
+/* ################# FOOTER ################# */
+footer{
+  
+  background: rgb(27, 27, 27);
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: var(--white-color);
+}
+.footer-content{
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+}
+.footer-content h2{
+  font-size: var(--h4-font-size);
+}
+.footer-content h4{
+  font-size: var(--normal-font-size);
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  padding: 5%
+}
+.footer__address{
+  padding: 1.2% 0;
+}
+.footer-bottom{
+  background:rgb(27, 27, 27);
+  /* width: 100%; */
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p{
+  text-align: center;
+  font-size: 1rem;
+  word-spacing: 2px;
+}
+.footer-bottom p a{
+color:var(--secondary-color);
+font-size: 1rem;
+text-decoration: none;
+text-align: center;
+}
+
+
+@media (max-width:1000px) {
+footer, .footer-bottom, .footer-content{
+  width: 100vw;
+}
+/* .footer__headline{
+  display: none;
+} */
+.footer-content{
+ flex-direction: column;
+}
+
+}
+
 
 /* ---------------------- Blog Index -------------------------- */
 

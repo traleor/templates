@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive footer design codepen</title>
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <style media="screen">
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 1rem;
+    word-spacing: 2px;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+
+@media (max-width:500px) {
+
+.footer__headline{
+    display: none;
+}
+.footer-content{
+   flex-direction: column;
+}
+}
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-content">
+            <div class="footer__headline">
+                <h1>Dior Moscow</h1>
+                
+            </div>
+            <div>
+                <h2>Visual Artist </h2>
+                <ul class="socials">
+                    
+                    <li><a href="https://instagram.com/dior_artz"><img src="./images/instagram.svg" alt="Instagram Profile"></a></li>
+                    <li><a href=" https://www.facebook.com/dior.artz/"><img src="./images/facebook.svg" alt="Facebook Profile"></a></li>
+                    <li><a href=" https://twitter.com/dior_artz"><img src="./images/twitter.svg" alt="Twitter Profile"></a></li>
+                    <li><a href=" https://www.tiktok.com/@dior_artz"><img src="./images/whatsapp.svg" alt="Twitter Profile"></a></li>
+    
+                </ul>
+            </div>
+            <div>
+                <h2>Fashion Model </h2>
+                    
+                <ul class="socials">
+                    <li><a href="https://instagram.com/dior_artz"><img src="./images/instagram.svg" alt="Instagram Profile"></a></li>
+                    <li><a href=" https://www.facebook.com/dior.artz/"><img src="./images/facebook.svg" alt="Facebook Profile"></a></li>
+                    <li><a href=" https://twitter.com/dior_artz"><img src="./images/twitter.svg" alt="Twitter Profile"></a></li>
+                    <li><a href=" https://www.tiktok.com/@dior_artz"><img src="./images/whatsapp.svg" alt="Twitter Profile"></a></li>
+    
+                </ul>
+            </div>
+            <div>
+                <h2>Address</h2>
+                <ul class="socials">
+                    <li>Great Soppo, Buea, South West, Cameroon</li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        <div class="footer-bottom">
+            <p>Designed by <a href="https://www.linkedin.com/company/brandshapers2022/">BrandShapers</a>  </p>
+                   
+        </div>
+
+    </footer>
+</body>
+</html>
