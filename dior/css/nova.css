@@ -528,6 +528,7 @@ footer {
   padding: 20px;
   padding-bottom: 40px;
   text-align: center;
+  display: flex;
 }
 .footer-bottom p {
   text-align: center;
@@ -547,9 +548,9 @@ footer {
   .footer-content {
     width: 100vw;
   }
-  /* .footer__headline{
-  display: none;
-} */
+ .footer-bottom{
+  flex-direction: column;
+}
   .footer-content {
     flex-direction: column;
   }
