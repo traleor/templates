@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+/* disable selecting of site content  */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #150189;
+    --white-color: #fffbfe;
+    --background-color: #edf1fa;
+    --secondary-color: #221b4c;
+  
+    /*------- Font and typography -------*/
+    --biggest-font-size: 1.25rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.6rem;
+    --h3-font-size: 2.2rem;
+    --h4-font-size: 1.8rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.713rem;
+    --tiny-font-size: 0.625rem;
+  }
+
+@media screen and (min-width: 1900px) {
+    :root {
+      --biggest-font-size: 1.5rem;
+      --h1-font-size: 3.2rem;
+      --h2-font-size: 2.8rem;
+      --h3-font-size: 2.4rem;
+      --h4-font-size: 2rem;
+      --normal-font-size: 1.8rem;
+      --small-font-size: 0.875rem;
+      --tiny-font-size: 0.688rem;
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+h2{
+    font-size: var(--h2-font-size);
+}
+h3{
+    font-size: var(--h3 -font-size);
+}
+.container{
+    max-width: 1166px;
+    margin: 0 auto;
+}
+
+header{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+header ul{
+    padding-left: 0;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header ul li a{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.banner{
+    height: 100vh;
+    background-color: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner .text{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.banner h1{
+    line-height: 80px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* *****GLOBAL BUTTON STYLE**** */
+.btn{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    z-index: 9;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+    /* border-radius: 10px; */
+}
+
+/* This effects changes the button color on hover  */
+.btn:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--secondary-color);
+    opacity: .9;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+.btn:hover{
+    color: var(--white-color);
+}
+.btn:hover:before{
+    top: 0;
+    height: 100%;
+}
