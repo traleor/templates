@@ -24,7 +24,7 @@ All the documentatation is found on github at Rolly js -->
 
 <!-- AOS for animation on scroll -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="css/bellissima.css" />
+    <link rel="stylesheet" href="css/test.css" />
   </head>
   <body>
     <main class="app">
@@ -32,7 +32,7 @@ All the documentatation is found on github at Rolly js -->
         <!-- NavBar begins here -->
         <header data-aos="fade-up" class="navbar">
             <div class="left__menu">
-                <ul>
+                <ul class="nav__menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Catalog</a></li>
@@ -42,9 +42,14 @@ All the documentatation is found on github at Rolly js -->
             <div class="logo brand">
                 <img src="images/logo.svg" alt="Logo">
             </div>
+            <!-- checkbox to track when the hamburger menu is clicked on -->
+        <input type="checkbox" id="menu_check" />
+        <label for="menu_check" class="menu__btn">
+            <div class="hamburger__menu"></div>
+        </label>
 
             <div class="right__menu">
-                <ul>
+                <ul class="nav__menu">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Account</a></li>
