@@ -1,82 +1,73 @@
-@import url("https://api.fonts.coollabs.io/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-  /* disable selecting of site content  */
-  user-select: none;
-  -webkit-user-select: none;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+/* disable selecting of site content  */
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
-  --main-color: #150189;
-  --white-color: #fffbfe;
-  --background-color: #edf1fa;
-  --secondary-color: #0d0b1a;
-
-  /*------- Font and typography -------*/
-  --biggest-font-size: 1.25rem;
-  --h1-font-size: 3rem;
-  --h2-font-size: 2.6rem;
-  --h3-font-size: 2.2rem;
-  --h4-font-size: 1.8rem;
-  --normal-font-size: 1.2rem;
-  --small-font-size: 0.713rem;
-  --tiny-font-size: 0.625rem;
-}
+    --main-color: #150189;
+    --white-color: #fffbfe;
+    --background-color: #edf1fa;
+    --secondary-color: #0d0b1a;
+  
+    /*------- Font and typography -------*/
+    --biggest-font-size: 1.25rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.6rem;
+    --h3-font-size: 2.2rem;
+    --h4-font-size: 1.8rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.713rem;
+    --tiny-font-size: 0.625rem;
+  }
 
 @media screen and (min-width: 1900px) {
-  :root {
-    --biggest-font-size: 1.5rem;
-    --h1-font-size: 3.2rem;
-    --h2-font-size: 2.8rem;
-    --h3-font-size: 2.4rem;
-    --h4-font-size: 2rem;
-    --normal-font-size: 1.8rem;
-    --small-font-size: 0.875rem;
-    --tiny-font-size: 0.688rem;
-  }
+    :root {
+      --biggest-font-size: 1.5rem;
+      --h1-font-size: 3.2rem;
+      --h2-font-size: 2.8rem;
+      --h3-font-size: 2.4rem;
+      --h4-font-size: 2rem;
+      --normal-font-size: 1.8rem;
+      --small-font-size: 0.875rem;
+      --tiny-font-size: 0.688rem;
+    }
 }
-li {
-  list-style: none;
+li{
+    list-style: none;
 }
-a {
-  text-decoration: none;
+a{
+    text-decoration: none;
 }
 
-<<<<<<< HEAD:bellissima/css/bellissima.css
 body{
     color: var(--white-color);
     background-color: var(--secondary-color );
     /* background-color: var(--secondary-color); */
 }
-body {
-  color: var(--white-color);
-  background-color: var(--secondary-color);
->>>>>>> b198f2c46c05927e13916607ede8ee1266638b49:Bellissima/css/bellissima.css
+
+h1{
+    font-size: var(--h1-font-size);
+}
+h2{
+    font-size: var(--h2-font-size);
+}
+h3{
+    font-size: var(--h3 -font-size);
+}
+.container{
+    max-width: 1166px;
+    margin: 0 auto;
 }
 
-h1 {
-  font-size: var(--h1-font-size);
-}
-h2 {
-  font-size: var(--h2-font-size);
-}
-h3 {
-  font-size: var(--h3 -font-size);
-}
-.container {
-  max-width: 1166px;
-  margin: 0 auto;
-}
-
-<<<<<<< HEAD:bellissima/css/bellissima.css
 /***************************** navbar ***********************/
   #a{order:1;}
   #b{order:2;}
@@ -131,7 +122,7 @@ h3 {
   /* **************NavBar ends here  ************/
 
 
-.banner{ 
+.banner{
     height: 100vh;
     z-index: 1;
     background: url(../images/banner.jpg) no-repeat;
@@ -139,112 +130,156 @@ h3 {
     background-position: top;
     display: flex;
     align-items: center;
-=======
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
 }
 
-header ul {
-  padding-left: 0;
+.banner .text{
+    text-align: center;
+    padding-bottom: 100px;
 }
 
-header ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-header ul li a {
-  color: var(--white-color);
-  text-transform: uppercase;
-}
-
-.banner {
-  height: 100vh;
-  background: url(../images/banner.jpg) no-repeat;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  align-items: flex-end;
->>>>>>> b198f2c46c05927e13916607ede8ee1266638b49:Bellissima/css/bellissima.css
-}
-
-.banner .text {
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-.banner h1 {
-  line-height: 80px;
-  font-weight: 300;
-  margin-bottom: 10px;
+.banner h1{
+    line-height: 80px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 /* *****GLOBAL BUTTON STYLE**** */
-.btn {
-  position: relative;
-  display: inline-block;
-  width: 250px;
-  height: 60px;
-  background-color: var(--background-color);
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  line-height: 60px;
-  z-index: 9;
-  margin-top: 50px;
-  transition: all ease 0.5s;
-  /* border-radius: 10px; */
+.btn{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    z-index: 9;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+    /* border-radius: 10px; */
 }
 
 /* This effects changes the button color on hover  */
-.btn:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: var(--secondary-color);
-  opacity: 0.9;
-  z-index: -1;
-  transition: all ease 0.5s;
+.btn:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--secondary-color);
+    opacity: .9;
+    z-index: -1;
+    transition: all ease 0.5s;
 }
-.btn:hover {
-  color: var(--white-color);
+.btn:hover{
+    color: var(--white-color);
 }
-.btn:hover:before {
-  top: 0;
-  height: 100%;
-}
-
-.brand__logo {
-  padding: 30px;
-}
-.brand__logo__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.btn:hover:before{
+    top: 0;
+    height: 100%;
 }
 
-.sec1 {
-  position: relative;
-  padding: 80px 0;
+.brand__logo{
+    padding: 30px;
 }
-.sec1 h3 {
-  text-transform: uppercase;
-  line-height: 40px;
+.brand__logo__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.sec1{
+    position: relative;
+    padding:80px 0 ;
 }
-<<<<<<< HEAD:bellissima/css/bellissima.css
+.sec1 h3{
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.sec1 p{
+    line-height: 32px;
+}
+.sec1__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sec1 .text{
+    width: 47%;
+}
+.sec1 .text__left{
+    text-align: right;
+}
+.sec1 .text__right{
+    text-align: left;
+}
+.sec1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, var(--white-color),transparent);
+}
+.sec1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, var(--white-color),transparent);
+} 
+
+.sec2{
+    padding: 100px 0 0;
+}
+.sec2 h2{
+    text-transform: uppercase;
+}
+.sec2 p{
+    line-height: 30px ;
+}
+.sec2__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sec2__inner img{
+    width: auto;
+}
+.sec2__inner .text{
+    width: 50%;
+    margin-left: -65px;
+    z-index: 9;
+}
+.sec2 .text__inner{
+    position: relative;
+    margin: 55px 0 0 190px;  
+}
+.sec2 .text__inner:before{
+    content:'';
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--white-color));
+}
+
+.left__right__sec:nth-child(even) .text{
+    margin-right: -65px;
+    text-align: right;
+}
+.left__right__sec:nth-child(even) .text__inner{
+   margin: 55px 190px 0 0;
+}
 .left__right__sec:nth-child(even) .text__inner:before{
     left: inherit;
     right: -30px;
@@ -328,244 +363,56 @@ header ul li a {
     z-index: -1;
     opacity: 0;
     transition: all ease 1s;
-=======
-.sec1 p {
-  line-height: 32px;
->>>>>>> b198f2c46c05927e13916607ede8ee1266638b49:Bellissima/css/bellissima.css
 }
-.sec1__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.sec1 .text {
-  width: 47%;
-}
-.sec1 .text__left {
-  text-align: right;
-}
-.sec1 .text__right {
-  text-align: left;
-}
-.sec1:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    to left,
-    transparent,
-    var(--white-color),
-    transparent
-  );
-}
-.sec1:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    to left,
-    transparent,
-    var(--white-color),
-    transparent
-  );
+.box:hover .img{
+    opacity: 1;
 }
 
-.sec2 {
-  padding: 100px 0 0;
+footer{
+    position: relative;
+    padding: 50px 0;
 }
-.sec2 h2 {
-  text-transform: uppercase;
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.sec2 p {
-  line-height: 30px;
+.footer__inner .col{
+    padding-right: 50px;
 }
-.sec2__inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+footer ul{
+    margin-left: 0;
 }
-.sec2__inner img {
-  width: auto;
+footer ul li{
+    margin-bottom: 30px;   
 }
-.sec2__inner .text {
-  width: 50%;
-  margin-left: -65px;
-  z-index: 9;
+footer ul li a{
+    color: var(--white-color);
+    font-size: 14px;
 }
-.sec2 .text__inner {
-  position: relative;
-  margin: 55px 0 0 190px;
+footer:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, var(--white-color),transparent);
 }
-.sec2 .text__inner:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: -30px;
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(to top, transparent, var(--white-color));
-}
-
-.left__right__sec:nth-child(even) .text {
-  margin-right: -65px;
-  text-align: right;
-}
-.left__right__sec:nth-child(even) .text__inner {
-  margin: 55px 190px 0 0;
-}
-.left__right__sec:nth-child(even) .text__inner:before {
-  left: inherit;
-  right: -30px;
+footer:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, var(--white-color),transparent);
 }
 
-.sec3 {
-  padding: 150px 0 0;
+.copyright{
+    padding: 25px 0;
+    text-align: center;
 }
-.sec3 h2 {
-  text-transform: uppercase;
-  max-width: 60%;
-}
-.sec3__slider {
-  margin-top: 90px;
-}
-.slick-arrow {
-  position: absolute;
-  top: -160px;
-}
-.slick-prev {
-  left: inherit;
-  right: 180px;
-}
-.slick-next {
-  right: 90px;
-}
-.slick-next:before,
-.slick-prev:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--white-color) url(../images/arrow-next.svg) no-repeat;
-  background-size: 14px;
-  background-position: center;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  border: 1px solid var(--white-color);
-  opacity: 1;
-}
-.slick-prev:before {
-  background: transparent url(../images/arrow-prev.svg) no-repeat;
-  background-size: 14px;
-  background-position: center;
-}
-
-.sec4 {
-  padding: 100px 0;
-}
-
-.sec4 h2 {
-  text-transform: uppercase;
-}
-.sec4__boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 90px;
-}
-.box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 23%;
-  min-height: 270px;
-  border: 1px solid var(--white-color);
-  margin-bottom: 40px;
-  overflow: hidden;
-}
-.box h6 {
-  font-size: 18px;
-  font-weight: 400px;
-}
-.sec4__boxes .img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-  transition: all ease 1s;
-}
-.box:hover .img {
-  opacity: 1;
-}
-
-footer {
-  position: relative;
-  padding: 50px 0;
-}
-.footer__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.footer__inner .col {
-  padding-right: 50px;
-}
-footer ul {
-  margin-left: 0;
-}
-footer ul li {
-  margin-bottom: 30px;
-}
-footer ul li a {
-  color: var(--white-color);
-  font-size: 14px;
-}
-footer:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    to left,
-    transparent,
-    var(--white-color),
-    transparent
-  );
-}
-footer:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    to left,
-    transparent,
-    var(--white-color),
-    transparent
-  );
-}
-
-.copyright {
-  padding: 25px 0;
-  text-align: center;
-}
-.copyright p {
-  font-size: 14px;
-}
-<<<<<<< HEAD:bellissima/css/bellissima.css
 .copyright p{
     font-size: 14px;
 }
@@ -639,7 +486,6 @@ footer:after {
   }
   .responsive__nav li {
     font-size: 1.5rem;
-    font-weight: bolder;
     padding: 15% 10%;
     /* border-bottom: 0.5px solid var(--main-color); */
     transition: all 0.2s ease-out;
@@ -655,5 +501,3 @@ footer:after {
     padding: 3% 10%;
   }
 }
-=======
->>>>>>> b198f2c46c05927e13916607ede8ee1266638b49:Bellissima/css/bellissima.css
