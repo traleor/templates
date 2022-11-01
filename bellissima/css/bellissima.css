@@ -495,9 +495,55 @@ footer:after{
     color: var(--white-color);
     letter-spacing: 5px;
   }
-
-
   .navbar{
     padding: 3% 10%;
   }
+
+   /* **********************HERO SECTION************************ */
+   .banner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 10%;
+   }
+   .banner .text{
+    padding-bottom: 10%;
+   }
+   .banner h1{
+    line-height: 45px;
+    font-size: var(--h3-font-size);
+   }
+
+   .btn{
+    width: 50%;
+    height: 40%;
+   }
+}
+
+/* **************************MEDIA QUERIES: GALAXY FOLD**************************** */
+
+@media screen and (max-width: 290px) {
+  /* ********************* NAV BAR **************************** */
+  .navbar {
+    padding: 3% 5%;
+}
+ /* **********************HERO SECTION************************ */
+ .banner{
+  padding: 5%;
+ }
+ .banner .text{
+  padding-bottom: 5%;
+ }
+ .banner h1{
+  line-height: 30px;
+  font-size: 1.5rem;
+ }
+
+ .btn{
+  width: 90%;
+  height: 20%;
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+}
 }
