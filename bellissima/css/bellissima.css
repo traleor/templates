@@ -50,7 +50,8 @@ a{
 
 body{
     color: var(--white-color);
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color );
+    /* background-color: var(--secondary-color); */
 }
 
 h1{
@@ -67,39 +68,68 @@ h3{
     margin: 0 auto;
 }
 
-header{
-    position: absolute ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
+/***************************** navbar ***********************/
+  #a{order:1;}
+  #b{order:2;}
+  #c{order:3;}
+  #d{order:1;}
+
+  .navbar {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    /* left: 0; */
+    padding: 3% 15% 3% 0%;
     align-items: center;
-    z-index: 999;
-}
-
-header ul{
-    padding-left: 0;
-}
-
-header ul li{
-    display: inline-block;
-    margin: 0 20px;
-}
-
-header ul li a{
+    justify-content: space-between;
+  }
+  .navbar input, .responsive__nav {
+    display: none;
+  }
+  .left__menu ul, .right__menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left__menu li a, .right__menu li a {
     color: var(--white-color);
+    font-weight: bolder;
+    padding: 0 16px;
     text-transform: uppercase;
+  }
+  .left__menu li a:hover,
+  .right__menu li a:hover,
+  .left__menu li a:focus-within,
+  .right__menu li a:focus-within {
+    color: var(--main-color);
 }
+
+
+/* When menu checked */
+  .navbar input:checked ~ .responsive__nav{
+    top: 0;
+  }
+  .navbar input:checked ~ label .hamburger__menu {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+  .navbar input:checked ~ label .hamburger__menu::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  
+  .navbar input:checked ~ label .hamburger__menu::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  /* **************NavBar ends here  ************/
+
 
 .banner{
     height: 100vh;
+    z-index: 1;
     background: url(../images/banner.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .banner .text{
@@ -297,6 +327,7 @@ header ul li a{
  }
 
 
+
  .sec4{
     padding: 100px 0;
  }
@@ -384,4 +415,90 @@ footer:after{
 }
 .copyright p{
     font-size: 14px;
+}
+
+
+/* **************************MEDIA QUERIES**************************** */
+
+@media screen and (max-width: 950px) {
+ /* **********************NAVBAR************************ */
+ /* #a{order:1;} */
+ #b{order:1;}
+ /* #c{order:3;} */
+ #d{order:2;}
+
+ .left__menu, .right__menu{
+    display: none;
+ }
+ .menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .hamburger__menu::before,
+  .hamburger__menu::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .hamburger__menu::before {
+    transform: translateY(-8px);
+  }
+
+  .hamburger__menu::after {
+    transform: translateY(8px);
+  }
+
+  .hamburger__menu {
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+    border-radius: 5px;
+    z-index: 10;
+    transition: all 0.5s ease;
+  }  
+  .responsive__nav {
+    display: flex;
+    flex-direction: column;
+    top: -600%;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 500%;
+    margin: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(4, 15, 22, 0.8);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+  }
+  .responsive__nav li {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 15% 10%;
+    /* border-bottom: 0.5px solid var(--main-color); */
+    transition: all 0.2s ease-out;
+  }
+ 
+  .responsive__nav li a:hover {
+    color: var(--white-color);
+    letter-spacing: 5px;
+  }
+
+
+  .navbar{
+    padding: 3% 10%;
+  }
 }
