@@ -30,37 +30,39 @@ All the documentatation is found on github at Rolly js -->
     <main class="app">
 
         <!-- NavBar begins here -->
-        <header data-aos="fade-up" class="navbar">
-            <div class="left__menu">
-                <ul class="nav__menu">
+        <nav data-aos="fade-up" class="navbar">
+
+            <!-- checkbox to track when the hamburger menu is clicked on -->
+        <input type="checkbox" id="menu_check" />
+        <label for="menu_check" class="menu__btn" id="d">
+            <div class="hamburger__menu"></div>
+        </label>
+
+            <div class="logo" id="b">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+
+            <!-- <div class="left__menu"> -->
+                <ul class="nav__menu left__menu" id="a">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Catalog</a></li>
                 </ul>
-            </div>
+            <!-- </div> -->
 
-            <div class="logo brand">
-                <img src="images/logo.svg" alt="Logo">
-            </div>
-            <!-- checkbox to track when the hamburger menu is clicked on -->
-        <input type="checkbox" id="menu_check" />
-        <label for="menu_check" class="menu__btn">
-            <div class="hamburger__menu"></div>
-        </label>
-
-            <div class="right__menu">
-                <ul class="nav__menu">
+            <!-- <div class="right__menu"> -->
+                <ul class="nav__menu right__menu" id="c">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Account</a></li>
                 </ul>
                 
-            </div>
-
-        </header>
+            <!-- </div> -->
+            
+        </nav>
     <!-- NavBar ends here -->
 
-        <section class="banner" data-scene>
+        <!-- <section class="banner" data-scene>
             <div class="container">
                 <div class="text" data-aos="zoom-out" data-aos-delay="1000">
                     <h1>Lorem ipsum dolor sit amet consectetur <br> adipisicing Quia possimus</h1>
@@ -271,7 +273,7 @@ All the documentatation is found on github at Rolly js -->
             <div class="container" data-aos="zoom-out-up" data-aos-offset="0"> 
                 <p>&copy; 2022 Traleor Bellissima | All Rights Reserved</p>
             </div>
-        </div>
+        </div> -->
 
     </main>
 <!-- Caroussel animation -->

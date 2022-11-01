@@ -50,7 +50,8 @@ a{
 
 body{
     color: var(--white-color);
-    background-color: var(--secondary-color);
+    background-color: #8f82d4;
+    /* background-color: var(--secondary-color); */
 }
 
 h1{
@@ -69,39 +70,58 @@ h3{
 
 /***************************** navbar ***********************/
 
-header{
-    position: absolute ;
+.navbar{
+    /* position: absolute ; */
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 3% 15% 3% 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+    z-index: 999; /*display in front of any other element*/
 }
 
-header ul{
+nav ul{
     padding-left: 0;
 }
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-header ul li{
-    display: inline-block;
+/* nav ul li{
+    display: flex;
+    flex-direction: column;
     margin: 0 20px;
-}
+} */
 
-header ul li a{
+nav ul li a{
     color: var(--white-color);
     text-transform: uppercase;
+    padding: 0 16px;
 }
-.navbar input {
-    display: none;
+.nav__menu li a:last-child {
+    padding-right: 0;
   }
-
-  /* Change the color of links on hover */
-.navbar a:hover {
+ 
+  .nav__menu li a:hover,
+  .nav__menu li a:focus-within {
     color: var(--main-color);
   }
+nav input {
+    display: none;
+  }
+  #a{order:2;}
+    #b{order:2;}
+    #c{order:1;}
+    /* #d{order:2;} */
+
+  /* Change the color of links on hover */
+/* .navbar a:hover {
+    color: var(--main-color);
+  } */
   
   /* When menu checked */
   .navbar input:checked ~ .nav__menu {
@@ -435,7 +455,7 @@ footer:after{
     position: absolute;
     width: 20px;
     height: 2px;
-    background: var(--main-color);
+    background: var(--white-color);
     border-radius: 5px;
     transition: all 0.5s ease;
   }
@@ -451,35 +471,54 @@ footer:after{
   .hamburger__menu {
     width: 20px;
     height: 2px;
-    background: var(--main-color);
+    background: var(--white-color);
     border-radius: 5px;
     z-index: 10;
     transition: all 0.5s ease;
   }
-
-  .nav__menu {
-    top: -100%;
-    right: 0;
-    z-index: 1;
+ 
+  .nav__menu{
+    top: -550%;
     width: 100%;
-    height: 60%;
+    height: 500%;
     margin: 0;
     position: absolute;
-    align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    transition: all 0.5s ease-in-out; 
+  }
+  .right__menu{
+    right: 0;
+    z-index:1; 
+    align-items: flex-end;
     background-color: rgba(4, 15, 22, 0.8);
     backdrop-filter: blur(20px);
-    flex-direction: column;
-    transition: all 0.5s ease-in-out;
   }
+ .left__menu{
+    z-index:2; 
+    align-items: flex-start;
+ }
   .nav__menu li {
     font-size: large;
     padding: 24px 10%;
-    border-bottom: 0.5px solid var(--main-color);
+    /* border-bottom: 0.8px solid var(--main-color); */
     transition: all 0.2s ease-out;
   }
-  .nav__menu li a:hover {
-    color: var(--white-color);
+  /* .nav__menu li:hover{
+    color: var(--main-color);
     letter-spacing: 5px;
-  }
+  } */
+  /* .left__menu li a:hover {
+    color: var(--main-color);
+    letter-spacing: 5px;
+  } */
+
+  .navbar{
+        background-color: var(--black-color);
+        padding: 3% 5% 3% 5%;
+    }
+    #a{order:2;}
+    #b{order:1;}
+    #c{order:3;}
+    #d{order:2;}
 }
