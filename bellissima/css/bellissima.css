@@ -547,3 +547,15 @@ footer:after{
   line-height: 2.5rem;
 }
 }
+
+@media screen and (max-width: 1050px) {
+  /* ********************* NAV BAR **************************** */
+ 
+.navbar {
+  padding: 2% 8% 3% 1%;
+}
+.navbar .logo img{
+  padding: 2% 13% 4% 12%;
+}
+
+}
