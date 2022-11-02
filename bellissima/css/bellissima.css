@@ -1,8 +1,11 @@
+/* Fonts: Source https://www.madebychroma.com/typography/10-elegant-google-display-fonts-for-your-brand/ */
+@import url('https://api.fonts.coollabs.io/css2?family=Italiana&family=Roboto:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: "Nunito", sans-serif;
+    font-family: "Roboto", sans-serif;
 /* disable selecting of site content  */
     user-select: none;
     -webkit-user-select: none;
@@ -95,6 +98,7 @@ h3{
     font-weight: bolder;
     padding: 0 16px;
     text-transform: uppercase;
+    font-family: 'Italiana', serif;
   }
   .left__menu li a:hover,
   .right__menu li a:hover,
@@ -140,6 +144,7 @@ h3{
 .banner h1{
     line-height: 80px;
     font-weight: 300;
+    font-family: 'Italiana', serif;
     margin-bottom: 10px;
 }
 
