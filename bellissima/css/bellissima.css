@@ -123,6 +123,10 @@ h3{
   .navbar input:checked ~ label .hamburger__menu::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
   /* **************NavBar ends here  ************/
 
 
