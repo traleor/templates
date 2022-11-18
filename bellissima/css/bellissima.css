@@ -84,6 +84,11 @@ h3{
     padding: 3% 15% 3% 0%;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #0d0b1a;
   }
   .navbar input, .responsive__nav {
     display: none;
@@ -536,6 +541,10 @@ footer:after{
   /* ********************* NAV BAR **************************** */
   .navbar {
     padding: 3% 5%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
  /* **********************HERO SECTION************************ */
  .banner{
@@ -562,6 +571,10 @@ footer:after{
  
 .navbar {
   padding: 2% 8% 3% 1%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .navbar .logo img{
   padding: 2% 13% 4% 12%;
