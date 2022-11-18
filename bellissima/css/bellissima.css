@@ -22,7 +22,7 @@ html {
     --secondary-color: #0d0b1a;
   
     /*------- Font and typography -------*/
-    --biggest-font-size: 1.25rem;
+    --biggest-font-size: 4.25rem;
     --h1-font-size: 3rem;
     --h2-font-size: 2.6rem;
     --h3-font-size: 2.2rem;
@@ -32,17 +32,22 @@ html {
     --tiny-font-size: 0.625rem;
   }
 
-@media screen and (min-width: 1900px) {
+@media screen and (max-width: 950px) {
     :root {
-      --biggest-font-size: 1.5rem;
-      --h1-font-size: 3.2rem;
-      --h2-font-size: 2.8rem;
-      --h3-font-size: 2.4rem;
-      --h4-font-size: 2rem;
-      --normal-font-size: 1.8rem;
+      --biggest-font-size: 2.3rem;
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 2.4rem;
+      --h3-font-size: 2.2rem;
+      --h4-font-size: 1.8rem;
+      --normal-font-size: 1.2rem;
       --small-font-size: 0.875rem;
       --tiny-font-size: 0.688rem;
     }
+}
+span{
+  color: var(--main-color);
+  font-family: 'Montserrat', serif;
+  font-weight: 300;
 }
 li{
     list-style: none;
@@ -64,7 +69,7 @@ h2{
     font-size: var(--h2-font-size);
 }
 h3{
-    font-size: var(--h3 -font-size);
+    font-size: var(--h3-font-size);
 }
 .container{
     max-width: 1166px;
@@ -81,7 +86,7 @@ h3{
     display: flex;
     width: 100%;
     /* left: 0; */
-    padding: 3% 15% 3% 0%;
+    padding: 3% 13% 3% 0%;
     align-items: center;
     justify-content: space-between;
     position: sticky;
@@ -103,6 +108,7 @@ h3{
     font-weight: bolder;
     padding: 0 16px;
     text-transform: uppercase;
+    font-size: var(--normal-font-size);
     font-family: 'Montserrat', serif;
   }
   .left__menu li a:hover,
@@ -130,7 +136,8 @@ h3{
   }
 
   .logo h1 {
-    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 0 0 10%;
   }
   /* **************NavBar ends here  ************/
 
@@ -152,6 +159,7 @@ h3{
 
 .banner h1{
     line-height: 80px;
+    font-size: var(--biggest-font-size);
     font-weight: 300;
     font-family: 'Montserrat', serif;
     margin-bottom: 10px;
@@ -173,7 +181,7 @@ h3{
     margin-top: 50px;
     transition: all ease 0.5s;
     font-weight: bold;
-    /* border-radius: 10px; */
+    border-radius: 4px;
 }
 
 /* This effects changes the button color on hover  */
@@ -186,6 +194,7 @@ h3{
     height: 0;
     background-color: var(--main-color);
     z-index: -1;
+    border-radius: 4px;
     transition: all ease 0.5s;
 }
 .btn:hover{
@@ -487,7 +496,7 @@ footer:after{
     right: 0;
     z-index: 1;
     width: 100%;
-    height: 500%;
+    height: 600%;
     margin: 0;
     position: absolute;
     align-items: center;
@@ -504,13 +513,16 @@ footer:after{
     /* border-bottom: 0.5px solid var(--main-color); */
     transition: all 0.2s ease-out;
   }
+  .responsive__nav ul{
+    padding: 0;
+  }
 
   .responsive__nav li a{
-    color: var(--main-color);
+    color: var(--white-color);
   }
  
   .responsive__nav li a:hover {
-    color: var(--white-color);
+    color: var(--main-color);
     letter-spacing: 5px;
   }
   .navbar{
@@ -537,8 +549,7 @@ footer:after{
    }
 
    .btn{
-    width: 50%;
-    height: 40%;
+    font-size: var(--small-font-size);
    }
 }
 
@@ -553,16 +564,22 @@ footer:after{
     left: 0;
     z-index: 1;
 }
+.logo h1{
+  padding: 0 0 0 20%;
+}
+.responsive__nav li a{
+  font-size: 1.3rem;
+}
  /* **********************HERO SECTION************************ */
  .banner{
   padding: 5%;
  }
- .banner .text{
-  padding-bottom: 5%;
+ .banner .text p{
+  font-size: 0.85rem;
  }
  .banner h1{
   line-height: 30px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
  }
 
  .btn{
@@ -573,6 +590,8 @@ footer:after{
 }
 }
 
+
+/* **************************MEDIA QUERIES: NEST HUB**************************** */
 @media screen and (max-width: 1050px) {
   /* ********************* NAV BAR **************************** */
  
@@ -582,6 +601,13 @@ footer:after{
   top: 0;
   left: 0;
   z-index: 1;
+}
+.responsive__nav ul li a{
+  font-size: var(--tiny-font-size);
+}
+.logo h1{
+  font-size: var(--h4-font-size);
+  padding: 0 0 0 15%;
 }
 .navbar .logo img{
   padding: 2% 13% 4% 12%;
