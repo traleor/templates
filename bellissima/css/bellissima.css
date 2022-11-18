@@ -588,8 +588,99 @@ footer:after{
   font-size: 0.9rem;
   line-height: 2.5rem;
 }
-}
 
+
+   /* **********************SECTION1************************ */
+
+   .sec1__inner {
+    flex-direction: column;
+    width: 90%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container {
+    display: flex;
+    justify-content: center;
+   }
+
+   .sec1 .text {
+    width: 100%;
+   }
+
+   .sec1 .text__left {
+    text-align: center;
+   }
+
+   .sec1 .text__right {
+    width: 100%;
+    text-align: center;
+
+   }
+  }   
+
+
+@media screen and (max-width: 360px) {
+  **********************SECTION1************************ */
+
+   .sec1__inner {
+    flex-direction: column;
+    width: 90%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container {
+    display: flex;
+    justify-content: center;
+   }
+
+   .sec1 .text {
+    width: 100%;
+   }
+
+   .sec1 .text__left {
+    text-align: center;
+   }
+
+   .sec1 .text__right {
+    width: 100%;
+    text-align: center;
+
+   }
+}
+@media screen and (max-width: 428px) {
+  **********************SECTION1************************ */
+
+   .sec1__inner {
+    flex-direction: column;
+    width: 90%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container {
+    display: flex;
+    justify-content: center;
+   }
+
+   .sec1 .text {
+    width: 100%;
+   }
+
+   .sec1 .text__left {
+    text-align: center;
+   }
+
+   .sec1 .text__right {
+    width: 100%;
+    text-align: center;
+
+   }
+  }
 
 /* **************************MEDIA QUERIES: NEST HUB**************************** */
 @media screen and (max-width: 1050px) {
