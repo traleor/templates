@@ -224,6 +224,18 @@ ul {
   font-size: 14px;
 }
 
+.language_select select,
+.language_select select:focus,
+.language_select select:active {
+  border: none;
+  color: var(--main-color);
+  font-weight: bold;
+  background-color: transparent;
+}
+.language_select select option {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* NAVBAR STYLES *********************************************************/
 
 .navbar {
