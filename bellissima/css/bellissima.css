@@ -24,7 +24,7 @@ html {
     --secondary-color: #0d0b1a;
   
     /*------- Font and typography -------*/
-    --biggest-font-size: 4.25rem;
+    --biggest-font-size: 1.25rem;
     --h1-font-size: 3rem;
     --h2-font-size: 2.6rem;
     --h3-font-size: 2.2rem;
@@ -34,7 +34,7 @@ html {
     --tiny-font-size: 0.625rem;
   }
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 1900px) {
     :root {
       --biggest-font-size: 2.3rem;
       --h1-font-size: 1.5rem;
@@ -577,7 +577,7 @@ footer:after{
     right: 0;
     z-index: 1;
     width: 100%;
-    height: 600%;
+    height: 500%;
     margin: 0;
     position: absolute;
     align-items: center;
@@ -594,23 +594,13 @@ footer:after{
     /* border-bottom: 0.5px solid var(--main-color); */
     transition: all 0.2s ease-out;
   }
-  .responsive__nav ul{
-    padding: 0;
-  }
-
-  .responsive__nav li a{
-    color: var(--white-color);
-  }
  
   .responsive__nav li a:hover {
-    color: var(--main-color);
+    color: var(--white-color);
     letter-spacing: 5px;
   }
   .navbar{
     padding: 3% 10%;
-  }
-  .logo h1{
-    padding-left: 2.5rem;
   }
 
    /* **********************HERO SECTION************************ */
@@ -630,19 +620,8 @@ footer:after{
    }
 
    .btn{
-    font-size: var(--small-font-size);
-   }
-
-   /* *************************************** ABOUT ME DETAILS ************************* */
-   #small__screen__one{order: 1;}
-   #small__screen__two{order: 2;}
-   #small__screen__three{order: 3;}
-
-   .about__info{
-    padding: 10%;
-   }
-   .about__info__inner{
-    justify-content: flex-start;
+    width: 50%;
+    height: 40%;
    }
    .about__info__inner .text{
     margin: 0;
@@ -726,22 +705,16 @@ footer:after{
     left: 0;
     z-index: 1;
 }
-.logo h1{
-  padding: 0 0 0 20%;
-}
-.responsive__nav li a{
-  font-size: 1.3rem;
-}
  /* **********************HERO SECTION************************ */
  .hero__section{
   padding: 5%;
  }
- .hero__section .text p{
-  font-size: 0.85rem;
+ .banner .text{
+  padding-bottom: 5%;
  }
  .hero__section h1{
   line-height: 30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
  }
 
  .btn{
@@ -750,10 +723,100 @@ footer:after{
   font-size: 0.9rem;
   line-height: 2.5rem;
 }
+
+
+   /* **********************SECTION1************************ */
+
+   .sec1__inner {
+    flex-direction: column;
+    width: 90%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container {
+    display: flex;
+    justify-content: center;
+   }
+
+   .sec1 .text {
+    width: 100%;
+   }
+
+   .sec1 .text__left {
+    text-align: center;
+   }
+
+   .sec1 .text__right {
+    width: 100%;
+    text-align: center;
+
+   }
+  }   
+
+
+@media screen and (max-width: 360px) {
+  **********************SECTION1************************ */
+
+   .sec1__inner {
+    flex-direction: column;
+    width: 90%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container {
+    display: flex;
+    justify-content: center;
+   }
+
+   .sec1 .text {
+    width: 100%;
+   }
+
+   .sec1 .text__left {
+    text-align: center;
+   }
+
+   .sec1 .text__right {
+    width: 100%;
+    text-align: center;
+
+   }
 }
+@media screen and (max-width: 428px) {
+  **********************SECTION1************************ */
 
+   .sec1__inner {
+    flex-direction: column;
+    width: 90%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+   }
 
-/* **************************MEDIA QUERIES: NEST HUB**************************** */
+   .container {
+    display: flex;
+    justify-content: center;
+   }
+
+   .sec1 .text {
+    width: 100%;
+   }
+
+   .sec1 .text__left {
+    text-align: center;
+   }
+
+   .sec1 .text__right {
+    width: 100%;
+    text-align: center;
+
+   }
+  }
+
 @media screen and (max-width: 1050px) {
   /* ********************* NAV BAR **************************** */
  
@@ -763,13 +826,6 @@ footer:after{
   top: 0;
   left: 0;
   z-index: 1;
-}
-.responsive__nav ul li a{
-  font-size: var(--tiny-font-size);
-}
-.logo h1{
-  font-size: var(--h4-font-size);
-  padding: 0 0 0 15%;
 }
 .navbar .logo img{
   padding: 2% 13% 4% 12%;
