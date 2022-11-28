@@ -16,13 +16,22 @@
       href="https://traleor.github.io/templates/nova/index.html"
     />
 
+    <!-- Rolly js is used to implement the smooth scrolling effect
+All the documentatation is found on github at Rolly js -->
+    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+
+<!-- AOS for animation on scroll -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
     <link rel="stylesheet" href="css/nova.css" />
   </head>
 
   <body>
-    <div class="container">
+    <div class="container app ">
       <!-- NAVBAR -------------------------------------------------->
       <nav
+        data-aos="fade-up"
         class="navbar flex fixed full-width a-j-space-between"
         role="navigation"
       >
@@ -64,8 +73,8 @@
       </nav>
 
       <!-- HERO ----------------------------------------------------->
-      <div class="hero default-padding full-width flex a-j-center">
-        <div class="hero__text flex-one">
+      <div class="hero default-padding full-width flex a-j-center" data-scene>
+        <div class="hero__text flex-one" data-aos="fade-up" data-aos-delay="1000">
           <h1>Start something Big with Traleor</h1>
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -78,14 +87,14 @@
             <a href="">Learn More</a>
           </div>
         </div>
-        <div class="hero__image flex-one">
+        <div class="hero__image flex-one" data-aos="zoom-out-left">
           <img src="./images/hill-cover.png" alt="hero-pic" />
         </div>
       </div>
 
       <!-- TITLE & TEXT --------------------------------------------->
-      <section class="title__text__wrapper full-width">
-        <div class="title__text__content flex flex-column a-j-center">
+      <section class="title__text__wrapper full-width" data-scene>
+        <div class="title__text__content flex flex-column a-j-center" data-aos="fade-up">
           <h2>Sed ut perspiciatis unde omnis iste natus</h2>
           <h3>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -95,8 +104,8 @@
       </section>
 
       <!-- LIST BLOCK ----------------------------------------------->
-      <section class="list__block default-padding">
-        <div class="list__block__item">
+      <section class="list__block default-padding" data-scene>
+        <div class="list__block__item" data-aos="zoom-out-up">
           <section class="default-padding full-width">
             <div class="list__block__item">
               <figure>
@@ -111,7 +120,7 @@
           </section>
         </div>
 
-        <div class="list__block__item">
+        <div class="list__block__item" data-aos="zoom-out-up"> 
           <section class="text__component default-padding full-width">
             <div class="list__block__item">
               <div class="rich__text">
@@ -133,7 +142,7 @@
           </section>
         </div>
 
-        <div class="list__block__item">
+        <div class="list__block__item" data-aos="zoom-out-up">
           <section class="title__text__wrapper full-width">
             <div class="title__text__content flex flex-column a-j-center">
               <h2>Sed ut perspiciatis unde omnis iste natus</h2>
@@ -145,7 +154,7 @@
           </section>
         </div>
 
-        <div class="list__block__item">
+        <div class="list__block__item" data-aos="zoom-out-up">
           <section class="title__text__wrapper full-width">
             <div class="title__text__content flex flex-column a-j-center">
               <h2>Sed ut perspiciatis unde omnis iste natus</h2>
@@ -157,7 +166,7 @@
           </section>
         </div>
 
-        <div class="list__block__item">
+        <div class="list__block__item" data-aos="zoom-out-up">
           <section class="banner flex a-j-center full-width default-padding">
             <div class="banner__content flex a-j-center flex-column">
               <h2>Sed ut perspiciatis unde omnis iste</h2>
@@ -174,8 +183,8 @@
       </section>
 
       <!-- BANNER --------------------------------------------->
-      <section class="banner flex a-j-center full-width default-padding">
-        <div class="banner__content flex a-j-center flex-column">
+      <section class="banner flex a-j-center full-width default-padding" data-scene>
+        <div class="banner__content flex a-j-center flex-column" data-aos="fade-up">
           <h2>Sed ut perspiciatis unde omnis iste</h2>
           <h3>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -187,8 +196,8 @@
         </div>
       </section>
 
-      <section class="default-padding full-width">
-        <div class="list__block__item">
+      <section class="default-padding full-width" data-scene>
+        <div class="list__block__item" data-aos="zoom-out-up">
           <figure>
             <img
               src="./images/hill-cover.png"
@@ -200,21 +209,21 @@
         </div>
       </section>
 
-      <div class="default__LR__padding">
-        <h1>Traleor templates are crafted with love to help you to build</h1>
+      <div class="default__LR__padding" data-scene>
+        <h1 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h1>
       </div>
-      <div class="default__LR__padding">
-        <h2>Traleor templates are crafted with love to help you to build</h2>
+      <div class="default__LR__padding" data-scene>
+        <h2 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h2>
       </div>
-      <div class="default__LR__padding">
-        <h3>Traleor templates are crafted with love to help you to build</h3>
+      <div class="default__LR__padding" data-scene>
+        <h3 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h3>
       </div>
-      <div class="default__LR__padding">
-        <h4>Traleor templates are crafted with love to help you to build</h4>
+      <div class="default__LR__padding" data-scene>
+        <h4 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h4>
       </div>
 
-      <section class="text__component default-padding full-width">
-        <div class="list__block__item">
+      <section class="text__component default-padding full-width" data-scene>
+        <div class="list__block__item" data-aos="zoom-out-left">
           <div class="rich__text">
             <h2>No Time to Waste</h2>
             <h4><b>Sed</b> ut perspiciatis unde omnis iste natus.</h4>
@@ -234,18 +243,19 @@
         </div>
       </section>
 
-      <section class="full-width flex a-j-center default-padding">
-        <button class="primary">Start Building</button>
+      <section class="full-width flex a-j-center default-padding" data-scene>
+        <button class="primary" data-aos="zoom-out-up">Start Building</button>
       </section>
 
       <!-- CARDS AREA - BLOGS --------------------------------------------->
-      <section class="card__block full-width default-padding">
-        <div class="title">
+      <section class="card__block full-width default-padding" data-scene>
+        <div class="title" data-aos="fade-up">
           <h2>Cards Title Here</h2>
         </div>
 
         <div class="cards__flex">
-          <div class="card">
+
+          <div class="card" data-aos="zoom-out-down" data-aos-delay="1000">
             <div class="card__image">
               <img src="./images/hill-cover.png" alt="alt-text" />
             </div>
@@ -260,7 +270,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="zoom-out-down" data-aos-delay="1000">
             <div class="card__image">
               <img src="./images/hill-cover.png" alt="alt-text" />
             </div>
@@ -275,7 +285,21 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="zoom-out-down" data-aos-delay="1000">
+            <div class="card__image">
+              <img src="./images/hill-cover.png" alt="alt-text" />
+            </div>
+            <div class="card__body">
+              <p>sub title</p>
+              <h2>Card Title</h2>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+                labore. Lorem ipsum consectetur adipisicing. dolor sit amet.
+              </h3>
+              <button class="primary">Click Me</button>
+            </div>
+          </div>
+          <div class="card" data-aos="zoom-out-up" data-aos-delay="1000">
             <div class="card__image">
               <img src="./images/hill-cover.png" alt="alt-text" />
             </div>
@@ -290,7 +314,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="zoom-out-up" data-aos-delay="1000">
             <div class="card__image">
               <img src="./images/hill-cover.png" alt="alt-text" />
             </div>
@@ -305,22 +329,7 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="card__image">
-              <img src="./images/hill-cover.png" alt="alt-text" />
-            </div>
-            <div class="card__body">
-              <p>sub title</p>
-              <h2>Card Title</h2>
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-                labore. Lorem ipsum consectetur adipisicing. dolor sit amet.
-              </h3>
-              <button class="primary">Click Me</button>
-            </div>
-          </div>
-
-          <div class="card">
+          <div class="card" data-aos="zoom-out-up" data-aos-delay="1000">
             <div class="card__image">
               <img src="./images/hill-cover.png" alt="alt-text" />
             </div>
@@ -337,7 +346,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" data-scene>
         <div class="title__text__wrapper full-width">
           <div class="title__text__content flex flex-column a-j-center">
             <h2>Sed ut perspiciatis unde omnis iste natus</h2>
@@ -359,6 +368,11 @@
       </a>
     </div>
 
+    <!-- Rolly js for smooth scroll effect -->
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <!-- AOS for animation on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   
     <script src="js/nova.js"></script>
   </body>
 </html>
