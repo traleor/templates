@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bellissima - Traleor Default Template</title>
+    <meta
+      name="description"
+      content="Traleor Template Bellissima is derived from the Italian word `Beautiful` and it is a sPrime template for traleor websites"
+    />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://traleor.github.io/templates/bellisima/index.html"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- Rolly js is used to implement the smooth scrolling effect
+All the documentatation is found on github at Rolly js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/rolly.js@0.2.1/css/style.css"
+    />
+
+    <!-- AOS for animation on scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/bellissima.css" />
+  </head>
+  <body>
+    <main class="app">
+      <!-- NavBar begins here -->
+
+      <nav data-aos="fade-up" class="navbar">
+        <div class="logo brand" id="b">
+          <!-- <img src="images/logo.svg" alt="Logo" /> -->
+          <h1>Bellissima</h1>
+        </div>
+
+        <!-- checkcard to track when the hamburger menu is clicked on -->
+        <input type="checkbox" id="menu_check" />
+        <label for="menu_check" class="menu__btn" id="d">
+          <div class="hamburger__menu"></div>
+        </label>
+        <div class="left__menu" id="a">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Catalog</a></li>
+          </ul>
+        </div>
+
+        <div class="right__menu" id="c">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </div>
+
+        <div class="responsive__nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Catalog</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NavBar ends here -->
+     
+      <div class="main" data-scene>
+        <div class="box" data-aos="zoom-out" data-aos-delay="1000">
+            <div class="images">
+                <div class="img-holder active">
+                    <img src="images/headphone.jpg">
+                </div>
+                <div class="img-holder">
+                    <img src="images/headphone.jpg">
+                </div>
+                <div class="img-holder">
+                    <img src="images/headphone.jpg">
+                </div>
+                <div class="img-holder">
+                    <img src="images/headphone.jpg">
+                </div>
+            </div>
+            <div class="basic-info">
+                <h1>Headphone</h1>
+                
+                <span>Price FCFA</span>
+                <div class="options">
+                    <a href="#">Buy It Now</a>
+                    <!-- This will be the linnk to the person's
+                    whatsapp contact -->
+                </div>
+            </div>
+            <div class="description">
+                <h4>Description</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus temporibus corporis repudiandae, consectetur nostrum nisi commodi placeat rerum molestias numquam nihil accusantium deleniti! Enim, nesciunt a quis amet hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo accusantium tempora facere doloremque cum iusto, ut neque, fuga omnis libero laborum ullam. At dolorum qui atque labore illo dignissimos.</p>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i>Supported Feature</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Supported Feature</li>
+                    <li><i class="fa-solid fa-circle-xmark"></i>Unsupported Feature</li>
+                    <li><i class="fa-solid fa-circle-xmark"></i>Unsupported Feature</li>
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- Caroussel animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Rolly js for smooth scroll effect -->
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <!-- AOS for animation on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/bellissima.js"></script>
+  </body>
+</html>
