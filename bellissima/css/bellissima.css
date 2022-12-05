@@ -980,15 +980,16 @@ footer ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0;
   color: var(--gray-color);
 }
 
-.box .description .features i {
+/* .box .description .features i {
   margin-right: 5px;
-}
+} */
 
-.box .description .features .fa-circle-check {
-  color: var(--tertiary-color);
+.box .description .features .check {
+  padding-right: 2.5%;
 }
 
 .box .description .features .fa-circle-xmark {
