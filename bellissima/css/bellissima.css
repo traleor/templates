@@ -233,6 +233,7 @@ h3 {
 .about__info__inner {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 5%;
   align-items: center;
   justify-content: center;
 }
@@ -557,31 +558,67 @@ footer ul li a:hover {
     line-height: 45px;
     font-size: var(--h3-font-size);
   }
-
-  /* .btn {
-    width: 50%;
-    height: 40%;
-  } */
-  .about__info__inner .text {
+/* ************************ABOUT SECTION****************** */
+.about__me h1{
+  font-size: var(--h3-font-size);
+}
+.about__info__inner{
+  padding-bottom: 10%;
+}
+.about__info__inner .img img{
+  width: 100%;
+  /* padding: 5%; */
+ }
+.about__info__inner .text {
     margin: 0;
     width: 100%;
+    
   }
   .about__info__inner .text h2 {
-    text-align: center;
+    text-align: right;
+    margin-bottom: 5%;
     font-size: var(--h4-font-size);
+
   }
-  .about__info__inner,
+  .about__info__inner
   .text .text__inner h3 {
     text-align: left;
-    font-size: 12px;
+    margin: 5% 0;
+    font-size: var(--normal-font-size);
+  }
+  .about__info{
+    padding: 0;
+  }
+  .about__info p{
+    text-align: left;
   }
   .about__info__inner img {
-    margin-left: -10%;
+    padding: 10% 10% 0 10%;
+    /* margin-left: -10%; */
   }
   .about__info .text__inner:before {
     width: 0;
   }
-
+  .left__right__sec:nth-child(even) .text {
+    margin: 10%;
+    text-align: center;
+  }
+  .left__right__sec:nth-child(even) .text__inner {
+    margin: 0;
+  }
+  .left__right__sec:nth-child(even) .text__inner:before {
+    left: 0;
+    right: 0;
+  }
+  .about__contact{
+    text-align: center;
+  }
+  .about__contact .btn{
+    margin-top: 0;
+  }
+  .about__contact .footer__socials{
+    margin-left: -13%;
+  }
   /* *********************** CATALOG ******************* */
   .card__container {
     grid-template-columns: 1fr 1fr;
@@ -629,6 +666,9 @@ footer ul li a:hover {
 @media screen and (min-width: 700px) and (max-width:950px){
   .view__more__button {
     margin-top: 15%;
+  }
+  .about__contact .footer__socials{
+    margin-left: 0;
   }
 }
 /* **************************MEDIA QUERIES: GALAXY FOLD**************************** */
