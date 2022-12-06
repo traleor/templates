@@ -46,7 +46,7 @@
     margin-top: 3rem;
 }
 
-.contact__socials a{
+/* .contact__socials a{
     background: var(--color-bg2);
     padding: 0.5rem;
     border-radius: 50%;
@@ -56,7 +56,7 @@
 
 .contact__socials a:hover{
     background: transparent;
-}
+} */
 
 /* ************ FORM *********** */
 .contact__form{

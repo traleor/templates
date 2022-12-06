@@ -25,7 +25,9 @@
     background: var(--color-bg1);
     padding: 1.5rem;
     border-radius: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .achievement__card:hover{
@@ -35,11 +37,6 @@
 
 .achievement__icon{
     background: var(--color-danger);
-    padding: 0.6rem;
-    border-radius: 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    font-size: 2rem;
 }
 
 .achievement__card:nth-child(2) .achievement__icon{
@@ -50,8 +47,8 @@
     background: var(--color-primary);
 }
 
-.achievement__card p{
-    margin-top: 1rem;
+.achievement__card p, .achievement__card h3{
+    margin-top: 10%;
 }
 
 /* ********** TEAM *********** */

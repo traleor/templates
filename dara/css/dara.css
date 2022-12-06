@@ -254,6 +254,8 @@ header{
 }
 
 .course{
+    /* height: 100%; */
+    /* padding-bottom: 5%; */
     background: var(--color-bg1);
     text-align: center;
     border: 1px solid transparent;
@@ -266,11 +268,11 @@ header{
     border-color: var(--color-primary);
 }
 
-.course__Info{
+.course__info{
     padding: 2rem;
 }
 
-.course__Info p{
+.course__info p{
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
 }
