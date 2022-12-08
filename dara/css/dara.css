@@ -156,7 +156,7 @@ header{
     top: 5rem;
     background: var(--light-bg);
     overflow: hidden;
-    height: 70vh;
+    height: auto;
     margin-bottom: 5rem;
 }
 
@@ -165,13 +165,19 @@ header{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 5rem;
-    height: 100%;
+    padding: 2%;
+    justify-content: center;
 }
 
 .header__left p{
     margin: 1rem 0 2.4rem;
     color: var(--light-text);
 }
+/* .header__right .header__right-image img{
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+} */
 
 /* ***** CATEGORIES ****** */
 .categories {
