@@ -297,7 +297,7 @@ header{
 }
 
 /* *********** FAQs ********** */
-.faqs{
+/* .faqs{
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(29, 28, 28, 0.3);
 }
@@ -334,8 +334,53 @@ header{
 
 .faq.open p{
     display: block;
+} */
+
+/* ********** Our Services ******* */
+.services h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+
 }
 
+.services h1::after {
+    content: '';
+    background: var(--color-primary);
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3%;
+}
+.service{
+    text-align: center;
+    justify-content: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.5s;
+}
+.service h2{
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+.service img{
+    width: 15%;
+}
+.service:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: scale(1.05);
+}
 /* ****** TESTIMONIAL ****** */
 .testimonial__container{
     overflow: hidden;
