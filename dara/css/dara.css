@@ -468,7 +468,7 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
 
     .nav__menu{
         position: fixed;
-        top: 5rem;
+        top: 8rem;
         right: 5%;
         height: fit-content;
         width: 18rem;
@@ -574,6 +574,7 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     /* ********* NAVBAR ******* */
     .nav__menu{
         right: 3%;
+        top:6rem;
     }
      
     header{
