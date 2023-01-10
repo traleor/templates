@@ -97,9 +97,9 @@ input, textarea{
 }
 /* ************** MEDIA QUERIES (TABLETS) ************** */
 @media screen and (max-width: 1024px) {
-    /* .contact{ */
-        /* padding-bottom: 0; */
-    /* } */
+    .contact{ 
+        padding-bottom: 0;
+    }
 
     .contact__container{
         gap: 1.5rem;
@@ -120,7 +120,10 @@ input, textarea{
 }
 
 /* ************** MEDIA QUERIES (TABLETS) ************** */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 700px) {
+    .contact{
+        padding-top: 10%;
+    }
     .contact__container{
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -128,6 +131,9 @@ input, textarea{
         padding: 0;
     }
 
+    .contact__aside{
+        margin-top: 15%;
+    }
     .contact__form{
         margin: 0 1.5rem 3rem;
     }

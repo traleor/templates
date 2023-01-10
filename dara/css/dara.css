@@ -519,10 +519,6 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     }
 
     /* ****** HEADER ***** */
-    header{
-        height: 52vh;
-        margin-bottom: 4rem;
-    }
 
     .header__container{
         gap: 0;
@@ -553,7 +549,9 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     }
 
 /* *************Services ********** */
-
+.services{
+    margin-bottom: 10%;
+}
 .service img {
     margin: 2% 0 2% 40%;
 }
