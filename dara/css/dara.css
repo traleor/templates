@@ -14,7 +14,7 @@
 :root{
     --color-primary: #4A74F9;
     --black-text: #000000;
-    --light-text: #ADA7A5;
+    --light-text: #7a7573;
     --color-success: #9ed4c7;
     --color-warning: #e5d19b;
     --color-danger: #e7a39a;
@@ -99,6 +99,7 @@ img{
     border-color: var(--black-text);
 }
 .btn-primary{
+    display: inline-block;
     background: var(--color-primary);
     color: var(--color-white);
 }
@@ -111,6 +112,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
+    height: 15%;
 }
 
 /* change navbar style on scroll javascript */
@@ -176,6 +178,9 @@ header{
     justify-content: center;
 }
 
+.header__container h1{
+    color: var(--dark-bg);
+}
 .header__left p{
     margin: 1rem 0 2.4rem;
     color: var(--light-text);
@@ -270,7 +275,22 @@ header{
     margin-top: 5rem;
     background-color: var(--light-bg);
 }
+.courses h1{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
 
+}
+.courses h1::after {
+    content: '';
+    background: var(--color-primary);
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .courses__container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -337,64 +357,25 @@ header{
     background: transparent;
     transition: 0.5s;
 }
-.service h2{
+.service h3{
     margin-bottom: 8px;
-    font-size: 1.2rem;
+    color: var(--color-primary);
+    font-size: 1.9rem;
+}
+.service p{
+    font-size: large;
+}
+.service a{
+    margin-top: 4%;
 }
 .service img{
     width: 15%;
-    margin: 8% 0 8% 40%;
+    margin: 7% 0 7% 40%;
 }
 .service:hover{
-    background: var(--color-primary);
+    background: var(--dark-bg);
     color: var(--color-white);
     transform: scale(1.05);
-}
-
-/* ****** TESTIMONIAL ****** */
-.testimonial__container{
-    overflow: hidden;
-    /* position: relative; */
-    margin-bottom: 5rem;
-}
-
-.testimonial{
-    padding-top: 2rem;
-}
-
-.avatar{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    border: 1rem solid var(--dark-bg);
-}
-
-.testimonial__info{
-    text-align: center;
-}
-
-.testimonial__body{
-    background: var(--dark-bg);
-    padding: 2rem;
-    color: var(--color-white);
-    margin: 3rem;
-    position: relative;
-}
-
-.testimonial__body::after{
-    content: "";
-    display: block;
-    background: linear-gradient(135deg,transparent,
-    var(--color-primary),
-    var(--color-primary)),var(--color-primary);
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    left: 50%;
-    top: -1.5rem;
-    transform: rotate(45deg);
 }
 
 /* ****** FOOTER ****** */
@@ -468,7 +449,9 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     h4{
         font-size: 1.2rem;
     }
-
+    section {
+        padding: 3rem 0;
+    }
     /* ********* NAVBAR ******** */
 
     nav button{
@@ -543,7 +526,8 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
 
     .header__container{
         gap: 0;
-        padding-bottom: 3rem;
+        /* padding-bottom: 3rem; */
+        height: 100%;
     }
 
     /*  ******** CATEGORIES ****** */
@@ -568,14 +552,12 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
         grid-template-columns: 1fr 1fr;
     }
 
-    /* ****** FAQs ******* */
-    .faqs__container{
-        grid-template-columns: 1fr;
-    }
+/* *************Services ********** */
 
-    .faq{
-        padding: 1.5rem;
-    }
+.service img {
+    margin: 2% 0 2% 40%;
+}
+
 
     /* ********* FOOTER ******** */
     .footer__container{
@@ -588,7 +570,9 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     .container{
         width: var(--container-width-sm);
     }
-
+    section {
+        padding: 3rem 0;
+    }
     /* ********* NAVBAR ******* */
     .nav__menu{
         right: 3%;
@@ -628,12 +612,10 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     .courses__container{
         grid-template-columns: 1fr;
     }
-
-    /* ************ TESTIMONIAL ************ */
-    .testimonial__body{
-        padding: 1.2rem;
+/* *****************SERVICES ************* */
+    .services .row{
+        gap: 1%;
     }
-
     /* ************ FOOTER ************ */
     .footer__container{
         grid-template-columns: 1fr;
