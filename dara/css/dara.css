@@ -100,7 +100,7 @@ img{
 }
 .btn-primary{
     display: inline-block;
-    background: var(--color-primary);
+    background: var(--dark-bg);
     color: var(--color-white);
 }
 
@@ -323,6 +323,11 @@ header{
     font-size: 0.9rem;
 }
 
+.viewAll{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
 /* ********** Our Services ******* */
 .services h1{
     text-align: center;
@@ -570,6 +575,9 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     }
     section {
         padding: 3rem 0;
+        width: 100%;
+        height: 100%;
+        /* overflow: hidden; */
     }
     /* ********* NAVBAR ******* */
     .nav__menu{
@@ -594,7 +602,7 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     /* *********** CATEGORIES *********** */
     .categories__right{
         grid-template-columns: 1fr 1fr;
-        gap: 0.7rem;
+        gap: 0.3rem;
     }
 
     .category{
@@ -614,6 +622,24 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
 /* *****************SERVICES ************* */
     .services .row{
         gap: 1%;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .services h1{
+        font-size: 1.8rem;
+    }
+    .service{
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+    }
+    .service h3{
+        font-size: 1.5rem;
+    }
+    .service p{
+        font-size: 0.8rem;
+    }
+    .service img{
+        margin: 5% 0 5% 40%;
     }
     /* ************ FOOTER ************ */
     .footer__container{
@@ -629,4 +655,33 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     .footer__socials{
         justify-content: center;
     }
+}
+
+/* ************** MEDIA QUERIES (GALAXY FOLD) ************ */
+@media screen and (max-width: 300px) {
+body{
+    overflow-x: hidden;
+}
+    .header__container{
+    padding-top: 15% 0 0 0;
+}
+
+.category{
+    padding: 0.5rem;
+    width: 98%;
+}
+.categories__right{
+    grid-template-columns: 1fr;
+}
+
+footer{
+    padding: 1rem;
+    overflow: hidden;
+}
+.footer__container{
+    text-align: left;
+}
+.footer__1 p{
+    margin: 0;
+}
 }
