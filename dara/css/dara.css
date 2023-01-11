@@ -634,6 +634,7 @@ footer ul li a:hover, .footer__1 p:hover, .footer__4 div p:hover{
     }
     .service h3{
         font-size: 1.5rem;
+        text-align: center;
     }
     .service p{
         font-size: 0.8rem;
