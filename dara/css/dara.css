@@ -1,4 +1,4 @@
-/* Fonts: Source https://www.madebychroma.com/typography/10-elegant-google-display-fonts-for-your-brand/ */
+/* Fonts */
 @import url("https://api.fonts.coollabs.io/css2?family=Italiana&family=Montserrat:wght@300;400;500&display=swap");
 
 * {
@@ -28,12 +28,98 @@
   --color-bg2: #5a366b;
   --hover-color: #8085f9;
 
-  --container-width-lg: 80%;
+  --container-width-xlg: 80%;
+  --container-width-lg: 85%;
   --container-width-md: 90%;
-  --container-width-sm: 94%;
+  --container-width-sm: 95%;
 
   --transition: all 400ms ease;
+
+  --content-margin: 15%;
+
+  /*------- Font and typography -------*/
+  --biggest-font-size: 3.25rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.6rem;
+  --h3-font-size: 2.2rem;
+  --h4-font-size: 1.8rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 1rem;
+  --tiny-font-size: 0.625rem;
 }
+
+/******************************* EXTREMELY LARGE SCREENS ***************************/
+@media screen and (min-width: 1900px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 3.2rem;
+    --h2-font-size: 2.8rem;
+    --h3-font-size: 2.4rem;
+    --h4-font-size: 2rem;
+    --normal-font-size: 1.8rem;
+    --small-font-size: 1.6rem;
+    --tiny-font-size: 0.688rem;
+  }
+}
+
+/**************************LARGE SCREENS ********************/
+@media screen and (max-width: 1024px) {
+  :root {
+    --content-margin: 12%;
+
+    /*------- Font and typography -------*/
+  --biggest-font-size: 3rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.7rem;
+  --h4-font-size: 1.5rem;
+  --normal-font-size: 0.9rem;
+  --small-font-size: 0.7rem;
+  --tiny-font-size: 0.555rem;
+  }
+}
+
+/***********************TABLETS SIZED SCREENS ********************/
+@media screen and (max-width: 768px) {
+  :root {
+    --content-margin: 10%;
+
+    /*------- Font and typography -------*/
+    --biggest-font-size: 2.8rem;
+    --h1-font-size: 2.2rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.3rem;
+    --normal-font-size: 0.7rem;
+    --small-font-size: 0.5rem;
+    --tiny-font-size: 0.4rem;
+  }
+}
+
+/***********************MOBILE SIZED SCREENS ********************/
+@media screen and (max-width: 640px) {
+  :root {
+    --content-margin: 9%;
+
+    /*------- Font and typography -------*/
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.4rem;
+    --h4-font-size: 1.1rem;
+    --normal-font-size: 0.7rem;
+    --small-font-size: 0.4rem;
+    --tiny-font-size: 0.355rem;
+  }
+}
+
+/** Breakpoints:
+  sm: min-width: 640px;
+  md: min-width: 768px;
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+  2xl: min-width: 1536px;
+**/
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -41,8 +127,10 @@ body {
   color: var(--black-text);
   background-color: var(--light-bg);
 }
+
+/* ************** MEDIA QUERIES (LARGER SCREENS): MIN-HEIGHT 1280px ************ */
 .container {
-  width: var(--container-width-lg);
+  width: var(--container-width-xlg);
   margin: 0 auto;
 }
 
@@ -61,18 +149,23 @@ h4,
 h5 {
   line-height: 1.2;
 }
+
 h1 {
-  font-size: 3.5rem;
+  font-size: var(--h1-font-size);
 }
 h2 {
-  font-size: 3rem;
+  font-size: var(--h2-font-size);
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: var(--h3-font-size);
 }
 h4 {
-  font-size: 2rem;
+  font-size: var(--h4-font-size);
 }
+p{
+    font-size: var(--normal-font-size);
+}
+
 a {
   color: var(--black-text);
 }
@@ -123,7 +216,7 @@ nav {
 
 .nav__container {
   height: 100%;
-  font-size: larger;
+  font-size: var(--h1-font-size);
   font-weight: bold;
   display: flex;
   color: var(--black-text);
@@ -134,7 +227,7 @@ nav {
 
 .nav__container > a {
   color: var(--color-primary);
-  font-size: xx-large;
+  font-size: var(--biggest-font-size);
 }
 
 nav button {
@@ -149,7 +242,7 @@ nav button {
 }
 
 .nav__menu a {
-  font-size: x-large;
+  font-size: var(--h2-font-size);
   transition: var(--transition);
   color: var(--black-text);
 }
@@ -174,7 +267,7 @@ header {
   align-items: center;
   height: 100vh;
   gap: 5rem;
-  padding: 2%;
+  padding: 2% 0;
   justify-content: center;
 }
 
@@ -266,7 +359,7 @@ header {
 }
 
 .category p {
-  font-size: 0.85rem;
+  font-size: var(--normal-font-size);
 }
 
 /* ======= POPULAR COURSES ======= */
@@ -355,7 +448,7 @@ header {
   justify-content: center;
   padding: 25px 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: var(--normal-font-size);
   cursor: pointer;
   background: transparent;
   transition: 0.5s;
@@ -363,10 +456,10 @@ header {
 .service h3 {
   margin-bottom: 8px;
   color: var(--color-primary);
-  font-size: 1.9rem;
+  font-size: var(--h3-font-size);
 }
 .service p {
-  font-size: large;
+  font-size: var(--normal-font-size);
 }
 .service a {
   margin-top: 4%;
@@ -386,7 +479,7 @@ header {
 footer {
   background: var(--dark-bg);
   padding: 5rem;
-  font-size: 0.9rem;
+  font-size: var(--normal-font-size);
 }
 
 .footer__container {
@@ -424,7 +517,7 @@ footer ul li a:hover,
 .footer__socials {
   display: flex;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: var(--normal-font-size);
   margin-top: 2rem;
 }
 
@@ -435,7 +528,7 @@ footer ul li a:hover,
   border-top: 1px solid var(--light-bg);
 }
 
-/* ******** MEDIA QERIES (TABLETS) ********* */
+/* ******** MEDIA QERIES (large screens) ********* */
 
 @media screen and (max-width: 1024px) {
   .container {
@@ -443,89 +536,29 @@ footer ul li a:hover,
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: var(--h1-font-size);
   }
-
   h2 {
-    font-size: 1.7rem;
+    font-size: var(--h2-font-size);
   }
-
   h3 {
-    font-size: 1.4rem;
+    font-size: var(--h3-font-size);
+  }
+  h4 {
+    font-size: var(--h4-font-size);
+  }
+  p{
+      font-size: var(--normal-font-size);
   }
 
-  h4 {
-    font-size: 1.2rem;
-  }
   section {
     padding: 3rem 0;
   }
-  /* ********* NAVBAR ******** */
 
-  nav button {
-    display: inline-block;
-    background: transparent;
-    font-size: 1.8rem;
-    color: var(--color-white);
-    cursor: pointer;
+  /***************************NAVBAR***************************/
+  .nav__container > a {
+    font-size: var(--biggest-font-size);
   }
-
-  nav button#close-menu-btn {
-    display: none;
-  }
-
-  .nav__menu {
-    position: fixed;
-    top: 8rem;
-    right: 5%;
-    height: fit-content;
-    width: 18rem;
-    flex-direction: column;
-    gap: 0;
-    display: none;
-  }
-
-  .nav__menu li {
-    width: 100%;
-    height: 5.8rem;
-    animation: animateNavItems 400ms linear forwards;
-    transform-origin: top right;
-    opacity: 0;
-  }
-
-  .nav__menu li:nth-child(2) {
-    animation-delay: 200ms;
-  }
-
-  .nav__menu li:nth-child(3) {
-    animation-delay: 400ms;
-  }
-
-  .nav__menu li:nth-child(4) {
-    animation-delay: 600ms;
-  }
-
-  @keyframes animateNavItems {
-    0% {
-      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
-    }
-
-    100% {
-      transform: rotateZ(0) rotateX(0) scale(1);
-      opacity: 1;
-    }
-  }
-
-  .nav__menu li a {
-    background: var(--color-primary);
-    box-shadow: -4rem 6rem 10rem rgba(29, 28, 28, 0.3);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    color: var(--color-white);
-  }
-
   /* ****** HEADER ***** */
 
   .header__container {
@@ -540,7 +573,7 @@ footer ul li a:hover,
   }
 
   .categories__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
 
@@ -553,7 +586,7 @@ footer ul li a:hover,
   }
 
   .courses__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   /* *************Services ********** */
@@ -566,12 +599,166 @@ footer ul li a:hover,
 
   /* ********* FOOTER ******** */
   .footer__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+/* ************** MEDIA QUERIES (TABLETS) ************ */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: var(--h1-font-size);
+      }
+      h2 {
+        font-size: var(--h2-font-size);
+      }
+      h3 {
+        font-size: var(--h3-font-size);
+      }
+      h4 {
+        font-size: var(--h4-font-size);
+      }
+      p{
+          font-size: var(--normal-font-size);
+      }
+    
+      section {
+        padding: 3rem 0;
+      }
+      /* ************************** NAVBAR ************************ */
+  .nav__container > a {
+    font-size: var(--biggest-font-size);
+  }
+  
+      nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: var(--normal-font-size);
+        color: var(--color-white);
+        cursor: pointer;
+      }
+    
+      nav button#close-menu-btn {
+        display: none;
+      }
+    
+      .nav__menu {
+        position: fixed;
+        top: 8rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+      }
+    
+      .nav__menu a {
+        font-size: var(--h3-font-size);
+    }
+      .nav__menu li {
+        width: 100%;
+        height: 5.8rem;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+      }
+    
+      .nav__menu li:nth-child(2) {
+        animation-delay: 200ms;
+      }
+    
+      .nav__menu li:nth-child(3) {
+        animation-delay: 400ms;
+      }
+    
+      .nav__menu li:nth-child(4) {
+        animation-delay: 600ms;
+      }
+    
+      @keyframes animateNavItems {
+        0% {
+          transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+    
+        100% {
+          transform: rotateZ(0) rotateX(0) scale(1);
+          opacity: 1;
+        }
+      }
+    
+      .nav__menu li a {
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(29, 28, 28, 0.3);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        color: var(--color-white);
+      }
+    
+      /* ****** HEADER ***** */
+    
+      .header__container {
+        gap: 0;
+        /* padding-bottom: 3rem; */
+        height: 100%;
+      }
+    
+      /*  ******** CATEGORIES ****** */
+      .categories {
+        height: auto;
+      }
+    
+      .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    
+      .categories__left {
+        margin-right: 0;
+      }
+      /* ******* POPULAR COURSES ****** */
+      .courses {
+        margin-top: 0;
+      }
+    
+      .courses__container {
+        grid-template-columns: 1fr 1fr;
+      }
+    
+      /* *************Services ********** */
+      .services {
+        margin-bottom: 10%;
+      }
+      .service img {
+        margin: 2% 0 2% 40%;
+      }
+    
+      /* ********* FOOTER ******** */
+      .footer__container {
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
 /* ************** MEDIA QUERIES (PHONES) ************ */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+
+    h1 {
+        font-size: var(--h1-font-size);
+      }
+      h2 {
+        font-size: var(--h2-font-size);
+      }
+      h3 {
+        font-size: var(--h3-font-size);
+      }
+      h4 {
+        font-size: var(--h4-font-size);
+      }
+      p{
+          font-size: var(--normal-font-size);
+      }
+
   .container {
     width: var(--container-width-sm);
   }
@@ -581,11 +768,17 @@ footer ul li a:hover,
     height: 100%;
     /* overflow: hidden; */
   }
-  /* ********* NAVBAR ******* */
+  /******************************* NAVBAR ***************************/
   .nav__menu {
     right: 3%;
     top: 6rem;
   }
+  .nav__container > a {
+    font-size: var(--h1-font-size);
+  }
+  .nav__menu a {
+    font-size: var(--h3-font-size);
+}
 
   header {
     height: 100vh;
@@ -627,7 +820,7 @@ footer ul li a:hover,
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
   .services h1 {
-    font-size: 1.8rem;
+    font-size: var(--h1-font-size);
   }
   .service {
     justify-content: left;
@@ -635,11 +828,11 @@ footer ul li a:hover,
     width: 100%;
   }
   .service h3 {
-    font-size: 1.5rem;
+    font-size: var(--h3-font-size);
     text-align: center;
   }
   .service p {
-    font-size: 0.8rem;
+    font-size: var(--normal-font-size);
   }
   .service img {
     margin: 5% 0 5% 40%;
