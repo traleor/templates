@@ -44,6 +44,20 @@ button {
   text-transform: uppercase;
 }
 
+.language_select select,
+.language_select select:focus,
+.language_select select:active {
+  border: none;
+  color: var(--main-color);
+  font-weight: bold;
+  padding-left: 0.4rem;
+  background-color: transparent;
+}
+.language_select select option {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
 /****** NAVIGATION BAR ******/
 
 .navbar {

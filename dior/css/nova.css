@@ -362,7 +362,7 @@ ul {
   flex: 30% 0 0;
   margin: 0.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px 1px #d3d3d3;
+  /* box-shadow: 0 0 10px 1px #d3d3d3; */
 }
 
 .list__block__item .banner__content h2 {
