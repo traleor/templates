@@ -25,7 +25,7 @@ html {
   --secondary-color: #1484cd;
 
   /*------- Font and typography -------*/
-  --biggest-font-size: 1.25rem;
+  --biggest-font-size: 3.25rem;
   --h1-font-size: 3rem;
   --h2-font-size: 2.6rem;
   --h3-font-size: 2.2rem;
@@ -37,7 +37,7 @@ html {
 
 @media screen and (min-width: 1900px) {
   :root {
-    --biggest-font-size: 1.5rem;
+    --biggest-font-size: 3.5rem;
     --h1-font-size: 3.2rem;
     --h2-font-size: 2.8rem;
     --h3-font-size: 2.4rem;
@@ -47,7 +47,7 @@ html {
     --tiny-font-size: 0.688rem;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   :root {
     --biggest-font-size: 2rem;
     --h1-font-size: 1.9rem;
