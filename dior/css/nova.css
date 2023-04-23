@@ -841,11 +841,16 @@ footer {
   }
 
   /*---- list__block ----*/
-  .list__block {
+  /* .list__block {
     /* Fixing grid on smaller screen */
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
+    /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
+  /* }  */
 
+  .list__block .list__block__item{
+    width: 100%;
+    flex: 100% 0 0;
+    /* box-shadow: 0 0 10px 1px #d3d3d3; */
+  }
   /*---- card__block ----*/
   .cards__flex .card {
     width: 100%;
