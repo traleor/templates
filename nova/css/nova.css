@@ -1,6 +1,3 @@
-/* Font Family Import */
-@import url("https://api.fonts.coollabs.io/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -25,30 +22,17 @@ html {
   --secondary-color: #1b364c;
 
   /*------- Font and typography -------*/
-  --biggest-font-size: 1.25rem;
-  --h1-font-size: 3rem;
-  --h2-font-size: 2.6rem;
-  --h3-font-size: 2.2rem;
-  --h4-font-size: 1.8rem;
-  --normal-font-size: 1.2rem;
-  --small-font-size: 0.713rem;
-  --tiny-font-size: 0.625rem;
-}
-
-@media screen and (min-width: 1900px) {
-  :root {
-    --biggest-font-size: 1.5rem;
-    --h1-font-size: 3.2rem;
-    --h2-font-size: 2.8rem;
-    --h3-font-size: 2.4rem;
-    --h4-font-size: 2rem;
-    --normal-font-size: 1.8rem;
-    --small-font-size: 0.875rem;
-    --tiny-font-size: 0.688rem;
-  }
+  /* https://enzedonline.com/en/tech-blog/create-responsive-font-sizes-based-on-the-viewport/ */
+  --h1-font-size: clamp(2rem, 1.7993rem + 0.8451vw, 2.75rem);
+  --h2-font-size: clamp(1.8rem, 1.6261rem + 0.7324vw, 2.45rem);
+  --h3-font-size: clamp(1.6rem, 1.4662rem + 0.5634vw, 2.1rem);
+  --h4-font-size: clamp(1.4rem, 1.293rem + 0.4507vw, 1.8rem);
+  --normal-font-size: clamp(1rem, 0.9599rem + 0.169vw, 1.15rem);
+  --small-font-size: clamp(0.9rem, 0.8732rem + 0.1127vw, 1rem);
 }
 
 body {
+  font-size: 100%;
   background: var(--background-color);
   min-height: 100vh;
 }
@@ -337,7 +321,7 @@ ul {
 
 .title__text__content h2 {
   color: #fff;
-  font-size: 45px;
+  font-size: var(--h2-font-size);
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
@@ -383,12 +367,12 @@ ul {
 }
 
 .list__block__item .title__text__content h2 {
-  font-size: 20px;
+  font-size: var(--h2-font-size);
   text-align: center;
 }
 
 .list__block__item .title__text__content h3 {
-  font-size: 18px;
+  font-size: var(--h3-font-size);
   text-align: center;
   width: 100%;
 }
@@ -415,7 +399,7 @@ ul {
 
 .banner__content h2 {
   color: #fff;
-  font-size: 45px;
+  font-size: var(--h2-font-size);
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
@@ -430,12 +414,12 @@ ul {
 }
 
 .list__block__item .banner__content h2 {
-  font-size: 20px;
+  font-size: var(--h2-font-size);
   text-align: center;
 }
 
 .list__block__item .banner__content h3 {
-  font-size: 18px;
+  font-size: var(--h3-font-size);
   text-align: center;
   width: 100%;
 }
@@ -446,7 +430,7 @@ ul {
 }
 
 .card__block .title h2 {
-  font-size: 45px;
+  font-size: var(--h2-font-size);
   text-align: center;
   margin-bottom: 2rem;
   color: var(--secondary-color);
@@ -481,7 +465,7 @@ ul {
 .cards__flex .card .card__body h3 {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--h3-font-size);
 }
 
 .cards__flex .card .card__body h2 {
@@ -491,7 +475,7 @@ ul {
 }
 
 .cards__flex .card .card__body button {
-  font-size: 14px;
+  font-size: var(--normal-font-size);
   margin-top: 0.6rem;
 }
 
@@ -508,7 +492,7 @@ ul {
 
 .blog__hero__content h1 {
   color: #fff;
-  font-size: 4rem;
+  font-size: var(--h1-font-size);
   margin: 0;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -536,7 +520,7 @@ ul {
 }
 .featured__article__content h2 {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: var(--h1-font-size);
   margin: 0;
   margin-left: 2%;
   margin-bottom: 1%;
@@ -570,7 +554,7 @@ ul {
 }
 .blog__card__content p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--normal-font-size);
 }
 /* ---------------------- End Blog Index -------------------------- */
 
@@ -590,7 +574,7 @@ ul {
   margin: 0;
   font-weight: 800;
   padding-top: 8rem;
-  font-size: 4rem;
+  font-size: var(--h1-font-size);
 }
 
 .authors__wrapper {
@@ -625,19 +609,6 @@ ul {
   .hero__text h1 {
     font-size: 55px;
   }
-  .title__text__content h2 {
-    font-size: 40px;
-  }
-  .banner__content h2 {
-    font-size: 40px;
-  }
-  /* blog hero */
-  .blog__hero__content h1 {
-    font-size: 3rem;
-  }
-  .featured__article__content h2 {
-    font-size: 3rem;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -663,22 +634,7 @@ ul {
     -ms-flex: 1;
     padding: 0;
   }
-  .hero__text h1 {
-    font-size: 40px;
-  }
-  .title__text__content h2 {
-    font-size: 35px;
-  }
-  .banner__content h2 {
-    font-size: 35px;
-  }
-  /* blog index  */
-  .featured__article__content h2 {
-    font-size: 2rem;
-  }
-}
 
-@media screen and (max-width: 1000px) {
   .hero__text h1 {
     font-size: 35px;
   }
@@ -775,9 +731,7 @@ ul {
   .blog__hero__wrapper {
     padding: 20% 8vw 5% 8vw;
   }
-  .blog__hero__content h1 {
-    font-size: 2rem;
-  }
+
   .blog__hero__content h2 {
     width: 90%;
   }
@@ -791,6 +745,11 @@ ul {
   /*---- blog post ----*/
   .blog__post__wrapper {
     padding: 2rem 0;
+  }
+
+  /*  */
+  .list__block__item section {
+    min-height: auto;
   }
 }
 

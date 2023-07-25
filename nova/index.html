@@ -18,17 +18,30 @@
 
     <!-- Rolly js is used to implement the smooth scrolling effect
 All the documentatation is found on github at Rolly js -->
-    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/rolly.js@0.2.1/css/style.css"
+    />
 
-<!-- AOS for animation on scroll -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- AOS for animation on scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
 
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin />
+    <link
+      rel="preload"
+      href="https://api.fonts.coollabs.io/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <link rel="stylesheet" href="css/nova.css" />
   </head>
 
   <body>
-    <div class="container app ">
+    <div class="container app">
       <!-- NAVBAR -------------------------------------------------->
       <nav
         data-aos="fade-up"
@@ -72,12 +85,8 @@ All the documentatation is found on github at Rolly js -->
           <li class="navbar__menu__list language_select">
             <select onchange="location = this.value;">
               <!-- current language selected -->
-              <option value="/" selected>
-                EN
-              </option>
-              <option value="/">
-                FR
-              </option>
+              <option value="/" selected>EN</option>
+              <option value="/">FR</option>
             </select>
           </li>
         </ul>
@@ -85,7 +94,11 @@ All the documentatation is found on github at Rolly js -->
 
       <!-- HERO ----------------------------------------------------->
       <div class="hero default-padding full-width flex a-j-center" data-scene>
-        <div class="hero__text flex-one" data-aos="fade-up" data-aos-delay="1000">
+        <div
+          class="hero__text flex-one"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
           <h1>Start something Big with Traleor</h1>
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -105,7 +118,10 @@ All the documentatation is found on github at Rolly js -->
 
       <!-- TITLE & TEXT --------------------------------------------->
       <section class="title__text__wrapper full-width" data-scene>
-        <div class="title__text__content flex flex-column a-j-center" data-aos="fade-up">
+        <div
+          class="title__text__content flex flex-column a-j-center"
+          data-aos="fade-up"
+        >
           <h2>Sed ut perspiciatis unde omnis iste natus</h2>
           <h3>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -131,7 +147,7 @@ All the documentatation is found on github at Rolly js -->
           </section>
         </div>
 
-        <div class="list__block__item" data-aos="zoom-out-up"> 
+        <div class="list__block__item" data-aos="zoom-out-up">
           <section class="text__component default-padding full-width">
             <div class="list__block__item">
               <div class="rich__text">
@@ -194,8 +210,14 @@ All the documentatation is found on github at Rolly js -->
       </section>
 
       <!-- BANNER --------------------------------------------->
-      <section class="banner flex a-j-center full-width default-padding" data-scene>
-        <div class="banner__content flex a-j-center flex-column" data-aos="fade-up">
+      <section
+        class="banner flex a-j-center full-width default-padding"
+        data-scene
+      >
+        <div
+          class="banner__content flex a-j-center flex-column"
+          data-aos="fade-up"
+        >
           <h2>Sed ut perspiciatis unde omnis iste</h2>
           <h3>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -221,16 +243,24 @@ All the documentatation is found on github at Rolly js -->
       </section>
 
       <div class="default__LR__padding" data-scene>
-        <h1 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h1>
+        <h1 data-aos="fade-up">
+          Traleor templates are crafted with love to help you to build
+        </h1>
       </div>
       <div class="default__LR__padding" data-scene>
-        <h2 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h2>
+        <h2 data-aos="fade-up">
+          Traleor templates are crafted with love to help you to build
+        </h2>
       </div>
       <div class="default__LR__padding" data-scene>
-        <h3 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h3>
+        <h3 data-aos="fade-up">
+          Traleor templates are crafted with love to help you to build
+        </h3>
       </div>
       <div class="default__LR__padding" data-scene>
-        <h4 data-aos="fade-up">Traleor templates are crafted with love to help you to build</h4>
+        <h4 data-aos="fade-up">
+          Traleor templates are crafted with love to help you to build
+        </h4>
       </div>
 
       <section class="text__component default-padding full-width" data-scene>
@@ -265,7 +295,6 @@ All the documentatation is found on github at Rolly js -->
         </div>
 
         <div class="cards__flex">
-
           <div class="card" data-aos="zoom-out-down" data-aos-delay="1000">
             <div class="card__image">
               <img src="./images/hill-cover.png" alt="alt-text" />
@@ -383,7 +412,7 @@ All the documentatation is found on github at Rolly js -->
     <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
     <!-- AOS for animation on scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-   
+
     <script src="js/nova.js"></script>
   </body>
 </html>
