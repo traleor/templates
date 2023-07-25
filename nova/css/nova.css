@@ -27,6 +27,7 @@ html {
   --h2-font-size: clamp(1.8rem, 1.6261rem + 0.7324vw, 2.45rem);
   --h3-font-size: clamp(1.6rem, 1.4662rem + 0.5634vw, 2.1rem);
   --h4-font-size: clamp(1.4rem, 1.293rem + 0.4507vw, 1.8rem);
+  --h5-font-size: clamp(1.2rem, 1.1331rem + 0.2817vw, 1.45rem);
   --normal-font-size: clamp(1rem, 0.9599rem + 0.169vw, 1.15rem);
   --small-font-size: clamp(0.9rem, 0.8732rem + 0.1127vw, 1rem);
 }
