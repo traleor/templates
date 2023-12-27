@@ -342,9 +342,10 @@ ul {
   gap: 1rem;
 }
 
-.list__block__item a {
+.list__block__item a,
+.list__block__item span {
   color: var(--secondary-color);
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .list__block__item .rich__text img {
@@ -380,7 +381,7 @@ ul {
 
 .rich__text a {
   color: var(--main-color);
-  font-style: italic;
+  /* font-style: italic; */
 }
 .rich__text ul {
   list-style-type: disc;
@@ -466,7 +467,7 @@ ul {
 .cards__flex .card .card__body h3 {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .cards__flex .card .card__body h2 {
