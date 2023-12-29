@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+header {
+  background-color: #e4ddd3;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  align-items: center;
+}
+
+.logo_box {
+  width: 136px;
+  height: 64px;
+}
+.logo_box img,
+.practice_card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu_links ul {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.menu_links ul li {
+  list-style-type: none;
+}
+.menu_links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.line {
+  height: 2px;
+  background-color: black;
+}
+
+.menu_links ul button,
+.leftsection button,
+.ourpractice_rightsection button {
+  background: #0a2b25;
+  box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  line-height: 55px;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  width: 231px;
+  height: 55px;
+}
+
+.menu_links ul button a,
+.leftsection button a,
+.ourpractice_rightsection button a {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  color: #e4ddd3;
+  line-height: normal;
+  font-family: Inter;
+}
+
+#header_hero {
+  display: flex;
+  gap: 74px;
+  padding: 102px 0 194px 0;
+}
+
+.leftsection {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 608px);
+}
+
+.leftsection h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.leftsection p {
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 32px 0 52px 0;
+}
+.rightsection {
+  width: 708px;
+  min-height: 652px;
+  background-color: #c1af95;
+}
+.section1 {
+  padding: 72px 0 194px 0;
+  background-color: #0a2b25;
+}
+.practice_area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.practice_area .title1 {
+  color: #e4ddd3;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.practice_area .title2 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.practices_box {
+  display: flex;
+  margin-top: 111px;
+  justify-content: space-between;
+  gap: 45px;
+}
+.practice_card {
+  min-height: 293px;
+  border-radius: 10px;
+  background: lightgray 50% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.practice_card .img_box {
+  height: 293px;
+}
+.practice_contents_box {
+  padding: 21px 41px 46px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #fff;
+}
+
+.practice_contents_box .article1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.practice_contents_box .article2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 12px;
+  margin-bottom: 22px;
+}
+.practice_contents_box .article3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.practice_contents_box a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-top: 29px;
+  padding-bottom: 10px;
+}
+
+.practice_contents_box .started {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #0a2b25;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.s_line {
+  height: 1px;
+  background-color: #0a2b25;
+  margin-top: 10px;
+}
+
+.section2 {
+  background-color: #e4ddd3;
+  padding: 164px 0 210px 0;
+}
+
+.ourpractice_box {
+  display: flex;
+  gap: 125px;
+}
+.ourpractice_leftsection {
+  display: flex;
+  align-items: start;
+  flex-grow: 1;
+}
+.ourpractice_img_box {
+  height: 652px;
+  width: 100%;
+  background-color: #c1af95;
+}
+.ourpractice_rightsection {
+  width: calc(100% - 758px);
+}
+.ourpractice_rightsection > p:nth-child(1) {
+  color: #0a2b25;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ourpractice_rightsection h2 {
+  color: #0a2b25;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.ourpractice_pinpoint_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 29px;
+  margin-bottom: 68px;
+  gap: 46px;
+}
+
+.point_box span {
+  margin-top: 7px;
+}
+.point_box {
+  display: flex;
+  gap: 37px;
+  align-items: start;
+}
+.point_content_box {
+  display: flex;
+  flex-direction: column;
+}
+.point_content_box > p:nth-child(1) {
+  color: #0a2b25;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.point_content_box > p:nth-child(2) {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 694px;
+}
