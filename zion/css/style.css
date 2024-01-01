@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.container{
+    width: 1500px;
+    max-width:100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color:#E4DDD3;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    align-items: center;
+}
+
+.logo_box{
+    width: 136px;
+    height: 64px;
+}
+.logo_box img,.practice_card img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.menu_links ul{
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.menu_links ul li{
+    list-style-type: none;
+}
+.menu_links ul li a{
+    text-decoration:none;
+    color:black;
+}
+
+.line{
+    height: 2px;
+    background-color: black;
+}
+
+.menu_links ul button, 
+.leftsection button,
+.ourpractice_rightsection button,
+.btn_box button,
+.contact_btn{
+    background: #0A2B25;
+    box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+    line-height: 55px;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    width: 231px;
+    height: 55px;
+}
+
+.menu_links ul button a, 
+.leftsection button a,
+.ourpractice_rightsection button a,
+.btn_box button a,
+.contact_btn a{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    color: #E4DDD3;
+    line-height: normal;
+    font-family: Inter;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+}
+.header_bottom_section{
+    padding: 48px 0;
+}
+.inner_header_bottom_section{
+    display: flex;
+    justify-content: space-between;
+}
+.header_bottom_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_bottom_box p:nth-child(1){
+    color:  #0A2B25;
+    text-align: center;
+    font64pxheader_bottom_section-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.header_bottom_box p:nth-child(2){
+    color: var(--primary-1, #0A2B25);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#header_hero{
+    display: flex;
+    gap: 74px;
+    padding: 102px 0 64px 0;
+}
+
+.leftsection{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 608px);
+}
+
+.leftsection h2{
+    color: #000;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.leftsection p{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 32px 0 52px 0;
+}
+.rightsection{
+    width: 708px;
+    max-width: 100%;
+    min-height: 298px;
+    background-color:#C1AF95 ;
+}
+.rightsection img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.section1{
+    padding: 72px 0 194px 0;
+    background-color: #0A2B25;
+}
+.practice_area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.practice_area .title1{
+    color: #E4DDD3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.practice_area .title2{
+    color:  #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.practices_box{
+    display: flex;
+    margin-top: 111px;
+    justify-content: space-between;
+    gap: 45px;
+}
+.practice_card{
+    min-height: 293px;
+    border-radius: 10px;
+    background:  lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.practice_card .img_box{
+    height: 293px;
+}
+.practice_contents_box{
+    padding:21px 41px 46px 35px ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #FFF;
+}
+
+.practice_contents_box .article1{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.practice_contents_box .article2{
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+.practice_contents_box .article3{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.practice_contents_box a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-top: 29px;
+    padding-bottom: 10px;
+}
+
+.practice_contents_box .started{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #0A2B25;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.s_line{
+    height: 1px;
+    background-color:#0A2B25 ;
+    margin-top: 10px;
+}
+
+.section2{
+    background-color: #E4DDD3;
+    padding: 164px 0 210px 0;
+}
+
+.ourpractice_box{
+    display: flex;
+    gap: 125px;
+}
+.ourpractice_leftsection{
+    display: flex;
+    align-items: start;
+    flex-grow: 1;
+}
+.ourpractice_img_box{
+    height: 652px;
+    width: 100%;
+    background-color: #C1AF95;
+}
+.ourpractice_rightsection{
+    width: calc(100% - 758px);
+}
+.ourpractice_rightsection > p:nth-child(1){
+    color: #0A2B25;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ourpractice_rightsection  h2 {
+    color: #0A2B25;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.ourpractice_pinpoint_box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    margin-bottom: 68px;
+    gap: 46px;
+}
+
+.point_box span{
+    margin-top: 7px;
+}
+.point_box{
+    display: flex;
+    gap: 37px;
+    align-items: start;
+}
+.point_content_box{
+    display: flex;
+    flex-direction: column;
+}
+.point_content_box > p:nth-child(1){
+    color: #0A2B25;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.point_content_box > p:nth-child(2){
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 694px;
+}
+
+#worktogether{
+    background: #0A2B25;
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#worktogether h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#worktogether p {
+    color:  #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 28px 0 46px 0;
+    max-width: 885px;
+}
+
+#worktogether button{
+    outline: none;
+    border: none;
+    background:  #C1AF95;
+    box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 231px;
+    height: 55px;
+}
+
+#worktogether button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:  #0A2B25;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 55px;
+}
+.hero_about{
+    padding: 94px 0 120px 0;
+}
+
+.hero_about h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 36px;
+}
+.hero_about h4{
+    color: #000;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.about_hero_img_box{
+    background-color: #C1AF95;
+    height: 652px;
+    margin: 36px 0 60px 0;
+}
+
+.hero_about p:nth-child(1){
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+.hero_about p:nth-child(2){
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn_box{
+    margin-top: 70px;
+}
+
+.contact_box{
+    padding: 94px 0 190px 0;
+}
+
+.contact_box h1{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact_box h4{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 25px;
+}
+.contact_form_box {
+    display: flex;
+    justify-content: center;
+}
+
+#main_contact{
+    background-color: #E4DDD3;
+}
+
+.contact_form_box{
+    margin-top: 110px;
+}
+.contact_form_box form {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    align-items: center;
+}
+
+.contact_form_box form input, 
+.contact_form_box form select,
+.contact_form_box form textarea{
+    max-width: 100%;
+    width: 850px;
+    padding: 23px 39px;
+    outline: none;
+    border: 1px solid  #0A2B25;
+    background-color: #FFF;
+}
+
+.contact_form_box form textarea{
+    min-height: 268px;
+}
+
+.contact_btn{
+    margin-top: 52px;
+}
+
+
+.toggle-menu{
+    display: none;
+}
+
+.footer {
+	background-color: #E4DDD3;
+	padding: 80px 0;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #0A2B25;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    font-family: Inter;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #0A2B25;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #0A2B25;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 40px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 540px){
+    #header_hero{
+        flex-direction: column;
+    }
+    .hero_about h1,
+    .contact_box h1{
+        font-size: 54px;
+    }
+    .hero_about h4,
+    .contact_box h4{
+        font-size: 34px;
+    }
+    .inner_header_bottom_section{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .leftsection,
+    .ourpractice_rightsection,
+    .point_content_box > p:nth-child(2),
+    .contact_form_box form input, .contact_form_box form select, .contact_form_box form textarea {
+        width: 100%;
+    }
+    .practices_box,
+    .ourpractice_box{
+        flex-direction: column;
+    }
+    .practice_card .img_box{
+        height: 230px;
+    }
+    .menu_links{
+        position: fixed;
+        top:0;
+        bottom: 0;
+        height: 100vh;
+        display: none;
+        align-items: center;
+        background-color: #C1AF95;
+        padding: 0 25px;
+        left: 0;
+    }
+    .leftsection h2{
+        font-size: 54px;
+    }
+    .menu_links ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .toggle-menu{
+        display: flex;
+    }
+    .toggle-menu{
+        display: none;
+    }
+    
+    .toggle {
+        display: flex;
+        box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+    
+    }
+    
+    .toggle-menu {
+        background-color: rgba(0, 0, 0);
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2px 2px 2px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+    .menu_line {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-out;
+        -webkit-transition: transform 0.2s ease-out;
+        -moz-transition: transform 0.2s ease-out;
+        -ms-transition: transform 0.2s ease-out;
+        -o-transition: transform 0.2s ease-out;
+    }
+    
+    .toggle .line1 {
+        background-color: #000000;
+        transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+    }
+    
+    .toggle .line2 {
+        display: none;
+    }
+    
+    .toggle .line3 {
+        background-color: #000000;
+        transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+    }
+    
+    .toggle .toggle-menu {
+        background-color: white;
+    }
+.container{
+    max-width:90%;
+}
+#worktogether p{
+    padding: 0 20px;
+}
+}
+
