@@ -92,11 +92,40 @@ header{
     height: 100%;
     line-height: 55px;
 }
-
+.header_bottom_section{
+    padding: 48px 0;
+}
+.inner_header_bottom_section{
+    display: flex;
+    justify-content: space-between;
+}
+.header_bottom_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_bottom_box p:nth-child(1){
+    color:  #0A2B25;
+    text-align: center;
+    font64pxheader_bottom_section-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.header_bottom_box p:nth-child(2){
+    color: var(--primary-1, #0A2B25);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 #header_hero{
     display: flex;
     gap: 74px;
-    padding: 102px 0 194px 0;
+    padding: 102px 0 64px 0;
 }
 
 .leftsection{
@@ -125,8 +154,13 @@ header{
 .rightsection{
     width: 708px;
     max-width: 100%;
-    min-height: 652px;
+    min-height: 298px;
     background-color:#C1AF95 ;
+}
+.rightsection img{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .section1{
     padding: 72px 0 194px 0;
@@ -585,7 +619,11 @@ ul {
     .contact_box h4{
         font-size: 34px;
     }
-    
+    .inner_header_bottom_section{
+        flex-direction: column;
+        gap: 35px;
+    }
+
     .leftsection,
     .ourpractice_rightsection,
     .point_content_box > p:nth-child(2),
