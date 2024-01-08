@@ -393,7 +393,7 @@ ul {
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../media/dark-cover.png");
+    url("https://cdn.traleor.com/dark-cover.png");
   background-size: cover;
   background-position: center;
   padding: 5rem 8vw;

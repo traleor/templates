@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Techa - Traleor Default Template</title>
+    <title>Nova - Traleor Default Template</title>
     <meta
       name="description"
-      content="Traleor Template Techa is derived from the Latin word `New` and is the starter template for traleor websites"
+      content="Traleor Template Nova is derived from the Latin word `New` and is the starter template for traleor websites"
     />
 
-    <!-- Canonical -->
+    <link rel="preconnect" href="https://cdn.traleor.com" />
+    <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin />
     <link
-      rel="canonical"
-      href="https://traleor.github.io/templates/techa/index.html"
+      rel="preload"
+      href="https://cdn.traleor.com/statics/reset.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-
-    <link rel="stylesheet" href="css/techa.css" />
+    <link
+      rel="preload"
+      href="https://api.fonts.coollabs.io/css2?family=Inter:wght@300;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link
       rel="stylesheet"
@@ -30,46 +38,29 @@
   <body>
     <div class="container">
       <!-- NAVBAR -------------------------------------------------->
-      <nav
-        class="navbar flex fixed full-width a-j-space-between"
-        role="navigation"
-      >
-        <div class="navbar__logo">
-          <a class="flex" href="./index.html">
-            <b>TECHA</b>
-            <!-- <img src="../media/traleor.svg" alt="logo"> -->
-          </a>
-        </div>
-        <!-- checkbox to track when the hamburger menu is clicked on -->
-        <input type="checkbox" id="menu_check" />
-        <label for="menu_check" class="menu__btn">
-          <div class="hamburger__menu"></div>
-        </label>
-        <ul class="navbar__menu flex a-j-center">
-          <li class="navbar__menu__list">
-            <a href="#" class="navbar__menu__list__item">Home</a>
-          </li>
-          <li class="navbar__menu__list">
-            <a href="./flex_page.html" class="navbar__menu__list__item"
-              >About</a
-            >
-          </li>
-          <li class="navbar__menu__list">
-            <a href="#" class="navbar__menu__list__item">Services</a>
-          </li>
-          <li class="navbar__menu__list">
-            <a href="./blog_index.html" class="navbar__menu__list__item"
-              >Blog</a
-            >
-          </li>
-          <li class="navbar__menu__list">
-            <a href="#" class="navbar__menu__list__item">Why Us</a>
-          </li>
-          <li class="navbar__menu__list">
-            <a href="#" class="navbar__menu__list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <header>
+        <nav>
+          <div id="nav" class="container">
+            <a href="./index.html" class="logo_box">
+              <img src="./images/logo.png" alt="zion_logo" />
+            </a>
+            <div class="menu_links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./blog_index.html">Blog</a></li>
+                <button><a href="./contact.html">Contact Us</a></button>
+              </ul>
+            </div>
+            <div class="toggle-menu">
+              <div class="menu_line line1"></div>
+              <div class="menu_line line2"></div>
+              <div class="menu_line line3"></div>
+            </div>
+          </div>
+          <div class="line container"></div>
+        </nav>
+      </header>
 
       <!-- Blog Post Wrapper --------------------------------------------->
       <section class="blog__post__wrapper">
@@ -354,29 +345,19 @@
         </section>
 
         <section class="full-width flex a-j-center default-padding">
-          <button class="primary">Start Building</button>
+          <button class="primary"><a href="#">Start Building</a></button>
         </section>
 
         <!-- comments  -->
         <section class="full-width default-padding">
-          <span class="remark42__counter"></span>
           <div id="remark42"></div>
         </section>
       </section>
     </div>
 
-    <footer class="footer">
-      <div class="title__text__wrapper full-width">
-        <div class="title__text__content flex flex-column a-j-center">
-          <h2>Sed ut perspiciatis unde omnis iste natus</h2>
-          <h3>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium.
-          </h3>
-        </div>
-      </div>
+    <footer>
       <div class="footer__mark">
-        <h4>Techa Template - Made By Traleor</h4>
+        <h4>Zion Template - Made By Traleor</h4>
       </div>
     </footer>
     <!-- Placed made__mark here for SEO purposes -->
@@ -386,7 +367,7 @@
       </a>
     </div>
 
-    <script src="js/techa.js"></script>
+    <script src="js/nova.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-core.min.js"
       integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w=="

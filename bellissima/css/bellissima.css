@@ -18,17 +18,17 @@ html {
 }
 
 :root {
-  --main-color: #266FF1;
+  --main-color: #266ff1;
   --white-color: #fffbfe;
   --background-color: #edf1fa;
   --secondary-color: #000000;
 
   /* Product Details Colors */
   --primary-color: #90e0ef;
-    --second-color: #00b4d5;
-    --tertiary-color: #0077b6;
-    --yellow-color: #ffb900;
-    --gray-color: #808080;
+  --second-color: #00b4d5;
+  --tertiary-color: #0077b6;
+  --yellow-color: #ffb900;
+  --gray-color: #808080;
 
   /*------- Font and typography -------*/
   --biggest-font-size: 4rem;
@@ -168,7 +168,12 @@ h3 {
 .hero__section {
   height: 100vh;
   z-index: 1;
-  background-image: linear-gradient(45deg, rgba(17, 17, 17, 0.301), rgba(0, 0, 0, 0.5)),url(../images/nature.jpg);
+  background-image: linear-gradient(
+      45deg,
+      rgba(17, 17, 17, 0.301),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/nature.jpg);
   background-size: cover;
   background-position: 50% 50%;
   display: flex;
@@ -267,7 +272,7 @@ h3 {
   background: linear-gradient(to top, transparent, var(--white-color));
 }
 
-.about__contact{
+.about__contact {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -315,7 +320,6 @@ h3 {
   border-radius: 12px;
   margin-bottom: 40px;
   overflow: hidden;
-  
 }
 
 /* This container is needed to position the front and back side */
@@ -351,7 +355,7 @@ h3 {
 
 /* Style the back side */
 .flip-card-back {
-  background: url(../images/hill-cover.png) no-repeat;
+  background: url(.https://cdn.traleor.com/hill-cover.png) no-repeat;
   /* background-color: var(--main-color); */
   background-size: cover;
   color: var(--white-color);
@@ -375,7 +379,7 @@ h3 {
   margin: 0;
   padding: 5%;
 }
-.view__more__button .btn{
+.view__more__button .btn {
   margin-top: 0;
 }
 .view__more__button h3 {
@@ -521,8 +525,8 @@ footer ul li a:hover {
   .responsive__nav {
     display: flex;
     flex-direction: column;
-     top: -600%;
-    right: 0; 
+    top: -600%;
+    right: 0;
     z-index: 1;
     width: 100%;
     height: 500%;
@@ -545,14 +549,12 @@ footer ul li a:hover {
     align-items: center;
   }
 
-
   .responsive__nav li a {
     font-size: 1.5rem;
     padding: 8px 16px;
     font-weight: bolder;
     /* border-bottom: 0.5px solid var(--main-color); */
     transition: all 0.2s ease-out;
-    
   }
 
   .responsive__nav li {
@@ -583,38 +585,35 @@ footer ul li a:hover {
     line-height: 45px;
     font-size: var(--h3-font-size);
   }
-/* ************************ABOUT SECTION****************** */
-.about__me h1{
-  font-size: var(--h3-font-size);
-}
-.about__info__inner{
-  padding-bottom: 10%;
-}
-.about__info__inner .img img{
-  width: 100%;
-  /* padding: 5%; */
- }
-.about__info__inner .text {
+  /* ************************ABOUT SECTION****************** */
+  .about__me h1 {
+    font-size: var(--h3-font-size);
+  }
+  .about__info__inner {
+    padding-bottom: 10%;
+  }
+  .about__info__inner .img img {
+    width: 100%;
+    /* padding: 5%; */
+  }
+  .about__info__inner .text {
     margin: 0;
     width: 100%;
-    
   }
   .about__info__inner .text h2 {
     text-align: right;
     margin-bottom: 5%;
     font-size: var(--h4-font-size);
-
   }
-  .about__info__inner
-  .text .text__inner h3 {
+  .about__info__inner .text .text__inner h3 {
     text-align: left;
     margin: 5% 0;
     font-size: var(--normal-font-size);
   }
-  .about__info{
+  .about__info {
     padding: 0;
   }
-  .about__info p{
+  .about__info p {
     text-align: left;
   }
   .about__info__inner img {
@@ -635,13 +634,13 @@ footer ul li a:hover {
     left: 0;
     right: 0;
   }
-  .about__contact{
+  .about__contact {
     text-align: center;
   }
-  .about__contact .btn{
+  .about__contact .btn {
     margin-top: 0;
   }
-  .about__contact .footer__socials{
+  .about__contact .footer__socials {
     margin-left: -13%;
   }
   /* *********************** CATALOG ******************* */
@@ -653,7 +652,6 @@ footer ul li a:hover {
     margin-top: 18%;
     height: 25%;
   }
-
 
   /* ************************** CATALOG ENDS HERE ************* */
 
@@ -688,11 +686,11 @@ footer ul li a:hover {
     justify-content: center;
   }
 }
-@media screen and (min-width: 700px) and (max-width:950px){
+@media screen and (min-width: 700px) and (max-width: 950px) {
   .view__more__button {
     margin-top: 15%;
   }
-  .about__contact .footer__socials{
+  .about__contact .footer__socials {
     margin-left: 0;
   }
 }
@@ -708,16 +706,16 @@ footer ul li a:hover {
     z-index: 1;
   }
 
-  .logo h1{
+  .logo h1 {
     font-size: var(--normal-font-size);
   }
-  .responsive__nav{
+  .responsive__nav {
     height: 590%;
   }
-  .responsive__nav ul{
+  .responsive__nav ul {
     padding: 0;
   }
-  .responsive__nav li{
+  .responsive__nav li {
     font-size: var(--normal-font-size);
   }
   /* **********************HERO SECTION************************ */
@@ -740,7 +738,7 @@ footer ul li a:hover {
   }
 
   /* ***********ABOUT ME ************ */
-  .about__me h1{
+  .about__me h1 {
     font-size: var(--normal-font-size);
   }
   /* **********************SECTION1************************ */
@@ -771,39 +769,39 @@ footer ul li a:hover {
     text-align: center;
   }
 
-   /* ************ FOOTER ************ */
-   .footer__container {
+  /* ************ FOOTER ************ */
+  .footer__container {
     grid-template-columns: 1fr;
     text-align: center;
     /* gap: 2rem; */
   }
 
   /* ****************CATALOG**************** */
-  .cards h2{
+  .cards h2 {
     font-size: var(--normal-font-size);
   }
-  .view__more__button h3{
+  .view__more__button h3 {
     font-size: var(--normal-font-size);
   }
   .flip-card-back .btn {
     margin-top: 40%;
     height: 25%;
   }
-  .flip-card{
+  .flip-card {
     width: 80%;
     margin-left: 10%;
   }
-  .flip-card-back h3{
+  .flip-card-back h3 {
     margin-top: 30%;
   }
-  .view__more__button .btn{
-   margin-top: 0;
-   width: 75%;
+  .view__more__button .btn {
+    margin-top: 0;
+    width: 75%;
   }
 }
 
 @media screen and (max-width: 360px) {
-  /**********************SECTION1************************ */ 
+  /**********************SECTION1************************ */
   .sec1__inner {
     flex-direction: column;
     width: 90%;
@@ -831,12 +829,11 @@ footer ul li a:hover {
   }
 }
 @media screen and (max-width: 428px) {
-
   /* *********CATALOG******* */
   .flip-card-back .btn {
     margin-top: 20%;
   }
-  /**********************SECTION1************************ */ 
+  /**********************SECTION1************************ */
   .sec1__inner {
     flex-direction: column;
     width: 90%;
@@ -877,12 +874,12 @@ footer ul li a:hover {
   .navbar .logo img {
     padding: 2% 13% 4% 12%;
   }
-   /* *********CATALOG******* */
-   .flip-card-back .btn {
+  /* *********CATALOG******* */
+  .flip-card-back .btn {
     margin-top: 45%;
   }
 
-  .cards{
+  .cards {
     padding: 0;
   }
   /* ******************************FOOTER******************** */
@@ -891,12 +888,11 @@ footer ul li a:hover {
   }
 }
 
-
 /* **********************PRODUCT DETAILS PAGE ******* */
 
 .main {
   background-color: var(--primary-color);
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   padding: 3% 0;
   color: var(--secondary-color);
@@ -916,9 +912,9 @@ footer ul li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  "images info"
-  "images description";
+  grid-template-areas:
+    "images info"
+    "images description";
   grid-gap: 35px;
 }
 
@@ -927,9 +923,9 @@ footer ul li a:hover {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  "active active active"
-  "idle idle idle";
+  grid-template-areas:
+    "active active active"
+    "idle idle idle";
   grid-gap: 5px;
 }
 
@@ -1030,53 +1026,53 @@ footer ul li a:hover {
 
 @media (max-width: 991px) {
   .box {
-      width: 750px;
-      grid-template-areas: 
+    width: 750px;
+    grid-template-areas:
       "info info"
       "images description";
   }
   .box .basic-info .options a {
-      padding: 8.5px 12px;
+    padding: 8.5px 12px;
   }
 }
 
 @media screen and (max-width: 991px) and (min-width: 769px) {
   .box .basic-info span {
-      position: absolute;
-      align-self: flex-end;
+    position: absolute;
+    align-self: flex-end;
   }
   .box .basic-info .options {
-      position: absolute;
-      align-self: flex-end;
-      margin-top: 40px;
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .box {
-      width: 600px;
-      grid-template-areas: 
+    width: 600px;
+    grid-template-areas:
       "images info"
       "description description";
   }
   .box .images {
-      gap: 3px;
+    gap: 3px;
   }
   .box .images .img-holder img {
-      border-radius: 5px;
+    border-radius: 5px;
   }
 }
 
 @media (max-width: 640px) {
   .box {
-      width: 100%;
-      min-height: 100vh;
-      border-radius: 0;
-      padding: 35px;
-      margin: 0;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: 
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 35px;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
       "images"
       "info"
       "description";

@@ -357,7 +357,7 @@ ul {
   justify-content: center;
 }
 
-.list__block .list__block__item{
+.list__block .list__block__item {
   width: 30%;
   flex: 30% 0 0;
   margin: 0.5rem;
@@ -425,7 +425,7 @@ ul {
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../media/dark-cover.png");
+    url("https://cdn.traleor.com/dark-cover.png");
   background-size: cover;
   background-position: center;
   padding: 3rem 4vw;
@@ -476,7 +476,7 @@ ul {
   border-radius: 10px;
   box-shadow: 0 0 10px 1px #d3d3d3;
 }
-.cards__flex .card .card__image{
+.cards__flex .card .card__image {
   width: 100%;
   height: 15vw;
   object-fit: cover;
@@ -843,10 +843,10 @@ footer {
   /*---- list__block ----*/
   /* .list__block {
     /* Fixing grid on smaller screen */
-    /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
   /* }  */
 
-  .list__block .list__block__item{
+  .list__block .list__block__item {
     width: 100%;
     flex: 100% 0 0;
     /* box-shadow: 0 0 10px 1px #d3d3d3; */
@@ -858,7 +858,7 @@ footer {
     height: fit-content;
   }
 
-  .cards__flex .card .card__image{
+  .cards__flex .card .card__image {
     width: 100%;
     height: 50%;
     object-fit: cover;
