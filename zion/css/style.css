@@ -7,7 +7,7 @@
   --white-color: #fffbfe;
   --background-color: #f5f5f5; */
 
-  --inter-font: "Inter", sans-serif;
+  --lora-font: "Lora", serif;
 
   /* Margine */
   --content-margin: 10%;
@@ -40,7 +40,7 @@ body {
   padding: 0;
   line-height: 1;
   font-size: var(--font-size-body);
-  font-family: var(--inter-font), -apple-system, BlinkMacSystemFont, Segoe UI,
+  font-family: var(--lora-font), -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   background-color: var(--background-color);

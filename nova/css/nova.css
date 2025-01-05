@@ -221,6 +221,40 @@ ul {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* Table styling */
+.block-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  text-align: left;
+}
+table caption {
+  text-align: left;
+  caption-side: bottom;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+/* Table cell styling */
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+/* Header styling */
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+/* Row hover effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
 /* NAVBAR STYLES *********************************************************/
 
 .navbar {
